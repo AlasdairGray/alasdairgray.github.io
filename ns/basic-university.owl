@@ -52,7 +52,8 @@ dcterms:title rdf:type owl:AnnotationProperty .
           rdfs:domain :Course ;
           rdfs:range :Academic ;
           <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-5711-4872> ;
-          <http://purl.org/dc/elements/1.1/date> "2020-12-17T12:57:05Z"^^xsd:dateTime .
+          <http://purl.org/dc/elements/1.1/date> "2020-12-17T12:57:05Z"^^xsd:dateTime ;
+          rdfs:label "taught by"@en .
 
 
 #################################################################
@@ -62,7 +63,8 @@ dcterms:title rdf:type owl:AnnotationProperty .
 ###  https://alasdairgray.github.io/ns/basic-university/hasName
 :hasName rdf:type owl:DatatypeProperty ;
          <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-5711-4872> ;
-         <http://purl.org/dc/elements/1.1/date> "2020-12-17T12:57:43Z"^^xsd:dateTime .
+         <http://purl.org/dc/elements/1.1/date> "2020-12-17T12:57:43Z"^^xsd:dateTime ;
+         rdfs:label "has name"@en .
 
 
 #################################################################
@@ -73,21 +75,24 @@ dcterms:title rdf:type owl:AnnotationProperty .
 :Academic rdf:type owl:Class ;
           <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-5711-4872> ;
           <http://purl.org/dc/elements/1.1/date> "2020-12-17T12:54:45Z"^^xsd:dateTime ;
-          rdfs:comment "A person who teaches a course at the university"@en .
+          rdfs:comment "A person who teaches a course at the university"@en ;
+          rdfs:label "Academic"@en .
 
 
 ###  https://alasdairgray.github.io/ns/basic-university/Course
 :Course rdf:type owl:Class ;
         <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-5711-4872> ;
         <http://purl.org/dc/elements/1.1/date> "2020-12-17T12:55:00Z"^^xsd:dateTime ;
-        rdfs:comment "A course taught on a particular topic"@en .
+        rdfs:comment "A course taught on a particular topic"@en ;
+        rdfs:label "Course"@en .
 
 
 ###  https://alasdairgray.github.io/ns/basic-university/Student
 :Student rdf:type owl:Class ;
          <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-5711-4872> ;
          <http://purl.org/dc/elements/1.1/date> "2020-12-17T12:54:51Z"^^xsd:dateTime ;
-         rdfs:comment "A person who studies a course at the university"@en .
+         rdfs:comment "A person who studies a course at the university"@en ;
+         rdfs:label "Student"@en .
 
 
 #################################################################
@@ -99,7 +104,8 @@ dcterms:title rdf:type owl:AnnotationProperty .
                 :Academic ;
        :hasName "Alasdair Gray" ;
        <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-5711-4872> ;
-       <http://purl.org/dc/elements/1.1/date> "2020-12-17T12:58:44Z"^^xsd:dateTime .
+       <http://purl.org/dc/elements/1.1/date> "2020-12-17T12:58:44Z"^^xsd:dateTime ;
+       rdfs:label "Alasdair Gray" .
 
 
 ###  https://alasdairgray.github.io/ns/basic-university/f21bd
@@ -108,7 +114,8 @@ dcterms:title rdf:type owl:AnnotationProperty .
        :taughtBy :agray ;
        :hasName "F21BD Big Data Management"@en ;
        <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-5711-4872> ;
-       <http://purl.org/dc/elements/1.1/date> "2020-12-17T12:59:40Z"^^xsd:dateTime .
+       <http://purl.org/dc/elements/1.1/date> "2020-12-17T12:59:40Z"^^xsd:dateTime ;
+       rdfs:label "F21BD" .
 
 
 #################################################################
