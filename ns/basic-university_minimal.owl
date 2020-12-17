@@ -1,0 +1,133 @@
+@prefix : <https://alasdairgray.github.io/ns/basic-university/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@base <https://alasdairgray.github.io/ns/basic-university/> .
+
+<https://alasdairgray.github.io/ns/basic-university/> rdf:type owl:Ontology ;
+                                                       dcterms:license <http://creativecommons.org/licenses/by/4.0/> ;
+                                                       owl:versionInfo 1.0 ;
+                                                       dcterms:description "An ontology used for teaching that represents a minimal set of properties about a university."@en ;
+                                                       dcterms:creator <http://orcid.org/0000-0002-5711-4872> ;
+                                                       dcterms:title "University Ontology" ;
+                                                       dcterms:creator "Alasdair Gray"@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+dcterms:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+dcterms:description rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+dcterms:license rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+dcterms:title rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://alasdairgray.github.io/ns/basic-university/taughtBy
+:taughtBy rdf:type owl:ObjectProperty ;
+          rdfs:domain :Course ;
+          rdfs:range :Academic ;
+          <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-5711-4872> ;
+          <http://purl.org/dc/elements/1.1/date> "2020-12-17T12:57:05Z"^^xsd:dateTime ;
+          rdfs:label "taught by"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://alasdairgray.github.io/ns/basic-university/hasName
+:hasName rdf:type owl:DatatypeProperty ;
+         <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-5711-4872> ;
+         <http://purl.org/dc/elements/1.1/date> "2020-12-17T12:57:43Z"^^xsd:dateTime ;
+         rdfs:label "has name"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://alasdairgray.github.io/ns/basic-university/Academic
+:Academic rdf:type owl:Class ;
+          <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-5711-4872> ;
+          <http://purl.org/dc/elements/1.1/date> "2020-12-17T12:54:45Z"^^xsd:dateTime ;
+          rdfs:comment "A person who teaches a course at the university"@en ;
+          rdfs:label "Academic"@en .
+
+
+###  https://alasdairgray.github.io/ns/basic-university/Course
+:Course rdf:type owl:Class ;
+        <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-5711-4872> ;
+        <http://purl.org/dc/elements/1.1/date> "2020-12-17T12:55:00Z"^^xsd:dateTime ;
+        rdfs:comment "A course taught on a particular topic"@en ;
+        rdfs:label "Course"@en .
+
+
+###  https://alasdairgray.github.io/ns/basic-university/Student
+:Student rdf:type owl:Class ;
+         <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-5711-4872> ;
+         <http://purl.org/dc/elements/1.1/date> "2020-12-17T12:54:51Z"^^xsd:dateTime ;
+         rdfs:comment "A person who studies a course at the university"@en ;
+         rdfs:label "Student"@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://alasdairgray.github.io/ns/basic-university/agray
+:agray rdf:type owl:NamedIndividual ,
+                :Academic ;
+       :hasName "Alasdair Gray" ;
+       <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-5711-4872> ;
+       <http://purl.org/dc/elements/1.1/date> "2020-12-17T12:58:44Z"^^xsd:dateTime ;
+       rdfs:label "Alasdair Gray" .
+
+
+###  https://alasdairgray.github.io/ns/basic-university/f21bd
+:f21bd rdf:type owl:NamedIndividual ,
+                :Course ;
+       :taughtBy :agray ;
+       :hasName "F21BD Big Data Management"@en ;
+       <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-5711-4872> ;
+       <http://purl.org/dc/elements/1.1/date> "2020-12-17T12:59:40Z"^^xsd:dateTime ;
+       rdfs:label "F21BD" .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Academic
+                :Course
+                :Student
+              )
+] .
+
+
+###  Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi
