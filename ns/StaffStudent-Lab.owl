@@ -1,4 +1,4 @@
-@prefix : <http://www.owl-ontologies.com/Ontology1263829566.owl#> .
+@prefix : <https://alasdairgray.github.io/ns/StaffStudent.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -8,24 +8,31 @@
 @prefix swrl: <http://www.w3.org/2003/11/swrl#> .
 @prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
 @prefix protege: <http://protege.stanford.edu/plugins/owl/protege#> .
-@base <http://www.owl-ontologies.com/Ontology1263829566.owl> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@base <https://alasdairgray.github.io/ns/StaffStudent.owl> .
 
-<http://www.owl-ontologies.com/Ontology1263829566.owl> rdf:type owl:Ontology .
+<https://alasdairgray.github.io/ns/StaffStudent.owl> rdf:type owl:Ontology ;
+                                                       dcterms:license <http://creativecommons.org/licenses/by/4.0/> ;
+                                                       owl:versionInfo 2.0 ;
+                                                       dcterms:description "Ontology representing staff and students at a fictional university. This ontology is used for teaching OWL in the Big Data Management Course at Heriot-Watt University."@en ;
+                                                       dcterms:creator <https://orcid.org/0000-0002-5492-8635>, <http://orcid.org/0000-0002-5711-4872> ;
+                                                       dcterms:title "Staff Student Ontology" ;
+                                                       dcterms:creator "Alasdair Gray", "Albert Burger" .
 
 #################################################################
 #    Object Properties
 #################################################################
 
-###  http://www.owl-ontologies.com/Ontology1263829566.owl#employedAs
+###  https://alasdairgray.github.io/ns/StaffStudent.owl#employedAs
 :employedAs rdf:type owl:ObjectProperty .
 
 
-###  http://www.owl-ontologies.com/Ontology1263829566.owl#residentOf
+###  https://alasdairgray.github.io/ns/StaffStudent.owl#residentOf
 :residentOf rdf:type owl:ObjectProperty ,
                      owl:FunctionalProperty .
 
 
-###  http://www.owl-ontologies.com/Ontology1263829566.owl#studies
+###  https://alasdairgray.github.io/ns/StaffStudent.owl#studies
 :studies rdf:type owl:ObjectProperty .
 
 
@@ -33,7 +40,7 @@
 #    Data properties
 #################################################################
 
-###  http://www.owl-ontologies.com/Ontology1263829566.owl#numberOfHoursEmployed
+###  https://alasdairgray.github.io/ns/StaffStudent.owl#numberOfHoursEmployed
 :numberOfHoursEmployed rdf:type owl:DatatypeProperty ,
                                 owl:FunctionalProperty ;
                        rdfs:range xsd:int .
@@ -43,20 +50,20 @@
 #    Classes
 #################################################################
 
-###  http://www.owl-ontologies.com/Ontology1263829566.owl#Country
+###  https://alasdairgray.github.io/ns/StaffStudent.owl#Country
 :Country rdf:type owl:Class .
 
 
-###  http://www.owl-ontologies.com/Ontology1263829566.owl#Course
+###  https://alasdairgray.github.io/ns/StaffStudent.owl#Course
 :Course rdf:type owl:Class .
 
 
-###  http://www.owl-ontologies.com/Ontology1263829566.owl#EU_Country
+###  https://alasdairgray.github.io/ns/StaffStudent.owl#EU_Country
 :EU_Country rdf:type owl:Class ;
             rdfs:subClassOf :Country .
 
 
-###  http://www.owl-ontologies.com/Ontology1263829566.owl#FullTimeStudent
+###  https://alasdairgray.github.io/ns/StaffStudent.owl#FullTimeStudent
 :FullTimeStudent rdf:type owl:Class ;
                  owl:equivalentClass [ owl:intersectionOf ( :Student
                                                             [ rdf:type owl:Restriction ;
@@ -69,7 +76,7 @@
                                      ] .
 
 
-###  http://www.owl-ontologies.com/Ontology1263829566.owl#HomeStudent
+###  https://alasdairgray.github.io/ns/StaffStudent.owl#HomeStudent
 :HomeStudent rdf:type owl:Class ;
              owl:equivalentClass [ owl:intersectionOf ( :Student
                                                         [ rdf:type owl:Restriction ;
@@ -82,21 +89,21 @@
              owl:disjointWith :OverseasStudent .
 
 
-###  http://www.owl-ontologies.com/Ontology1263829566.owl#Job
+###  https://alasdairgray.github.io/ns/StaffStudent.owl#Job
 :Job rdf:type owl:Class .
 
 
-###  http://www.owl-ontologies.com/Ontology1263829566.owl#NonEUCountry
+###  https://alasdairgray.github.io/ns/StaffStudent.owl#NonEUCountry
 :NonEUCountry rdf:type owl:Class ;
               rdfs:subClassOf :Country .
 
 
-###  http://www.owl-ontologies.com/Ontology1263829566.owl#NorthAmericanCountry
+###  https://alasdairgray.github.io/ns/StaffStudent.owl#NorthAmericanCountry
 :NorthAmericanCountry rdf:type owl:Class ;
                       rdfs:subClassOf :NonEUCountry .
 
 
-###  http://www.owl-ontologies.com/Ontology1263829566.owl#NorthAmericanStudent
+###  https://alasdairgray.github.io/ns/StaffStudent.owl#NorthAmericanStudent
 :NorthAmericanStudent rdf:type owl:Class ;
                       owl:equivalentClass [ owl:intersectionOf ( :Student
                                                                  [ rdf:type owl:Restriction ;
@@ -108,7 +115,7 @@
                                           ] .
 
 
-###  http://www.owl-ontologies.com/Ontology1263829566.owl#OverseasStudent
+###  https://alasdairgray.github.io/ns/StaffStudent.owl#OverseasStudent
 :OverseasStudent rdf:type owl:Class ;
                  owl:equivalentClass [ owl:intersectionOf ( :Student
                                                             [ rdf:type owl:Restriction ;
@@ -120,11 +127,11 @@
                                      ] .
 
 
-###  http://www.owl-ontologies.com/Ontology1263829566.owl#Person
+###  https://alasdairgray.github.io/ns/StaffStudent.owl#Person
 :Person rdf:type owl:Class .
 
 
-###  http://www.owl-ontologies.com/Ontology1263829566.owl#Staff
+###  https://alasdairgray.github.io/ns/StaffStudent.owl#Staff
 :Staff rdf:type owl:Class ;
        owl:equivalentClass [ rdf:type owl:Restriction ;
                              owl:onProperty :employedAs ;
@@ -133,7 +140,7 @@
        rdfs:subClassOf :Person .
 
 
-###  http://www.owl-ontologies.com/Ontology1263829566.owl#Student
+###  https://alasdairgray.github.io/ns/StaffStudent.owl#Student
 :Student rdf:type owl:Class ;
          owl:equivalentClass [ rdf:type owl:Restriction ;
                                owl:onProperty :studies ;
@@ -142,7 +149,7 @@
          rdfs:subClassOf :Person .
 
 
-###  http://www.owl-ontologies.com/Ontology1263829566.owl#UKStudent
+###  https://alasdairgray.github.io/ns/StaffStudent.owl#UKStudent
 :UKStudent rdf:type owl:Class ;
            owl:equivalentClass [ owl:intersectionOf ( :Student
                                                       [ rdf:type owl:Restriction ;
@@ -158,39 +165,39 @@
 #    Individuals
 #################################################################
 
-###  http://www.owl-ontologies.com/Ontology1263829566.owl#AI
+###  https://alasdairgray.github.io/ns/StaffStudent.owl#AI
 :AI rdf:type owl:NamedIndividual ,
              :Course .
 
 
-###  http://www.owl-ontologies.com/Ontology1263829566.owl#Databases
+###  https://alasdairgray.github.io/ns/StaffStudent.owl#Databases
 :Databases rdf:type owl:NamedIndividual ,
                     :Course .
 
 
-###  http://www.owl-ontologies.com/Ontology1263829566.owl#Mike
+###  https://alasdairgray.github.io/ns/StaffStudent.owl#Mike
 :Mike rdf:type owl:NamedIndividual ,
                :Person ;
       :residentOf :UK ;
       :studies :Programming .
 
 
-###  http://www.owl-ontologies.com/Ontology1263829566.owl#Networking
+###  https://alasdairgray.github.io/ns/StaffStudent.owl#Networking
 :Networking rdf:type owl:NamedIndividual ,
                      :Course .
 
 
-###  http://www.owl-ontologies.com/Ontology1263829566.owl#Programming
+###  https://alasdairgray.github.io/ns/StaffStudent.owl#Programming
 :Programming rdf:type owl:NamedIndividual ,
                       :Course .
 
 
-###  http://www.owl-ontologies.com/Ontology1263829566.owl#Theory
+###  https://alasdairgray.github.io/ns/StaffStudent.owl#Theory
 :Theory rdf:type owl:NamedIndividual ,
                  :Course .
 
 
-###  http://www.owl-ontologies.com/Ontology1263829566.owl#Tom
+###  https://alasdairgray.github.io/ns/StaffStudent.owl#Tom
 :Tom rdf:type owl:NamedIndividual ,
               :Person ;
      :residentOf :USA ;
@@ -201,12 +208,12 @@
      :numberOfHoursEmployed "20"^^xsd:int .
 
 
-###  http://www.owl-ontologies.com/Ontology1263829566.owl#UK
+###  https://alasdairgray.github.io/ns/StaffStudent.owl#UK
 :UK rdf:type owl:NamedIndividual ,
              :EU_Country .
 
 
-###  http://www.owl-ontologies.com/Ontology1263829566.owl#USA
+###  https://alasdairgray.github.io/ns/StaffStudent.owl#USA
 :USA rdf:type owl:NamedIndividual ,
               :NorthAmericanCountry .
 
