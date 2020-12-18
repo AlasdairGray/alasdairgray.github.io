@@ -1,0 +1,172 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+    xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns="http://www.owl-ontologies.com/Ontology1263829566.owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+    xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="http://www.owl-ontologies.com/Ontology1263829566.owl">
+  <owl:Ontology rdf:about=""/>
+  <owl:Class rdf:ID="EU_Country">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Country"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="NonEUCountry">
+    <rdfs:subClassOf rdf:resource="#Country"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Job"/>
+  <owl:Class rdf:ID="FullTimeStudent">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Class rdf:ID="Student"/>
+          <owl:Restriction>
+            <owl:onProperty>
+              <owl:ObjectProperty rdf:ID="studies"/>
+            </owl:onProperty>
+            <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >4</owl:minCardinality>
+            <owl:valuesFrom>
+              <owl:Class rdf:ID="Course"/>
+            </owl:valuesFrom>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:ID="NorthAmericanStudent">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Student"/>
+          <owl:Restriction>
+            <owl:someValuesFrom>
+              <owl:Class rdf:ID="NorthAmericanCountry"/>
+            </owl:someValuesFrom>
+            <owl:onProperty>
+              <owl:FunctionalProperty rdf:ID="residentOf"/>
+            </owl:onProperty>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:ID="OverseasStudent">
+    <owl:disjointWith>
+      <owl:Class rdf:ID="HomeStudent"/>
+    </owl:disjointWith>
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Student"/>
+          <owl:Restriction>
+            <owl:onProperty>
+              <owl:FunctionalProperty rdf:about="#residentOf"/>
+            </owl:onProperty>
+            <owl:someValuesFrom rdf:resource="#NonEUCountry"/>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:ID="UKStudent">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Student"/>
+          <owl:Restriction>
+            <owl:onProperty>
+              <owl:FunctionalProperty rdf:about="#residentOf"/>
+            </owl:onProperty>
+            <owl:hasValue>
+              <EU_Country rdf:ID="UK"/>
+            </owl:hasValue>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="#NorthAmericanCountry">
+    <rdfs:subClassOf rdf:resource="#NonEUCountry"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Person"/>
+  <owl:Class rdf:about="#Student">
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="#studies"/>
+        <owl:someValuesFrom rdf:resource="#Course"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+    <rdfs:subClassOf rdf:resource="#Person"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Staff">
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="employedAs"/>
+        </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="#Job"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+    <rdfs:subClassOf rdf:resource="#Person"/>
+  </owl:Class>
+  <owl:Class rdf:about="#HomeStudent">
+    <owl:disjointWith rdf:resource="#OverseasStudent"/>
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Student"/>
+          <owl:Restriction>
+            <owl:onProperty>
+              <owl:FunctionalProperty rdf:about="#residentOf"/>
+            </owl:onProperty>
+            <owl:someValuesFrom rdf:resource="#EU_Country"/>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:FunctionalProperty rdf:ID="numberOfHoursEmployed">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="#residentOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </owl:FunctionalProperty>
+  <Course rdf:ID="Theory"/>
+  <Person rdf:ID="Mike">
+    <residentOf rdf:resource="#UK"/>
+    <studies>
+      <Course rdf:ID="Programming">
+        <owl:differentFrom>
+          <Course rdf:ID="Networking"/>
+        </owl:differentFrom>
+        <owl:differentFrom>
+          <Course rdf:ID="AI">
+            <owl:differentFrom>
+              <Course rdf:ID="Databases"/>
+            </owl:differentFrom>
+          </Course>
+        </owl:differentFrom>
+      </Course>
+    </studies>
+  </Person>
+  <Person rdf:ID="Tom">
+    <studies rdf:resource="#AI"/>
+    <studies rdf:resource="#Networking"/>
+    <studies rdf:resource="#Databases"/>
+    <studies rdf:resource="#Programming"/>
+    <residentOf>
+      <NorthAmericanCountry rdf:ID="USA"/>
+    </residentOf>
+    <numberOfHoursEmployed rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+    >20</numberOfHoursEmployed>
+  </Person>
+</rdf:RDF>
+
+<!-- Created with Protege (with OWL Plugin 3.4.2, Build 562)  http://protege.stanford.edu -->
