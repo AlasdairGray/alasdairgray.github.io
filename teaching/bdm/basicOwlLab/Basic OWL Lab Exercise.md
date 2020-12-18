@@ -53,7 +53,8 @@ We will now create some classes to represent people and courses within a univers
 
 1. Click on `owl:Thing`; all classes must be defined below this most general class
 
-1. Click on the icon containing two yellow balls with a + sign![create-subclass](create-subclass.png)
+1. Click on the icon containing two yellow balls with a + sign
+![create-subclass](create-subclass.png)
 
 1. Type in the name of the class that we are creating `Course`
    **Note:** for the ease of discussion we will use labels as names. In real-world scenarios it is considered best practice to use opaque identifiers.
@@ -80,7 +81,8 @@ We will now run the reasoner to ensure that our ontology is consistent. It is go
 We will now create some individuals for our ontology.
 
 1. Click on the 'Individuals' tab within the 'Entities' tab
-1. Click on the purple diamond icon![create-individual](create-individual.png)
+1. Click on the purple diamond icon
+   ![create-individual](create-individual.png)
 1. Create an individual called `alice` by typing 'alice' into the popup and clicking OK
 1. Declare `alice` to be of type `Person` by clicking on the `+`  icon next to `Types` and then choosing `Person` from the 'Class hierarchy'
 1. Create the individual `f20bd` to be of type `Course`
