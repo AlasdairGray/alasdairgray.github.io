@@ -1,4 +1,10 @@
-# Entity Identification Exercise
+# Big Data Management: Entity Identification Exercise
+
+Author: [Alasdair Gray](http://orcid.org/0000-0002-5711-4872)
+
+License: [CC-BY](https://creativecommons.org/licenses/by/4.0/)
+
+## Exercise
 
 Consider the following statements:
 
