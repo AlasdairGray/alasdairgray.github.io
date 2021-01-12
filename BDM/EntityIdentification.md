@@ -18,3 +18,4 @@ It is taught in Edinburgh and Dubai
 Tasks:
 1. Idenitfy the entities that exist in the statements
 1. State which entities need to be represented with nodes (IRIs) and which are data values
+1. What commonsense knowledge/reasoning can you apply to the statements? Give some examples of what you infer.
