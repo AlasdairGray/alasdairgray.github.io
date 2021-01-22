@@ -149,7 +149,7 @@ Unfortunately, Protégé does not encourage best practice. In this case, I mean 
 1. Select `rdfs:label` and enter the text `Staff member` in the box at the side 
 1. Select `en` from the 'Lang' dropdown item and click OK
 1. Click on the `+` icon again
-1. Select `rdfs:label` and enter the text `A person who works at the university.`
+1. Select `rdfs:comment` and enter the text `A person who works at the university.`
 1. Again select `en` from the 'Lang' dropdown and click OK.
 
 ![annotated-class](annotated-class.png)
