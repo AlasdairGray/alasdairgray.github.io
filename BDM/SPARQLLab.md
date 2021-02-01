@@ -1,12 +1,24 @@
 # SPARQL Lab
 
-Discussions can be held on the Discussion Forum on Vision. This can be found under the Tools navigation menu item.
+Author: [Alasdair Gray](http://orcid.org/0000-0002-5711-4872)
+
+License: [CC-BY](https://creativecommons.org/licenses/by/4.0/)
+
+## Overview
+
+This lab exercise aims to introduce the SPARQL query language.
+
+Discussions can be held on the Discussion Forum on Vision.
 
 ## Task 1: Run Lecture Queries
 
-Load the two datasets available from Vision and make sure that you understand the queries presented in the lecture. There are notes Vision for running an instance of Apache Jena with Fuseki.
+Load the two datasets available from Vision and make sure that you understand the queries presented in the lecture. There are notes in the 'Additional course resources' section on Vision for running an instance of Apache Jena with Fuseki.
 
 When running the queries, try altering them to return different information.
+
+### Writing Queries
+
+It is recommended that you keep a copy of your queries in a code editor such as Atom, GEdit, or VisualStudio. These code editors can provide syntax highlighting to make it easier to develop your queries.
 
 ### Syntax Highlighting in Atom Editor
 
