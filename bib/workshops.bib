@@ -118,11 +118,6 @@ The goal of this presentation is to give an overview of the HCLS Community Profi
                Eelke van der Horst and
                Barend Mons and
                Mark Wilkinson},
-  editor    = {Adrian Paschke and
-               Albert Burger and
-               Paolo Romano and
-               M. Scott Marshall and
-               Andrea Splendiani},
   title     = {Bring Your Own Data Workshops: {A} Mechanism to Aid Data Owners to
                Comply with Linked Data Best Practices},
   booktitle = {Proceedings of the 7th International Workshop on Semantic Web Applications
@@ -130,11 +125,9 @@ The goal of this presentation is to give an overview of the HCLS Community Profi
   series    = {{CEUR} Workshop Proceedings},
   volume    = {1320},
   publisher = {CEUR-WS.org},
+  month     = dec,
   year      = {2014},
   url       = {http://ceur-ws.org/Vol-1320/paper\_36.pdf},
-  timestamp = {Tue, 28 May 2019 16:23:31 +0200},
-  biburl    = {https://dblp.org/rec/bib/conf/swat4ls/RoosGWTKHMW14},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
 }
 
 @inproceedings{Hussain2014CIM,
@@ -144,7 +137,29 @@ The goal of this presentation is to give an overview of the HCLS Community Profi
 	Booktitle = {Context Interpretation and Meaning},
 	Title = {{A Justification-based Semantic Framework for Representing , Evaluating and Utilizing Terminology Mappings}},
 	url = {http://www.macs.hw.ac.uk/~fm206/cim14/cim20140_submission_2.pdf},
+  Month = oct,
 	Year = {2014}
+}
+
+@inproceedings{JuppMG14,
+  abstract  = {Biological interactions such as those between genes and proteins
+are complex and require intricate {OWL} models. However, direct
+links between biological entities can support search and data integration.
+In this paper we introduce linksets of convenience that capture
+these direct links. We show the provenance statements required to track
+the derivation of such linksets; linking them back to the full biological
+justification.},
+  author    = {Simon Jupp and
+               James Malone and
+               Alasdair J. G. Gray},
+  title     = {Capturing Provenance for a Linkset of Convenience},
+  booktitle = {Proceedings of the 4th Workshop on Linked Science 2014 - Making Sense
+               Out of Data {(LISC2014)} co-located with the 13th International Semantic
+               Web Conference {(ISWC} 2014), Riva del Garda, Italy, October 19, 2014.},
+  pages     = {71--75},
+  month     = oct,
+  year      = {2014},
+  url       = {http://ceur-ws.org/Vol-1282/lisc2014_submission_7.pdf},
 }
 
 @InProceedings{Dunlop2013,
@@ -189,26 +204,6 @@ The goal of this presentation is to give an overview of the HCLS Community Profi
   url = {http://ceur-ws.org/Vol-1114/Session4_Brenninkmeijer.pdf}
 }
 
-@inproceedings{JuppMG14,
-  abstract  = {Biological interactions such as those between genes and proteins
-are complex and require intricate {OWL} models. However, direct
-links between biological entities can support search and data integration.
-In this paper we introduce linksets of convenience that capture
-these direct links. We show the provenance statements required to track
-the derivation of such linksets; linking them back to the full biological
-justification.},
-  author    = {Simon Jupp and
-               James Malone and
-               Alasdair J. G. Gray},
-  title     = {Capturing Provenance for a Linkset of Convenience},
-  booktitle = {Proceedings of the 4th Workshop on Linked Science 2014 - Making Sense
-               Out of Data {(LISC2014)} co-located with the 13th International Semantic
-               Web Conference {(ISWC} 2014), Riva del Garda, Italy, October 19, 2014.},
-  pages     = {71--75},
-  year      = {2014},
-  url       = {http://ceur-ws.org/Vol-1282/lisc2014_submission_7.pdf},
-}
-
 @InProceedings{Brenn2013COLD,
   abstract  = {Linked data relies on instance level links between potentially
 differing representations of concepts in multiple datasets. However, in
@@ -222,6 +217,7 @@ links during query execution. We present the infrastructure developed for
 the Open PHACTS Discovery Platform to enable this and show through
 evaluation that the incurred performance cost is below the threshold of
 user perception.},
+  address   = {Sydney, Australia},
   author    = {Christian Y. A. Brenninkmeijer and
                Carole A. Goble and
                Alasdair J. G. Gray and
@@ -231,7 +227,10 @@ user perception.},
   title     = {Including Co-referent URIs in a {SPARQL} Query},
   booktitle = {Proceedings of the Fourth International Workshop on Consuming Linked
                Data, {COLD} 2013, Sydney, Australia, October 22, 2013},
+  month     = oct,
   year      = {2013},
+  publisher =	 {CEUR Workshop Proceedings},
+  note      =	 {http://ceur-ws.org/Vol-1034/BrenninkmeijerEtAl_COLD2013.pdf},
   url       = {http://ceur-ws.org/Vol-1034/BrenninkmeijerEtAl_COLD2013.pdf}
 }
 
@@ -260,14 +259,14 @@ user perception.},
 	Address = {Boston, MA, USA},
 	Author = {C. Brenninkmeijer and C. Evelo and C. Goble and A.J.G. Gray and P. Groth and S. Pettifer and R. Stevens and A.J. Williams and E.L. Willighagen},
 	Booktitle = {2nd International Workshop on Linked Science 2012 -- Tackling Big Data (LISC 2012)},
-        Note = {(Alphabetic authorship)},
+  Note = {(Alphabetic authorship)},
 	OPTpages = {},
 	Title = {Scientific Lenses over Linked Data: An approach to support task specific views of the data. A vision},
 	Year = {2012},
-        Month = nov,
+  Month = nov,
 	Volume = {951},
-        Publisher = {CEUR Workshop Proceedings},
-        WebURL = {http://ceur-ws.org/Vol-951/paper5.pdf}
+  Publisher = {CEUR Workshop Proceedings},
+  WebURL = {http://ceur-ws.org/Vol-951/paper5.pdf}
 	}
 
   @inproceedings{DBLP:conf/icbo/GrayABBCEEGGHLPRTWW12,
@@ -287,19 +286,15 @@ user perception.},
                  Mark Thompson and
                  Andra Waagmeester and
                  Antony J. Williams},
-    editor    = {Ronald Cornet and
-                 Robert Stevens},
     title     = {The Pharmacology Workspace: {A} Platform for Drug Discovery},
     booktitle = {Proceedings of the 3rd International Conference on Biomedical Ontology
                  {(ICBO} 2012), {KR-MED} Series, Graz, Austria, July 21-25, 2012},
     series    = {{CEUR} Workshop Proceedings},
     volume    = {897},
     publisher = {CEUR-WS.org},
+    month     = jul,
     year      = {2012},
     url       = {http://ceur-ws.org/Vol-897/demo\_4.pdf},
-    timestamp = {Tue, 28 May 2019 16:23:41 +0200},
-    biburl    = {https://dblp.org/rec/bib/conf/icbo/GrayABBCEEGGHLPRTWW12},
-    bibsource = {dblp computer science bibliography, https://dblp.org}
   }
 
 @InProceedings{Valkanas:SNEE-A:MobiDE2011,
@@ -309,7 +304,7 @@ user perception.},
   booktitle =	 {10th ACM International Workshop on Data Engineering for Wireless and Mobile Access (MobiDE 2011)},
   year =	 {2011},
   pages =	 {34-41},
-  month =	 {June},
+  month =	 jun,
   address =	 {Athens, Greece},
   publisher =	 {ACM},
   DOI =          {10.1145/1999309.1999318}
@@ -320,10 +315,6 @@ user perception.},
                Norman Gray and
                Iadh Ounis and
                Alasdair J. G. Gray},
-  editor    = {Christoph Lange and
-               Jochen Reutelshoefer and
-               Sebastian Schaffert and
-               Hala Skaf{-}Molli},
   title     = {Collaborative Editing and Linking of Astronomy Vocabularies Using
                Semantic Mediawiki},
   booktitle = {Proceedings of the 5th Workshop on Semantic Wikis, Hersonissos, Heraklion,
@@ -331,11 +322,9 @@ user perception.},
   series    = {{CEUR} Workshop Proceedings},
   volume    = {632},
   publisher = {CEUR-WS.org},
+  month     = may,
   year      = {2010},
   url       = {http://ceur-ws.org/Vol-632/paper06.pdf},
-  timestamp = {Tue, 28 May 2019 16:23:45 +0200},
-  biburl    = {https://dblp.org/rec/bib/conf/semwiki/ChalmersGOG10},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
 }
 
 @inproceedings{Gray2009Searching-and-e,
@@ -356,6 +345,6 @@ user perception.},
 @InProceedings{byrom2004production,
   title={Production services for information and monitoring in the grid},
   author={Byrom, Rob and Coghlan, Brian and Cooke, Andy and Cordenonsi, Roney and Cornwall, Linda and Craig, Martin and Djaoui, Abdeslem and Fisher, Steve and Gray, Alasdair and Hicks, Steve and others},
-  journal={AHM2004, Nottingham, UK},
+  Booktitle={AHM2004, Nottingham, UK},
   year={2004}
 }
