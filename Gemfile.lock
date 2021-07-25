@@ -145,6 +145,9 @@ GEM
       jekyll (>= 3.8, < 5.0)
     jekyll-sitemap (1.4.0)
       jekyll (>= 3.7, < 5.0)
+    jekyll-theme-slate (0.1.1)
+      jekyll (~> 3.5)
+      jekyll-seo-tag (~> 2.0)
     jekyll-titles-from-headings (0.5.3)
       jekyll (>= 3.3, < 5.0)
     jekyll-watch (2.2.1)
@@ -169,8 +172,6 @@ GEM
     minitest (5.14.4)
     multipart-post (2.1.1)
     nokogiri (1.11.7-arm64-darwin)
-      racc (~> 1.4)
-    nokogiri (1.11.7-x86_64-darwin)
       racc (~> 1.4)
     octokit (4.21.0)
       faraday (>= 0.9)
@@ -217,6 +218,7 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
+  jekyll-theme-slate
 
 BUNDLED WITH
    2.2.24
