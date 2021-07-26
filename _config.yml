@@ -6,6 +6,6 @@ plugins:
 # Scholar configuration
 scholar:
   style: harvard-cite-them-right
-  bibliography: '**/*.bib{,tex}'
+  bibliography: '*.bib'
   sort_by: 'year,month'
   order: descending
