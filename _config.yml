@@ -1,1 +1,11 @@
 theme: jekyll-theme-slate
+
+plugins:
+  - "jekyll/scholar"
+
+# Scholar configuration
+scholar:
+  style: harvard-cite-them-right
+  bibliography: '**/*.bib{,tex}'
+  sort_by: 'year,month'
+  order: descending
