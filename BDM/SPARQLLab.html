@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=839108592753666bf989c72cfe70911898388471">
+
+<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>SPARQL Lab | Alasdair J G Gray</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="SPARQL Lab" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Connecting the dots in the World’s data" />
+<meta property="og:description" content="Connecting the dots in the World’s data" />
+<link rel="canonical" href="https://alasdairgray.github.io//BDM/SPARQLLab.html" />
+<meta property="og:url" content="https://alasdairgray.github.io//BDM/SPARQLLab.html" />
+<meta property="og:site_name" content="Alasdair J G Gray" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="SPARQL Lab" />
+<script type="application/ld+json">
+{"description":"Connecting the dots in the World’s data","@type":"WebPage","url":"https://alasdairgray.github.io//BDM/SPARQLLab.html","headline":"SPARQL Lab","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/AlasdairGray/alasdairgray.github.io">View on GitHub</a>
+
+          <h1 id="project_title">Alasdair J G Gray</h1>
+          <h2 id="project_tagline">Connecting the dots in the World's data</h2>
+
+          
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1 id="sparql-lab">SPARQL Lab</h1>
+
+<p>Author: <a href="http://orcid.org/0000-0002-5711-4872">Alasdair Gray</a></p>
+
+<p>License: <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY</a></p>
+
+<h2 id="overview">Overview</h2>
+
+<p>This lab exercise aims to introduce the SPARQL query language.</p>
+
+<p>Discussions can be held on the Discussion Forum on Vision.</p>
+
+<h2 id="task-1-run-lecture-queries">Task 1: Run Lecture Queries</h2>
+
+<p>Load the two datasets available from Vision and make sure that you understand the queries presented in the lecture. There are notes in the ‘Additional course resources’ section on Vision for running an instance of Apache Jena with Fuseki.</p>
+
+<p>When running the queries, try altering them to return different information.</p>
+
+<h3 id="writing-queries">Writing Queries</h3>
+
+<p>It is recommended that you keep a copy of your queries in a code editor such as Atom, GEdit, or VisualStudio. These code editors can provide syntax highlighting to make it easier to develop your queries.</p>
+
+<h3 id="syntax-highlighting-in-atom-editor">Syntax Highlighting in Atom Editor</h3>
+
+<p>You need to install two extensions in Atom. On the lab machines go to Edit -&gt; Preferences. This will open the settings window. On the left hand side you will see Install. Click on this and then type ‘rdf’ into the search box. Click on the Install button for ‘language-rdf’ and ‘language-sparql’.</p>
+
+<p>The highlighting should start automatically based on the file extension. If it doesn’t, then you can always set the highlighting in the bottom right of the screen.</p>
+
+<h2 id="task-2-movie-queries">Task 2: Movie Queries</h2>
+
+<p>Using the Linked Movie Database that you loaded in Task 1, answer the following questions.</p>
+
+<ol>
+  <li>Return the names of all directors of movies, returning each name only once</li>
+  <li>Write the same query using a property path</li>
+  <li>Find the 20 most recent films by date (<code class="language-plaintext highlighter-rouge">dcterms:date</code>) or initial release date (<code class="language-plaintext highlighter-rouge">movie:initial_release_date</code>). Return the name and date.
+    <ul>
+      <li>Hint: Property path using <code class="language-plaintext highlighter-rouge">|</code></li>
+    </ul>
+  </li>
+  <li>Find all films released in 2007. Return the name and date, with the films sorted by the title.</li>
+  <li>Return the names of actors in Ghostbusters</li>
+  <li>Find the films that having 35 or more actors
+    <ul>
+      <li>Hint: Use <code class="language-plaintext highlighter-rouge">GROUP BY</code> and <code class="language-plaintext highlighter-rouge">HAVING</code></li>
+    </ul>
+  </li>
+  <li>Return the names of actors in Ghostbusters. Each film should have a single row response with the actor names being comma separated.
+    <ul>
+      <li>Hint: Use <code class="language-plaintext highlighter-rouge">group_concat</code></li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="task-3-querying-dbpedia">Task 3: Querying DBpedia</h2>
+
+<p><a href="https://wiki.dbpedia.org/">DBpedia</a> is a dataset that has been derived from the information boxes on Wikipedia. It covers a wide range of topics and has developed an <a href="http://downloads.dbpedia.org/2014/dbpedia_2014.owl.bz2">ontology</a> to model this data. The 2016-10 version contains 13 billion triples but the data is available through the DBpedia SPARQL endpoint (http://dbpedia.org/sparql).</p>
+
+<p>Work through the exercise sheet available on Vision for querying DBpedia.</p>
+
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        
+        <p class="copyright">Alasdair J G Gray maintained by <a href="https://github.com/AlasdairGray">AlasdairGray</a></p>
+        
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+  </body>
+</html>

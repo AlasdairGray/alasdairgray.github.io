@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=839108592753666bf989c72cfe70911898388471">
+
+<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Basic OWL Lab Session | Alasdair J G Gray</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Basic OWL Lab Session" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Connecting the dots in the World’s data" />
+<meta property="og:description" content="Connecting the dots in the World’s data" />
+<link rel="canonical" href="https://alasdairgray.github.io//teaching/bdm/basicOwlLab/BasicOWLLab.html" />
+<meta property="og:url" content="https://alasdairgray.github.io//teaching/bdm/basicOwlLab/BasicOWLLab.html" />
+<meta property="og:site_name" content="Alasdair J G Gray" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Basic OWL Lab Session" />
+<script type="application/ld+json">
+{"description":"Connecting the dots in the World’s data","@type":"WebPage","url":"https://alasdairgray.github.io//teaching/bdm/basicOwlLab/BasicOWLLab.html","headline":"Basic OWL Lab Session","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/AlasdairGray/alasdairgray.github.io">View on GitHub</a>
+
+          <h1 id="project_title">Alasdair J G Gray</h1>
+          <h2 id="project_tagline">Connecting the dots in the World's data</h2>
+
+          
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1 id="basic-owl-lab-session">Basic OWL Lab Session</h1>
+
+<p>In this OWL lab you will get started using Protégé to create and edit an ontology.</p>
+
+<p>Remember to regularly save your work as you go through by clicking ‘File -&gt; Save’</p>
+
+<h2 id="starting-protégé">Starting Protégé</h2>
+
+<h3 id="local-installation">Local Installation</h3>
+
+<p>If you have installed your own copy of Protégé then you should start this up in the usual way for your platform.</p>
+
+<h3 id="macs-labvm-installation">MACS Lab/VM Installation</h3>
+
+<p>To open Protégé on the MACS Linux machines or VM follow these steps:</p>
+
+<ol>
+  <li>Click on the ‘Applications’ menu in the top left</li>
+  <li>Choose protege from within the Programming menu</li>
+  <li>Click ‘Not Now’ from the plugins popup menu once Protégé has started</li>
+</ol>
+
+<h2 id="opening-shell-ontology">Opening Shell Ontology</h2>
+
+<p>I have created a shell ontology which contains basic metadata that all ontologies should provide as a minimum. We are going to use this as a starting point for the Lab.</p>
+
+<ol>
+  <li>Select ‘File -&gt; Open from URL…’</li>
+  <li>Enter the URL for the ontology
+<code class="language-plaintext highlighter-rouge">https://alasdairgray.github.io/ns/ontology-start.owl</code></li>
+  <li>Save the ontology to your local disk
+    <ol>
+      <li>‘File -&gt; Save’</li>
+      <li>Select ‘Turtle Syntax’</li>
+      <li>Give the ontology a suitable filename</li>
+      <li>Choose where to save the file and click ‘Save’</li>
+    </ol>
+  </li>
+</ol>
+
+<p>Your ontology should look something like the following screenshot.</p>
+
+<p><img src="/teaching/bdm/basicOwlLab/shell-ontology.png" alt="shell-ontology" /></p>
+
+<h2 id="updating-the-ontology-metadata">Updating the Ontology Metadata</h2>
+
+<p>To edit a metadata element, click on the circle icon and type in the new value. Do this for the following elements:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">dcterms:creator</code> where the value is <code class="language-plaintext highlighter-rouge">Alasdair Gray</code>; put your own name in</li>
+  <li><code class="language-plaintext highlighter-rouge">dcterms:description</code> replace with your own description text</li>
+  <li><code class="language-plaintext highlighter-rouge">dcterms:title</code> replace with your own ontology title</li>
+</ul>
+
+<p>To remove a metadata element, click on the x in a circle next to the element. Do this for the creator element that has a URL.</p>
+
+<h2 id="creating-our-first-classes">Creating our first Classes</h2>
+
+<p>We will now create some classes to represent people and courses within a university.</p>
+
+<ol>
+  <li>
+    <p>Click on the ‘Entities’ tab</p>
+  </li>
+  <li>
+    <p>Click on <code class="language-plaintext highlighter-rouge">owl:Thing</code>; all classes must be defined below this most general class</p>
+  </li>
+  <li>
+    <p>Click on the icon containing two yellow balls with a + sign
+<img src="/teaching/bdm/basicOwlLab/create-subclass.png" alt="create-subclass" /></p>
+  </li>
+  <li>
+    <p>Type in the name of the class that we are creating <code class="language-plaintext highlighter-rouge">Course</code>
+<strong>Note:</strong> for the ease of discussion we will use labels as names. In real-world scenarios it is considered best practice to use opaque identifiers.</p>
+  </li>
+  <li>
+    <p>Now create a sibling class to <code class="language-plaintext highlighter-rouge">Course</code> called <code class="language-plaintext highlighter-rouge">Person</code> ; you can do this same way as for the <code class="language-plaintext highlighter-rouge">Course</code> class or use the add sibling class option.</p>
+  </li>
+  <li>
+    <p>Now let’s declare <code class="language-plaintext highlighter-rouge">Course</code> and <code class="language-plaintext highlighter-rouge">Person</code> to be disjoint since no individual could be both an instance of both of them.</p>
+
+    <ol>
+      <li>In one of the classes, click on the <code class="language-plaintext highlighter-rouge">+</code> icon next to the text <code class="language-plaintext highlighter-rouge">Disjoint With</code></li>
+      <li>In the popup window, browse through the class hierarchy and choose the class that you are declaring to be disjoint with</li>
+    </ol>
+  </li>
+</ol>
+
+<h2 id="running-the-reasoner">Running the Reasoner</h2>
+
+<p>We will now run the reasoner to ensure that our ontology is consistent. It is good practice to regularly check your ontology for consistency.</p>
+
+<ol>
+  <li>Click on the ‘Reasoner’ menu item</li>
+  <li>Select ‘HermiT’</li>
+  <li>Click on the ‘Reasoner’ menu item</li>
+  <li>Select ‘Start reasoner’</li>
+</ol>
+
+<h2 id="creating-some-individuals">Creating some Individuals</h2>
+
+<p>We will now create some individuals for our ontology.</p>
+
+<ol>
+  <li>Click on the ‘Individuals’ tab within the ‘Entities’ tab</li>
+  <li>Click on the purple diamond icon
+<img src="/teaching/bdm/basicOwlLab/create-individual.png" alt="create-individual" /></li>
+  <li>Create an individual called <code class="language-plaintext highlighter-rouge">alice</code> by typing ‘alice’ into the popup and clicking OK</li>
+  <li>Declare <code class="language-plaintext highlighter-rouge">alice</code> to be of type <code class="language-plaintext highlighter-rouge">Person</code> by clicking on the <code class="language-plaintext highlighter-rouge">+</code>  icon next to <code class="language-plaintext highlighter-rouge">Types</code> and then choosing <code class="language-plaintext highlighter-rouge">Person</code> from the ‘Class hierarchy’</li>
+  <li>Create the individual <code class="language-plaintext highlighter-rouge">f20bd</code> to be of type <code class="language-plaintext highlighter-rouge">Course</code></li>
+</ol>
+
+<h2 id="deliberate-inconsistency">Deliberate Inconsistency</h2>
+
+<p>We are now going to create a deliberate inconsistency so that we understand when the reasoner is informing us of a problem.</p>
+
+<ol>
+  <li>Select <code class="language-plaintext highlighter-rouge">alice</code> from the individuals that you created</li>
+  <li>Click on the <code class="language-plaintext highlighter-rouge">+</code> icon next to <code class="language-plaintext highlighter-rouge">Types</code> and state that <code class="language-plaintext highlighter-rouge">alice</code> is of type <code class="language-plaintext highlighter-rouge">Course</code></li>
+  <li>Synchronise the reasoner by going to the ‘Reasoner’ menu and selecting ‘Synchronize reasoner’</li>
+</ol>
+
+<p>You should now see the following screenshot</p>
+
+<p><img src="/teaching/bdm/basicOwlLab/reasoner-error.png" alt="reasoner-error" /></p>
+
+<p>Click on the ‘Explain’ button to get an indication of what axioms in the ontology have led to the inconsistency. The explanation shown in the following screenshot states that <code class="language-plaintext highlighter-rouge">Course</code> and <code class="language-plaintext highlighter-rouge">Person</code> are disjoint and that <code class="language-plaintext highlighter-rouge">alice</code> has been declared to be of type both of them.</p>
+
+<p><img src="/teaching/bdm/basicOwlLab/reasoner-explanation.png" alt="reasoner-explanation" /></p>
+
+<p>Click OK and then fix the ontology by removing the declaration that <code class="language-plaintext highlighter-rouge">alice</code> is of type <code class="language-plaintext highlighter-rouge">Course</code>.</p>
+
+<p>Note that Protégé has highlighted in red the two axioms that led to the contradiction.</p>
+
+<p>Once you have performed your fix, synchronise the reasoner.</p>
+
+<h2 id="creating-multiple-children-classes">Creating Multiple Children Classes</h2>
+<p>We are now going to create multiple children to be subclasses of <code class="language-plaintext highlighter-rouge">Person</code>. These classes will be for staff and students and their sub classes. We will not declare them to be disjoint since it is permissible for staff members to be students.</p>
+
+<ol>
+  <li>
+    <p>Click on the ‘Classes’ tab within the ‘Entities’ tab</p>
+  </li>
+  <li>
+    <p>Choose the <code class="language-plaintext highlighter-rouge">Person</code> class</p>
+  </li>
+  <li>
+    <p>Click on the ‘Tools’ menu and select ‘Create class hierarchy…’</p>
+  </li>
+  <li>
+    <p>Within the resulting popup enter the class names; each on their own line with indentation to capture the desired hierarchy.</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Staff
+	Academic
+	Administrative
+Student
+	Undergraduate
+	Postgraduate
+</code></pre></div>    </div>
+
+    <p><strong>Note:</strong> you can use the prefix and suffix options at the bottom of the popup to give all your classes the same start or end.</p>
+  </li>
+  <li>
+    <p>Uncheck the checkbox for making siblings disjoint since a student could be a staff member</p>
+  </li>
+  <li>
+    <p>Click ‘Finish’</p>
+  </li>
+</ol>
+
+<p>You should now see the classes in the class hierarchy</p>
+
+<p><img src="/teaching/bdm/basicOwlLab/class-hierarchy.png" alt="class-hierarchy" /></p>
+
+<h2 id="bad-habits-come-easily">Bad habits come easily</h2>
+
+<p>Unfortunately, Protégé does not encourage best practice. In this case, I mean that we have not defined any of our classes by annotating them with labels and descriptions; the class identifiers we have been using do not count as labels and should not be relied upon to define the entity.</p>
+
+<ol>
+  <li>Select the <code class="language-plaintext highlighter-rouge">Staff</code> class</li>
+  <li>Click on the <code class="language-plaintext highlighter-rouge">+</code> icon next to ‘Annotations’</li>
+  <li>Select <code class="language-plaintext highlighter-rouge">rdfs:label</code> and enter the text <code class="language-plaintext highlighter-rouge">Staff member</code> in the box at the side</li>
+  <li>Select <code class="language-plaintext highlighter-rouge">en</code> from the ‘Lang’ dropdown item and click OK</li>
+  <li>Click on the <code class="language-plaintext highlighter-rouge">+</code> icon again</li>
+  <li>Select <code class="language-plaintext highlighter-rouge">rdfs:comment</code> and enter the text <code class="language-plaintext highlighter-rouge">A person who works at the university.</code></li>
+  <li>Again select <code class="language-plaintext highlighter-rouge">en</code> from the ‘Lang’ dropdown and click OK.</li>
+</ol>
+
+<p><img src="/teaching/bdm/basicOwlLab/annotated-class.png" alt="annotated-class" /></p>
+
+<p>Now annotate all the other classes.</p>
+
+<h2 id="creating-object-properties">Creating Object Properties</h2>
+
+<p>Now that we have some classes, we want to be able to relate them. We will create relationships between academics, courses, and students.</p>
+
+<p>In line with good practice, we will assume that you are annotating the properties with labels and descriptions. The instructions here will focus on the creation of the object properties.</p>
+
+<p>We will create multiple object properties at the same time. Again, you can have a hierarchy of properties, although this is not as common.</p>
+
+<ol>
+  <li>
+    <p>Click on the ‘Object properties’ tab</p>
+  </li>
+  <li>
+    <p>Select the <code class="language-plaintext highlighter-rouge">owl:topObjectProperty</code> property</p>
+  </li>
+  <li>
+    <p>Click on the ‘Tools’ menu item and select ‘Create object property hierarchy…’</p>
+  </li>
+  <li>
+    <p>Enter the following properties into the popup window</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>teaches
+taughtBy
+studies
+hasStudent
+</code></pre></div>    </div>
+
+    <p>Note that I have not been consistent in the way I’m calling my properties. This is to show you different styles. Instead of <code class="language-plaintext highlighter-rouge">taughtBy</code> it would be better to use <code class="language-plaintext highlighter-rouge">hasTeacher</code>.</p>
+  </li>
+  <li>
+    <p>Do not make the properties disjoint</p>
+  </li>
+</ol>
+
+<p><img src="/teaching/bdm/basicOwlLab/object-property-hierarchy.png" alt="object-property-hierarchy" /></p>
+
+<p>Now provide labels and definitions for each of the properties.</p>
+
+<h2 id="defining-characteristics-of-our-object-properties">Defining Characteristics of our Object Properties</h2>
+
+<p>We will only define domain, range, and inverse property definitions for the properties that we created since non of the other characteristics hold for these properties.</p>
+
+<ol>
+  <li>Click on the <code class="language-plaintext highlighter-rouge">studies</code> property</li>
+  <li>Click on the <code class="language-plaintext highlighter-rouge">+</code> icon next to ‘Inverse Of’</li>
+  <li>In the list of properties, select <code class="language-plaintext highlighter-rouge">hasStudent</code> and click OK</li>
+  <li>If you click on <code class="language-plaintext highlighter-rouge">hasStudent</code> you will see that it now has <code class="language-plaintext highlighter-rouge">studies</code> as an inverse property</li>
+  <li>Go back to <code class="language-plaintext highlighter-rouge">studies</code> and click on the <code class="language-plaintext highlighter-rouge">+</code> icon next to Domains</li>
+  <li>Select <code class="language-plaintext highlighter-rouge">Student</code> from the class hierarchy</li>
+  <li>Now click on the <code class="language-plaintext highlighter-rouge">+</code> icon next to Ranges and select <code class="language-plaintext highlighter-rouge">Course</code> from the class hierarchy</li>
+</ol>
+
+<p>Now repeat this for the other properties. Courses should be taught by an academic.</p>
+
+<h2 id="defining-data-properties">Defining Data Properties</h2>
+
+<p>This is done in the same way as for Object Properties.</p>
+
+<p>Create a data property <code class="language-plaintext highlighter-rouge">hasName</code> that gives the name of a Person, i.e. its domain is <code class="language-plaintext highlighter-rouge">Person</code>.</p>
+
+<p>Create a data property <code class="language-plaintext highlighter-rouge">courseTitle</code> that gives the title of a Course.</p>
+
+<h2 id="exploiting-the-reasoner">Exploiting the Reasoner</h2>
+
+<p>We are now going to declare the <code class="language-plaintext highlighter-rouge">:alice :studies :f21bd</code>.</p>
+
+<ol>
+  <li>Create the individual <code class="language-plaintext highlighter-rouge">:f21bd</code> but do not declare it to be of any type.</li>
+  <li>Select <code class="language-plaintext highlighter-rouge">:alice</code> and click on the <code class="language-plaintext highlighter-rouge">+</code> icon next to ‘Object property assertions’</li>
+  <li>Enter <code class="language-plaintext highlighter-rouge">studies</code> and <code class="language-plaintext highlighter-rouge">f21bd</code> into the respective boxes and click OK</li>
+</ol>
+
+<p>Now synchronise the reasoner and see what it has inferred for <code class="language-plaintext highlighter-rouge">:alice</code> and <code class="language-plaintext highlighter-rouge">:f21bd</code>. <em>They should both have types highlighted in yellow.</em></p>
+
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        
+        <p class="copyright">Alasdair J G Gray maintained by <a href="https://github.com/AlasdairGray">AlasdairGray</a></p>
+        
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+  </body>
+</html>
