@@ -33,7 +33,7 @@ jobs:
         set -xo pipefail
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git checkout master
+        git checkout main
         ls -Q | grep -v _site | xargs rm -rf
         mv _site/* .
         rm -rf _site
