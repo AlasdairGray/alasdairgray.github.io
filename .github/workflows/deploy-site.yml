@@ -18,7 +18,7 @@ jobs:
       run: |
         set -xo pipefail
         rm -rf _site/*
-        docker run --rm -v "$PWD:/srv/jekyll" --user $(id -u):$(id -g) -i AlasdairGray/alasdairgray.github.io:latest jekyll build
+        docker run --rm -v "$PWD:/srv/jekyll" --user $(id -u):$(id -g) -i alasdairgray/alasdairgray.github.io:latest jekyll build
     - name: Deploy
       if: github.ref == 'refs/heads/source'
       env:
