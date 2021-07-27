@@ -1,0 +1,39 @@
+# Copied from https://github.com/m-pilia/m-pilia.github.io/blob/source/.github/workflows/build.yml
+name: Build
+
+on:
+  push:
+    branches:
+    - source
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v1
+      with:
+        ref: source
+    - name: Build Jekyll site
+      run: |
+        set -xo pipefail
+        rm -rf _site/*
+        docker run --rm -v "$PWD:/srv/jekyll" --user $(id -u):$(id -g) -i AlasdairGray/AlasdairGray.github.io:latest jekyll build
+    - name: Deploy
+      if: github.ref == 'refs/heads/source'
+      env:
+        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+      run: |
+        set -xo pipefail
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git checkout master
+        ls -Q | grep -v _site | xargs rm -rf
+        mv _site/* .
+        rm -rf _site
+        rm -rf .jekyll-cache
+        [[ -n "$(git status --porcelain)" ]] || exit 0
+        git add .
+        git commit -m "Build $(git rev-parse source | grep -o '^.\{10\}')"
+        git push "https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" main
+
