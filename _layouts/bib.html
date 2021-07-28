@@ -1,0 +1,17 @@
+---
+---
+{{ reference }}
+
+{% if entry.doi %}
+<a href="https://doi.org/{{entry.doi}}">{{entry.title}}</a>
+{% elsif entry.url %}
+<a href="{{entry.url}}">{{entry.title}}</a>
+{% else %}
+{{entry.title}}
+{% endif %}
+
+{% if entry.abstract %}
+<p>{{ entry.abstract }}</p>
+{% endif %}
+
+<pre>{{ entry.bibtex }}</pre>
