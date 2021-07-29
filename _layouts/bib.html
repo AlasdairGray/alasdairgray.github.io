@@ -1,13 +1,20 @@
 ---
 ---
-{{ reference }}
 
+<!-- title with hyperlink -->
 {% if entry.doi %}
 <a href="https://doi.org/{{entry.doi}}">{{entry.title}}</a>
 {% elsif entry.url %}
 <a href="{{entry.url}}">{{entry.title}}</a>
 {% else %}
 {{entry.title}}
+{% endif %}
+<br/>
+<!-- Display author list, or editor list if no author list -->
+{% if entry.author %}
+    {{ entry.author }}
+{% else %}
+    {{ entry.editor  }}
 {% endif %}
 
 {% if entry.abstract %}
