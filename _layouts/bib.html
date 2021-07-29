@@ -24,7 +24,22 @@
 {% else %}
     {{ entry.editor  }}
 {% endif %}
-
+<br/>
+<!--
+    Display venue information based on entry type.
+    Note that you cannot prettify the code below since any 
+    spaces/newlines get manifested as spaces in the HTML
+-->
+{% case entry.type  %} 
+    {% when "article" %}
+        {{ entry.journal }}{% if entry.volume %}, {{ entry.volume }}{% endif %}{% if entry.number %}({{ entry.number }}){% endif %}{% if entry.pages %}:{{ entry.pages }}{% endif %}{% if entry.publisher %}, {{ entry.publisher }}{% endif %}{% if entry.year %}, {{ entry.year }}{% endif %}
+    {% when "inproceedings" %}
+        {{ entry.booktitle }}
+{% endcase %}
+<br/>
+{% if entry.note %}
+    {{ entry.note }}
+{% endif %}
 {% if entry.abstract %}
 <p>{{ entry.abstract }}</p>
 {% endif %}
