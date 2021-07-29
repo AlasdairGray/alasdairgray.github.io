@@ -11,6 +11,14 @@
 {% endif %}
 <br/>
 <!-- Display author list, or editor list if no author list -->
+<!-- 
+    Could do extra processing on {{ entry.author_array }} to control
+    the display of author/editor information using the subkeys
+    {{ first }} and {{ last }}
+    There are also enumerated forms if you want to control the number
+    of authors/editors shown. These are not in a sub-array but accessed
+    directly with {{ entry.author_0_first}} and {{ entry.author_0_last}}
+-->
 {% if entry.author %}
     {{ entry.author }}
 {% else %}
