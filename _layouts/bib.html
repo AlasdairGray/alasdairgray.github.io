@@ -35,6 +35,15 @@
         {{ entry.journal }}{% if entry.volume %}, {{ entry.volume }}{% endif %}{% if entry.number %}({{ entry.number }}){% endif %}{% if entry.pages %}:{{ entry.pages }}{% endif %}{% if entry.publisher %}, {{ entry.publisher }}{% endif %}{% if entry.year %}, {{ entry.year }}{% endif %}
     {% when "inproceedings" %}
         {{ entry.booktitle }}
+    {% when "proceedings" %}
+        <!--
+            Can use multiple lines due to assumptions on fields present
+        -->
+        {% if entry.series %}{{ entry.series }},{% endif %}
+        {% if entry.volume %}{{ entry.volume }},{% endif %}
+        {% if entry.publisher %}{{ entry.publisher }},{% endif %}
+        {{ entry.year }}
+        {% if entry.isbn %}<br/>ISBN: {{ entry.isbn }}{% endif %}
 {% endcase %}
 <br/>
 {% if entry.note %}
