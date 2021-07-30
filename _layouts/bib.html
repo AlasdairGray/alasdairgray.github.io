@@ -34,7 +34,7 @@
     {% when "article" %}
         {{ entry.journal }}{% if entry.volume %}, {{ entry.volume }}{% endif %}{% if entry.number %}({{ entry.number }}){% endif %}{% if entry.pages %}:{{ entry.pages }}{% endif %}{% if entry.publisher %}, {{ entry.publisher }}{% endif %}{% if entry.year %}, {{ entry.year }}{% endif %}
     {% when "inproceedings" %}
-        {{ entry.booktitle }}
+        In <em>{{ entry.booktitle }}</em>{% if entry.address %}, {{ entry.address }}{% endif %}{% if entry.series %}, {{ entry.series }}{% endif %}{% if entry.volume %}, {{ entry.volume }}{% endif %}{% if entry.pages %}, pages {{ entry.pages }}{% endif %}{% if entry.publisher %}, {{ entry.publisher }}{% endif %}{% if entry.year %}, {{ entry.year }}{% endif %}
     {% when "proceedings" %}
         <!--
             Can use multiple lines due to assumptions on fields present
