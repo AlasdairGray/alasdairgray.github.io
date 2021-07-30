@@ -46,6 +46,8 @@
         {% if entry.publisher %}{{ entry.publisher }},{% endif %}
         {{ entry.year }}
         {% if entry.isbn %}<br/>ISBN: {{ entry.isbn }}{% endif %}
+    {% else %}
+        {% if entry.type == "techreport" %}Technical Report{% else %}{{ entry.type }}{% endif %}{% if entry.number %}, {{ entry.number }}. {% else %}. {% endif %}{% if entry.institution %} {{ entry.institution }}. {% endif %}{% if entry.publisher %}{{ entry.publisher }}. {% endif %}{%if entry.month %}{{ entry.month }}, {% endif %}{%if entry.year %}{{ entry.year }}{% endif %}
 {% endcase %}
 <br/>
 {% if entry.note %}
