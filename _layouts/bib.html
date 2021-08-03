@@ -54,7 +54,7 @@
     {{ entry.note }}
     <br/>
 {% endif %}
-<br/>
+{% assign cleanKey = {{entry.key | remove: ":" | remove: "/" | remove: "_" | | remove: '-' }}}} %}
 <!-- Display abstract on button click -->
 {% if entry.abstract %}
     {% assign cleanKey = {{entry.key | remove: ":" | remove: "/" | remove: "_"}} %}
