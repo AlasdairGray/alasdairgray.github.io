@@ -53,8 +53,14 @@
 {% if entry.note %}
     {{ entry.note }}
 {% endif %}
+<br/>
+<!-- Display abstract on button click -->
 {% if entry.abstract %}
-<p>{{ entry.abstract }}</p>
+    {% assign cleanKey = {{entry.key | remove: ":" | remove: "/" | remove: "_"}} %}
+    <button onclick="toggle({{ cleanKey }})">Abstract</button>
+    <p style="display: none" id="{{ cleanKey }}">{{ entry.abstract }}</p>
 {% endif %}
 
 <pre>{{ entry.bibtex }}</pre>
+
+<script src="/js/scripts.js"></script>
