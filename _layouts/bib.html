@@ -55,14 +55,17 @@
     <br/>
 {% endif %}
 {% assign cleanKey = {{entry.key | remove: ":" | remove: "/" | remove: "_" | | remove: '-' }}}} %}
-<!-- Display abstract on button click -->
+<!-- Buttons to control blocks -->
 {% if entry.abstract %}
     {% assign abKey = {{cleanKey | append: "Abstract"}} %}
     <button onclick="toggle({{ abKey }})">Abstract</button>
-    <p style="display: none" id="{{ abKey }}">{{ entry.abstract }}</p>
 {% endif %}
 {% assign bibKey = {{cleanKey | append: "Bib"}} %}
 <button onclick="toggle({{ bibKey }})">BibTeX</button>
+
+<!-- Display abstract on button click -->
+<p style="display: none" id="{{ abKey }}">{{ entry.abstract }}</p>
+<!-- Display bibtex on button click -->
 <pre style="display: none" id="{{ bibKey }}">{{ entry.bibtex }}</pre>
 
 <script src="/js/scripts.js"></script>
