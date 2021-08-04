@@ -54,8 +54,13 @@
     {{ entry.note }}
     <br/>
 {% endif %}
-{% assign cleanKey = {{entry.key | remove: ":" | remove: "/" | remove: "_" | | remove: '-' }}}} %}
+{% if entry.doi %}
+    <!-- Altmetrics donut; requires script at end of page -->
+    <div data-badge-details="right" data-badge-type="medium-donut" data-doi="{{ entry.doi }}" data-hide-no-mentions="true" class="altmetric-embed"></div>
+{% endif %}
+
 <!-- Buttons to control blocks -->
+{% assign cleanKey = {{entry.key | remove: ":" | remove: "/" | remove: "_" | | remove: '-' }}}} %}
 {% if entry.abstract %}
     {% assign abKey = {{cleanKey | append: "Abstract"}} %}
     <button onclick="toggle({{ abKey }})">Abstract</button>
@@ -68,4 +73,7 @@
 <!-- Display bibtex on button click -->
 <pre style="display: none" id="{{ bibKey }}">{{ entry.bibtex }}</pre>
 
+<!-- Toggle script -->
 <script src="/js/scripts.js"></script>
+<!-- Altmetrics script -->
+<script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
