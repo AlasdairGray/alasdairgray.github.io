@@ -1,37 +1,16 @@
-## Welcome to GitHub Pages
+# Academic Website
 
-You can use the [editor on GitHub](https://github.com/AlasdairGray/AlasdairGray.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+This is my academic website, which is hosted on GitHub pages. It uses Jekyll to generate the pages, however, due to the use of [jekyll-scholar](https://github.com/inukshuk/jekyll-scholar), it does not build as a native Jekyll/GitHub pages site.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Git Branches
 
-### Markdown
+The default branch for this repo is the [`source`](https://github.com/AlasdairGray/AlasdairGray.github.io/tree/source) branch.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+The website is rendered from the [`main`](https://github.com/AlasdairGray/AlasdairGray.github.io/tree/main) branch. 
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+## Automated Build Process
 
-- Bulleted
-- List
+The automated build process uses GitHub Actions to automatically generate the static website pages using Jekyll, and then commits them to the `main` branch. The GitHub Action is fired whenever there is a commit on the `source` branch on the GitHub server.
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/AlasdairGray/AlasdairGray.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+The build process follows the instructions of [Martino Pilia](https://martinopilia.com/) described in [this blog post](https://martinopilia.com/posts/2020/02/22/migration.html). Martino has since moved on to using Docker within his steps, but for now I'm sticking with the original process that he described.
