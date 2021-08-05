@@ -26,3 +26,4 @@ scholar:
   bibliography: '*.bib'
   sort_by: 'year,month'
   order: descending
+  bibliography_template: bib
