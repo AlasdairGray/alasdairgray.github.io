@@ -1,80 +1,102 @@
 ---
 ---
+<style>
+    .grid-container {
+        display: grid;
+    }
+    .mainItem {
+        grid-column: 1 /span 2;
+        grid-row: 1;
+    }
+    .rightItem {
+        grid-column: 3;
+        grid-row: 1;
+        text-align: center;
+    }
+</style>
 
-<!-- title with hyperlink -->
-{% if entry.doi %}
-    <a href="https://doi.org/{{entry.doi}}">{{entry.title}}</a>
-{% elsif entry.url %}
-    <a href="{{entry.url}}">{{entry.title}}</a>
-{% else %}
-    {{entry.title}}
-{% endif %}
-<br/>
-<!-- Display author list, or editor list if no author list -->
-<!-- 
-    Could do extra processing on {{ entry.author_array }} to control
-    the display of author/editor information using the subkeys
-    {{ first }} and {{ last }}
-    There are also enumerated forms if you want to control the number
-    of authors/editors shown. These are not in a sub-array but accessed
-    directly with {{ entry.author_0_first}} and {{ entry.author_0_last}}
--->
-{% if entry.author %}
-    {{ entry.author }}
-{% else %}
-    {{ entry.editor  }}
-{% endif %}
-<br/>
-<!--
-    Display venue information based on entry type.
-    Note that you cannot prettify the code below since any 
-    spaces/newlines get manifested as spaces in the HTML
--->
-{% case entry.type  %} 
-    {% when "article" %}
-        {{ entry.journal }}{% if entry.volume %}, {{ entry.volume }}{% endif %}{% if entry.number %}({{ entry.number }}){% endif %}{% if entry.pages %}:{{ entry.pages }}{% endif %}{% if entry.publisher %}, {{ entry.publisher }}{% endif %}{% if entry.year %}, {{ entry.year }}{% endif %}
-    {% when "inproceedings" %}
-        In <em>{{ entry.booktitle }}</em>{% if entry.address %}, {{ entry.address }}{% endif %}{% if entry.series %}, {{ entry.series }}{% endif %}{% if entry.volume %}, {{ entry.volume }}{% endif %}{% if entry.pages %}, pages {{ entry.pages }}{% endif %}{% if entry.publisher %}, {{ entry.publisher }}{% endif %}{% if entry.year %}, {{ entry.year }}{% endif %}
-    {% when "phdthesis" %}
-        PhD Thesis, {{ entry.school }}, {{ entry.address }}, {{ entry.year }}
-    {% when "proceedings" %}
-        <!--
-            Can use multiple lines due to assumptions on fields present
+<div class="grid-container">
+    <div class="grid-item mainItem">
+        <!-- title with hyperlink -->
+        {% if entry.doi %}
+            <a href="https://doi.org/{{entry.doi}}">{{entry.title}}</a>
+        {% elsif entry.url %}
+            <a href="{{entry.url}}">{{entry.title}}</a>
+        {% else %}
+            {{entry.title}}
+        {% endif %}
+        <br/>
+        <!-- Display author list, or editor list if no author list -->
+        <!-- 
+            Could do extra processing on {{ entry.author_array }} to control
+            the display of author/editor information using the subkeys
+            {{ first }} and {{ last }}
+            There are also enumerated forms if you want to control the number
+            of authors/editors shown. These are not in a sub-array but accessed
+            directly with {{ entry.author_0_first}} and {{ entry.author_0_last}}
         -->
-        {% if entry.series %}{{ entry.series }},{% endif %}
-        {% if entry.volume %}{{ entry.volume }},{% endif %}
-        {% if entry.publisher %}{{ entry.publisher }},{% endif %}
-        {{ entry.year }}
-        {% if entry.isbn %}<br/>ISBN: {{ entry.isbn }}{% endif %}
-    {% else %}
-        {% if entry.type == "techreport" %}Technical Report{% else %}{{ entry.type }}{% endif %}{% if entry.number %}, {{ entry.number }}. {% else %}. {% endif %}{% if entry.institution %} {{ entry.institution }}. {% endif %}{% if entry.publisher %}{{ entry.publisher }}. {% endif %}{%if entry.month %}{{ entry.month }}, {% endif %}{%if entry.year %}{{ entry.year }}{% endif %}
-{% endcase %}
-<br/>
-{% if entry.note %}
-    {{ entry.note }}
-    <br/>
-{% endif %}
-{% if entry.doi %}
-    <!-- PlumX widget; requires script at end of page -->
-    <a data-popup="bottom" href="https://plu.mx/plum/a/?doi={{ entry.doi }}" class="plumx-plum-print-popup plum-liberty-theme"></a>
-    
-    <!-- Altmetrics donut; requires script at end of page -->
-    <div data-badge-popover="bottom" data-badge-type="donut" data-doi="{{ entry.doi }}" data-hide-no-mentions="true" class="altmetric-embed"></div>
-{% endif %}
+        {% if entry.author %}
+            {{ entry.author }}
+        {% else %}
+            {{ entry.editor  }}
+        {% endif %}
+        <br/>
+        <!--
+            Display venue information based on entry type.
+            Note that you cannot prettify the code below since any 
+            spaces/newlines get manifested as spaces in the HTML
+        -->
+        {% case entry.type  %} 
+            {% when "article" %}
+                {{ entry.journal }}{% if entry.volume %}, {{ entry.volume }}{% endif %}{% if entry.number %}({{ entry.number }}){% endif %}{% if entry.pages %}:{{ entry.pages }}{% endif %}{% if entry.publisher %}, {{ entry.publisher }}{% endif %}{% if entry.year %}, {{ entry.year }}{% endif %}
+            {% when "inproceedings" %}
+                In <em>{{ entry.booktitle }}</em>{% if entry.address %}, {{ entry.address }}{% endif %}{% if entry.series %}, {{ entry.series }}{% endif %}{% if entry.volume %}, {{ entry.volume }}{% endif %}{% if entry.pages %}, pages {{ entry.pages }}{% endif %}{% if entry.publisher %}, {{ entry.publisher }}{% endif %}{% if entry.year %}, {{ entry.year }}{% endif %}
+            {% when "phdthesis" %}
+                PhD Thesis, {{ entry.school }}, {{ entry.address }}, {{ entry.year }}
+            {% when "proceedings" %}
+                <!--
+                    Can use multiple lines due to assumptions on fields present
+                -->
+                {% if entry.series %}{{ entry.series }},{% endif %}
+                {% if entry.volume %}{{ entry.volume }},{% endif %}
+                {% if entry.publisher %}{{ entry.publisher }},{% endif %}
+                {{ entry.year }}
+                {% if entry.isbn %}<br/>ISBN: {{ entry.isbn }}{% endif %}
+            {% else %}
+                {% if entry.type == "techreport" %}Technical Report{% else %}{{ entry.type }}{% endif %}{% if entry.number %}, {{ entry.number }}. {% else %}. {% endif %}{% if entry.institution %} {{ entry.institution }}. {% endif %}{% if entry.publisher %}{{ entry.publisher }}. {% endif %}{%if entry.month %}{{ entry.month }}, {% endif %}{%if entry.year %}{{ entry.year }}{% endif %}
+        {% endcase %}
+        <br/>
+        {% if entry.note %}
+            {{ entry.note }}
+            <br/>
+        {% endif %}
 
-<!-- Buttons to control blocks -->
-{% assign cleanKey = {{entry.key | remove: ":" | remove: "/" | remove: "_" | | remove: '-' }}}} %}
-{% if entry.abstract %}
-    {% assign abKey = {{cleanKey | append: "Abstract"}} %}
-    <button onclick="toggle({{ abKey }})">Abstract</button>
-{% endif %}
-{% assign bibKey = {{cleanKey | append: "Bib"}} %}
-<button onclick="toggle({{ bibKey }})">BibTeX</button>
+        <!-- Buttons to control blocks -->
+        {% assign cleanKey = {{entry.key | remove: ":" | remove: "/" | remove: "_" | remove: '-' }}}} %}
+        {% if entry.abstract %}
+            {% assign abKey = {{cleanKey | append: "Abstract"}} %}
+            <button onclick="toggle({{ abKey }})">Abstract</button>
+        {% endif %}
+        {% assign bibKey = {{cleanKey | append: "Bib"}} %}
+        <button onclick="toggle({{ bibKey }})">BibTeX</button>
 
-<!-- Display abstract on button click -->
-<p style="display: none" id="{{ abKey }}">{{ entry.abstract }}</p>
-<!-- Display bibtex on button click -->
-<pre style="display: none" id="{{ bibKey }}">{{ entry.bibtex }}</pre>
+        <!-- Display abstract on button click -->
+        <p style="display: none" id="{{ abKey }}">{{ entry.abstract }}</p>
+        <!-- Display bibtex on button click -->
+        <pre style="display: none" id="{{ bibKey }}">{{ entry.bibtex }}</pre>
+    </div>
+
+    <!-- Display metrics in right grid item -->
+    <div class="grid-item rightItem">
+        {% if entry.doi %}
+        <!-- PlumX widget; requires script at end of page -->
+        <a data-popup="bottom" href="https://plu.mx/plum/a/?doi={{ entry.doi }}" class="plumx-plum-print-popup plum-liberty-theme"></a>
+        
+        <!-- Altmetrics donut; requires script at end of page -->
+        <div data-badge-popover="right" data-badge-type="donut" data-doi="{{ entry.doi }}" data-hide-no-mentions="true" class="altmetric-embed"></div>
+        {% endif %}
+    </div>
+</div>
 
 <!-- Toggle script -->
 <script src="/js/scripts.js"></script>
