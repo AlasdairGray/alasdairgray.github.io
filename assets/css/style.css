@@ -268,6 +268,9 @@ kbd {
 /*******************************************************************************
 Full-Width Styles
 *******************************************************************************/
+* {
+  box-sizing: border-box;
+}
 
 .outer {
   width: 100%;
@@ -278,6 +281,27 @@ Full-Width Styles
   max-width: 80%; 
   /* padding: 20px 10px; */
   margin: 0 auto;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 #header_wrap #navbar {
