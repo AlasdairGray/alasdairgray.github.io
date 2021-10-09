@@ -1,0 +1,13 @@
+<div id="navbar">
+    {% if include.active == "About" %}
+        <a class="active" href="/">Home</a>
+    {% else %}
+        <a href="/">Home</a>
+    {% endif %}
+    {% if include.active == "Publications" %}
+        <a class="active" href="/Publications">Publications</a>
+    {% else %}
+        <a href="/Publications">Publications</a>
+    {% endif %}
+    <a href="/teaching">Teaching</a>
+</div>
