@@ -14,3 +14,9 @@ The website is rendered from the [`main`](https://github.com/AlasdairGray/Alasda
 The automated build process uses GitHub Actions to automatically generate the static website pages using Jekyll, and then commits them to the `main` branch. The GitHub Action is fired whenever there is a commit on the `source` branch on the GitHub server.
 
 The build process follows the instructions of [Martino Pilia](https://martinopilia.com/) described in [this blog post](https://martinopilia.com/posts/2020/02/22/migration.html). Martino has since moved on to using Docker within his steps, but for now I'm sticking with the original process that he described.
+
+## Publication Listings
+
+The publications are sourced from the BibTeX files in the [`_bibliograph`](https://github.com/AlasdairGray/alasdairgray.github.io/tree/source/_bibliography) directory.
+
+They are displayed using the [jekyll-scholar](https://github.com/inukshuk/jekyll-scholar) plugin. A template has been written to display the entry, and pull in [altmetric](https://www.altmetric.com/products/free-tools/free-badges-for-researchers/) and [plumX](https://plu.mx/plum/developers/widgets#Artifact-Plum-Print-Widget) widgets.
