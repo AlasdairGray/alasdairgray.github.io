@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,maximum-scale=2">
     <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/fontawesome-5.15.4/css/all.min.css?v=' | append: site.github.build_revision | relative_url }}">
 
 {% seo %}
     {% include head-custom.html %}
@@ -35,9 +36,11 @@
             <a href="/about" title="About me"><img class="icon" src="/assets/img/gray-135x135.jpg" alt="Headshot"></a>
             <p>I'm an Associate Professor in Computer Science at Heriot-Watt University. My research focuses on linking datasets.
             <em><a href="/about" title="About me">Read more</a></em></p>
-            <ul>
-              <li><a href="https://twitter.com/gray_alasdair" title="Twitter">Twitter</a></li>
-            </ul>
+            <div class="social-icons">
+              <a href="https://github.com/AlasdairGray" title="GitHub Alasdair Gray" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="https://orcid.org/0000-0002-5711-4872" title="ORCID Alasdair Gray" target="_blank"><i class="fab fa-orcid"></i></a>
+              <a href="https://twitter.com/gray_alasdair" title="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
             <h4>Tweets</h4>
             <a class="twitter-timeline" data-width="300" data-height="350" data-theme="light" href="https://twitter.com/gray_alasdair?ref_src=twsrc%5Etfw">Tweets by gray_alasdair</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
           </div>

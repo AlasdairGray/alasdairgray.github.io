@@ -8,6 +8,11 @@ The default branch for this repo is the [`source`](https://github.com/AlasdairGr
 
 The website is rendered from the [`main`](https://github.com/AlasdairGray/AlasdairGray.github.io/tree/main) branch. 
 
+## Fonts
+
+Using [fontswesome](https://fontawesome.com/) to provide icons for brands. These are [self-hosted](https://fontawesome.com/v5.15/how-to-use/on-the-web/setup/hosting-font-awesome-yourself) within the website.
+
+Icons can be searched [here](https://fontawesome.com/v6.0/icons?s=solid%2Cbrands).
 
 ## Automated Build Process
 
