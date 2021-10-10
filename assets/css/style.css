@@ -158,8 +158,7 @@ p img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 50%;
-  width: 50%;
+  border-radius: 100%;
 }
 
 pre, code {
