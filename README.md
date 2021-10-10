@@ -14,6 +14,8 @@ Using [fontswesome](https://fontawesome.com/) to provide icons for brands. These
 
 Icons can be searched [here](https://fontawesome.com/v6.0/icons?s=solid%2Cbrands).
 
+Additional academic icons are provided by [academicons](https://jpswalsh.github.io/academicons/). There is some duplication with fontawesome; in general the fontawesome icon is used.
+
 ## Automated Build Process
 
 The automated build process uses GitHub Actions to automatically generate the static website pages using Jekyll, and then commits them to the `main` branch. The GitHub Action is fired whenever there is a commit on the `source` branch on the GitHub server.
