@@ -15,4 +15,9 @@
     {% else %}
         <a href="/about" title="About Me">About</a>
     {% endif %}
+    {% if include.active == "Contact Details" %}
+        <a class="active" href="/contact" title="Contact details">Contact</a>
+    {% else %}
+        <a href="/contact" title="Contactt details">Contact</a>
+    {% endif %}
 </div>
