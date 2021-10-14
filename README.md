@@ -2,8 +2,6 @@
 
 This is my academic website, which is hosted on GitHub pages. It uses Jekyll to generate the pages, however, due to the use of [jekyll-scholar](https://github.com/inukshuk/jekyll-scholar), it does not build as a native Jekyll/GitHub pages site.
 
-[[TOC]]
-
 ## Build Process
 
 ### Git Branches
