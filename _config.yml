@@ -20,6 +20,7 @@ theme: jekyll-theme-slate
 plugins:
   - "jekyll/scholar"
   - "jekyll-paginate-v2"
+  - "jekyll-sitemap"
 
 # Pagination Settings
 pagination:
