@@ -23,13 +23,15 @@ theme: jekyll-theme-slate
 plugins:
   - "jekyll/scholar"
   - "jekyll-paginate-v2"
+  - "jekyll-redirect-from"
   - "jekyll-sitemap"
 
-# Pagination Settings
+# Pagination-v2 Settings
 pagination:
   enabled: true
   per_page: 10
-  permalink: '/page/:num/'
+  paginate_path: 'blog/page:num/'
+  # permalink: '/page/:num/'
   title: ' - page :num'
   limit: 0
   sort_field: 'date'
@@ -42,3 +44,12 @@ scholar:
   sort_by: 'year,month'
   order: descending
   bibliography_template: bib
+
+# Collections
+collections_dir: pages
+collections:
+  posts:
+    output: true
+    permalink: /:collection/:path
+    redirect_from:
+      - "/:collection/:path/"
