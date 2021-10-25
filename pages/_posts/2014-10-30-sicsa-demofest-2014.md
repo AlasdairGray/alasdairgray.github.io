@@ -1,11 +1,8 @@
 ---
-id: 190
 title: SICSA DEMOfest 2014
 date: 2014-10-30T10:05:35+00:00
 author: Alasdair Gray
 layout: post
-guid: http://www.macs.hw.ac.uk/~ajg33/?p=190
-permalink: /sicsa-demofest-2014/
 categories:
   - Open PHACTS
 ---
