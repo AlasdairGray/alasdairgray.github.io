@@ -1,19 +1,16 @@
 ---
-id: 221
 title: Open PHACTS wins European Linked Data Award
 date: 2015-09-22T12:13:24+01:00
 author: Alasdair Gray
 layout: post
-guid: http://www.macs.hw.ac.uk/~ajg33/?p=221
-permalink: /open-phacts-wins-european-linked-data-award/
 categories:
   - Open PHACTS
   - Research
 ---
 We are delighted to announce that [Open PHACTS has been awarded first place](http://www.semantics.cc/eldc-awards-given) in the Linked Open Data Award of the inaugural [European Linked Data Contest (ELDC)](http://semantics.cc/eldc). An international jury of ambassadors from over 15 European countries elected [Open PHACTS](http://www.openphacts.org) as the winner, judged by the following criteria:
 
-<div id="attachment_222" style="width: 310px" class="wp-caption alignright">
-  <a href="http://www.macs.hw.ac.uk/~ajg33/wp-content/uploads/2015/09/Semantics_160915_Award©uschioswald.jpg"><img aria-describedby="caption-attachment-222" src="http://www.macs.hw.ac.uk/~ajg33/wp-content/uploads/2015/09/Semantics_160915_Award©uschioswald-300x199.jpg" alt="Gerhard receiving ELDC award" width="300" height="199" class="size-medium wp-image-222" srcset="https://www.macs.hw.ac.uk/~ajg33/wp-content/uploads/2015/09/Semantics_160915_Award©uschioswald-300x199.jpg 300w, https://www.macs.hw.ac.uk/~ajg33/wp-content/uploads/2015/09/Semantics_160915_Award©uschioswald-1024x678.jpg 1024w, https://www.macs.hw.ac.uk/~ajg33/wp-content/uploads/2015/09/Semantics_160915_Award©uschioswald-620x411.jpg 620w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+<div id="attachment_222" style="width: 310px; float: right">
+  <a href="/assets/img/2015-09-22_euld-award.jpeg"><img aria-describedby="caption-attachment-222" src="/assets/img/2015-09-22_euld-award.jpeg" alt="Gerhard receiving ELDC award" width="300" height="199" class="size-medium wp-image-222"/></a>
   
   <p id="caption-attachment-222" class="wp-caption-text">
     Gerhard receiving ELDC award
