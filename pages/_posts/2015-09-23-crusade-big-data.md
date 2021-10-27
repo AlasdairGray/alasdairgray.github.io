@@ -1,11 +1,8 @@
 ---
-id: 226
 title: Crusade for Big Data Keynote
 date: 2015-09-23T21:31:54+01:00
 author: Alasdair Gray
 layout: post
-guid: http://www.macs.hw.ac.uk/~ajg33/?p=226
-permalink: /crusade-big-data/
 categories:
   - Open PHACTS
   - Presentation
@@ -15,16 +12,14 @@ Today I gave the keynote presentation ([slides below](#slides)) at the [Crusade 
 
 The workshop then broke out into five breakout groups to discuss open challenges facing the AAL community that are posed by Big Data. The breakout groups were:
 
-  1. Privacy and Ethics
-  2. Business models for sustainability
-  3. Data reuse and interoperability
-  4. Data quality
-  5. Feedback to the users
+1. Privacy and Ethics
+2. Business models for sustainability
+3. Data reuse and interoperability
+4. Data quality
+5. Feedback to the users
 
 The organisers of the workshop ([Femke Ongenae](https://biblio.ugent.be/person/802000192218) and [Femke De Backere](https://biblio.ugent.be/person/802000602446)) will be sharing the outcomes of the brainstorming by proposing several working groups to focus on the issues in the area of AAL.  
+
 <a name="slides"></a>  
 
-
-<div style="margin-bottom: 5px;">
-  <strong> <a title="Data Integration in a Big Data Context: An Open PHACTS Case Study" href="//www.slideshare.net/alasdair_gray/data-integration-in-a-big-data-context-an-open-phacts-case-study" target="_blank">Data Integration in a Big Data Context: An Open PHACTS Case Study</a> </strong> from <strong><a href="//www.slideshare.net/alasdair_gray" target="_blank">Alasdair Gray</a></strong>
-</div>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/okHmcNQT4H0L8w" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/alasdair_gray/data-integration-in-a-big-data-context-an-open-phacts-case-study" title="Data Integration in a Big Data Context: An Open PHACTS Case Study" target="_blank">Data Integration in a Big Data Context: An Open PHACTS Case Study</a> </strong> from <strong><a href="https://www.slideshare.net/alasdair_gray" target="_blank">Alasdair Gray</a></strong> </div>
