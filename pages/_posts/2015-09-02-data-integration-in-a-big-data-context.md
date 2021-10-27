@@ -1,11 +1,8 @@
 ---
-id: 214
 title: Data Integration in a Big Data Context
 date: 2015-09-02T21:14:54+01:00
 author: Alasdair Gray
 layout: post
-guid: http://www.macs.hw.ac.uk/~ajg33/?p=214
-permalink: /data-integration-in-a-big-data-context/
 categories:
   - ADRC-Scotland
   - Dataset Description
@@ -26,8 +23,4 @@ I finished the talk with an overview of the [Administrative Data Research Centre
 
 In the discussions following the talk, the notion of [FAIR](https://www.force11.org/group/fairgroup/fairprinciples) data came up. This is the idea that data should be Findable, Accessible, Interoperable, and Reusable by both humans and machines. RDF is one approach that could lead to this. The other area of discussion was around community initiatives for converting existing open datasets into an RDF format. I advocated adopting the approach followed by the [Bio2RDF](https://github.com/bio2rdf/bio2rdf-scripts/wiki) community who share the tasks of creating and maintaining such scripts for biological datasets. An important part of this jigsaw is tracking the provenance of the datasets, for which the [W3C Health Care and Life Sciences Community Profile for Dataset Descriptions](http://www.w3.org/TR/hcls-dataset/) could be beneficial (there is nothing specific to the HCLS community in the profile).
 
-
-
-<div style="margin-bottom: 5px;">
-  <strong> <a title="Data Integration in a Big Data Context" href="//www.slideshare.net/alasdair_gray/data-integration-in-a-big-data-context" target="_blank">Data Integration in a Big Data Context</a> </strong> from <strong><a href="//www.slideshare.net/alasdair_gray" target="_blank">Alasdair Gray</a></strong>
-</div>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/1RZ4Phz0VTJL9W" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/alasdair_gray/data-integration-in-a-big-data-context" title="Data Integration in a Big Data Context" target="_blank">Data Integration in a Big Data Context</a> </strong> from <strong><a href="https://www.slideshare.net/alasdair_gray" target="_blank">Alasdair Gray</a></strong> </div>
