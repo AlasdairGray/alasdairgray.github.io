@@ -1,11 +1,8 @@
 ---
-id: 250
 title: Open PHACTS Closing Symposium
 date: 2016-02-18T13:54:54+00:00
 author: Alasdair Gray
 layout: post
-guid: http://www.macs.hw.ac.uk/~ajg33/?p=250
-permalink: /open-phacts-closing-symposium/
 categories:
   - Dataset Description
   - Linked Data
@@ -19,8 +16,4 @@ The project has been hugely successful in developing an integrated data platform
 
 Here are my slides on the state of the data in the Open PHACTS 2.0 platform.
 
-
-
-<div style="margin-bottom: 5px;">
-  <strong> <a title="Open PHACTS: The Data Today" href="//www.slideshare.net/alasdair_gray/open-phacts-the-data-today" target="_blank">Open PHACTS: The Data Today</a> </strong> from <strong><a href="//www.slideshare.net/alasdair_gray" target="_blank">Alasdair Gray</a></strong>
-</div>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/e55Rfe4jWDhInX" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/alasdair_gray/open-phacts-the-data-today" title="Open PHACTS: The Data Today" target="_blank">Open PHACTS: The Data Today</a> </strong> from <strong><a href="https://www.slideshare.net/alasdair_gray" target="_blank">Alasdair Gray</a></strong> </div>
