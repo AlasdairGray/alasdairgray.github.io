@@ -1,18 +1,18 @@
 ---
-id: 259
 title: Open PHACTS is dead, long live Open PHACTS!
 date: 2016-02-25T09:52:47+00:00
 author: Alasdair Gray
 layout: post
-guid: http://www.macs.hw.ac.uk/~ajg33/?p=259
-permalink: /open-phacts-is-dead-long-live-open-phacts/
 categories:
   - Open PHACTS
   - Research
+excerpt_separator: <!--more-->
 ---
-[<img class="size-full alignright" src="http://www.macs.hw.ac.uk/~ajg33/wp-content/uploads/2016/02/20160218_OpticalEngineers_SC_9879_web-300x200.jpg" alt="" />](http://www.openphactsfoundation.org/linking-life-science-data/)
+
+<img style="float: right" src="/assets/img/2016-02-25_OPS-Foundation.jpeg" alt="" />
 
 I have spent the last five years working on the Open PHACTS project which is sadly at an end. However it is not the end of the [Open PHACTS drug discovery platform](https://dev.openphacts.org/docs). We have transitioned to a new era of a foundation organisation running and developing the platform. The milestone was marked by the symbolic handover of the Open PHACTS flag (see photo of on the right Barend Mons (Leiden Medical Center) and Gerhard Ecker (University of Vienna) handing the flag to on the left Stefan Senger (GlaxoSmithKline), Derek Marren (Eli Lilly), and Herman van Vlijmen (Janssen Pharmaceutica).
+<!--more-->
 
 A nice summary of the closing symposium is available:
 
