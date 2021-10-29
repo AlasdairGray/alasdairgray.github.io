@@ -1,15 +1,12 @@
 ---
-id: 280
 title: ISWC 2016 Deadlines Approaching
 date: 2016-04-19T12:24:49+01:00
 author: Alasdair Gray
 layout: post
-guid: http://www.macs.hw.ac.uk/~ajg33/?p=280
-permalink: /iswc-2016-deadlines-approaching/
-image: /wp-content/uploads/2016/04/iswc-header-620x99.png
 categories:
   - Research
 ---
+![ISWC 2016 Banner](/assets/img/2016-04-19_iswc2016-header.png)   
 [ISWC 2016](http://iswc2016.semanticweb.org/) will be taking place in Kobe, Japan from 17-21 October. Tomorrow is the deadline for abstract submissions for ISWC, with full papers due on 30 April. There are three tracks for you to submit to:
 
   1. The Research Track: innovative and groundbreaking work on the cross between semantics and the web.
