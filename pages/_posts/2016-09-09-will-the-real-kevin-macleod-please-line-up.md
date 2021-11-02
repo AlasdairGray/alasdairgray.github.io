@@ -1,17 +1,15 @@
 ---
-id: 370
 title: Will the real Kevin Macleod please line up?
 date: 2016-09-09T16:30:35+01:00
 author: Alasdair Gray
 layout: post
-guid: http://www.macs.hw.ac.uk/~ajg33/?p=370
-permalink: /will-the-real-kevin-macleod-please-line-up/
 image: /wp-content/uploads/2016/09/2016-08-28-14.25.20-e1473433119177-620x220.jpg
 categories:
   - ADRC-Scotland
   - Linked Data
   - Research
 ---
+<img src="/assets/img/2016-08-28-14.25.20.jpg"/>
 Last week I attended the [Digitising Scotland Project](http://www.lscs.ac.uk/projects/digitising-scotland/) Colloquium at [Raasay House](https://www.raasay-house.co.uk/) (featured image above) on the Isle of Raasay. The colloquium was a gathering of historians and computer scientists to discuss the challenges of linking the vital records of the people of Scotland between 1851 and 1974.
 
 The Digitising Scotland Project is having the birth, marriage, and death records of Scotland transcribed from the scans of the original hand written registration books. This process is not without its own challenges, try reading [this birth record](http://www.scotlandspeople.gov.uk/content/images/crmbirthjune1868l.jpg) of a famous [Scottish artist and architect](https://en.wikipedia.org/wiki/Charles_Rennie_Mackintosh), but the focus of the colloquium was on what happens after the records have been transcribed.
@@ -24,17 +22,15 @@ The colloquium was a great opportunity for historians and computer scientists to
 
 Overall, we made great progress on exchanging ideas and techniques. We heard how similar challenges are being addressed in a related project focusing on North Orkney, how historians approach the record linkage challenge, and about work for automatically classifying causes of death to their [ICD10](http://www.who.int/classifications/icd/en/) code and jobs to [HISCO](https://socialhistory.org/en/projects/hisco-history-work). There was also time to socialise and enjoy some of the scenery of Raasay, which is a beautiful island the size of Manhattan but with a population of only 160.
 
-<div id="attachment_380" style="width: 310px" class="wp-caption alignleft">
-  <a href="http://www.macs.hw.ac.uk/~ajg33/wp-content/uploads/2016/09/2016-08-28-18.21.26.jpg"><img aria-describedby="caption-attachment-380" class="wp-image-380 size-medium" src="http://www.macs.hw.ac.uk/~ajg33/wp-content/uploads/2016/09/2016-08-28-18.21.26-300x225.jpg" alt="View from the meeting room" width="300" height="225" srcset="https://www.macs.hw.ac.uk/~ajg33/wp-content/uploads/2016/09/2016-08-28-18.21.26-300x225.jpg 300w, https://www.macs.hw.ac.uk/~ajg33/wp-content/uploads/2016/09/2016-08-28-18.21.26-768x576.jpg 768w, https://www.macs.hw.ac.uk/~ajg33/wp-content/uploads/2016/09/2016-08-28-18.21.26-1024x768.jpg 1024w, https://www.macs.hw.ac.uk/~ajg33/wp-content/uploads/2016/09/2016-08-28-18.21.26-620x465.jpg 620w" sizes="(max-width: 300px) 100vw, 300px" /></a>
-  
+<div id="attachment_380" style="width: 310px; float: left" class="wp-caption alignleft">
+  <img src="/assets/img/2016-08-28-18.21.26.jpg" alt="View from the meeting room" width="300" height="225" />
   <p id="caption-attachment-380" class="wp-caption-text">
     View from the meeting room
   </p>
 </div>
 
-<div id="attachment_381" style="width: 310px" class="wp-caption aligncenter">
-  <a href="http://www.macs.hw.ac.uk/~ajg33/wp-content/uploads/2016/09/2016-08-28-20.55.24.jpg"><img aria-describedby="caption-attachment-381" class="wp-image-381 size-medium" src="http://www.macs.hw.ac.uk/~ajg33/wp-content/uploads/2016/09/2016-08-28-20.55.24-300x225.jpg" alt="Sunset over Portree, Skye" width="300" height="225" srcset="https://www.macs.hw.ac.uk/~ajg33/wp-content/uploads/2016/09/2016-08-28-20.55.24-300x225.jpg 300w, https://www.macs.hw.ac.uk/~ajg33/wp-content/uploads/2016/09/2016-08-28-20.55.24-768x576.jpg 768w, https://www.macs.hw.ac.uk/~ajg33/wp-content/uploads/2016/09/2016-08-28-20.55.24-1024x768.jpg 1024w, https://www.macs.hw.ac.uk/~ajg33/wp-content/uploads/2016/09/2016-08-28-20.55.24-620x465.jpg 620w" sizes="(max-width: 300px) 100vw, 300px" /></a>
-  
+<div id="attachment_381" style="width: 310px; float: right" class="wp-caption aligncenter">
+  <img aria-describedby="caption-attachment-381" class="wp-image-381 size-medium" src="/assets/img/2016-08-28-20.55.24.jpg" alt="Sunset over Portree, Skye" width="300" height="225" />
   <p id="caption-attachment-381" class="wp-caption-text">
     Sunset over Portree, Skye
   </p>
