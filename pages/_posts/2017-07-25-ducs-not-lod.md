@@ -1,13 +1,11 @@
 ---
-id: 481
 title: DUCS not LOD
 date: 2017-07-25T10:09:55+01:00
 author: Alasdair Gray
 layout: post
-guid: http://www.macs.hw.ac.uk/~ajg33/?p=481
-permalink: /ducs-not-lod/
 categories:
   - Linked Data
+excerpt_separator: <!--more-->
 ---
 The follow is an excerpt from a blog by [Keir Winesmith](https://www.sfmoma.org/author/keir-winesmith/), Head of Digital at the [San Francisco Museum of Modern Art](https://www.sfmoma.org/) ([@SFMOMAlab](http://twitter.com/SFMOMAlab))
 
@@ -16,6 +14,7 @@ The follow is an excerpt from a blog by [Keir Winesmith](https://www.sfmoma.org/
 > Well, I call bullshit. Most cultural heritage organizations (like most organizations) are terrible at data. And most of those who are good at collecting it, very rarely use it effectively or strategically.
 
 Instead of Linked Open Data ([LOD](http://linkeddata.org/)), Keir argues for DUCS:
+<!--more-->
 
 > <p id="e6b6" class="graf graf--p graf-after--p">
 >   I propose an alternative anagram, and an alternative order of importance.
