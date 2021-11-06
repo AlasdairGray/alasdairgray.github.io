@@ -1,11 +1,8 @@
 ---
-id: 439
 title: Shapeshifting LOD Cloud
 date: 2017-02-13T10:27:50+00:00
 author: Alasdair Gray
 layout: post
-guid: http://www.macs.hw.ac.uk/~ajg33/?p=439
-permalink: /shapeshifting-lod-cloud/
 categories:
   - Linked Data
 ---
