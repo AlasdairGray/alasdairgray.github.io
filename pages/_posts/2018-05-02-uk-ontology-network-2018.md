@@ -1,11 +1,8 @@
 ---
-id: 540
 title: UK Ontology Network 2018
 date: 2018-05-02T11:48:29+01:00
 author: Alasdair Gray
 layout: post
-guid: http://www.macs.hw.ac.uk/~ajg33/?p=540
-permalink: /uk-ontology-network-2018/
 categories:
   - BioSchemas
   - Dataset Description
@@ -18,10 +15,4 @@ I gave a talk on the [Bioschemas Community](http://bioschemas.org/)  (slides be
 
 The UK Ontology Network is going through a reflection phase and would like interested parties to complete the following online survey.
 
-
-
-<div style="margin-bottom: 5px;">
-  <strong> <a title="Bioschemas Community: Developing profiles over Schema.org to make life sciences resources more findable" href="//www.slideshare.net/alasdair_gray/bioschemas-community-developing-profiles-over-schemaorg-to-make-life-sciences-resources-more-findable" target="_blank" rel="noopener">Bioschemas Community: Developing profiles over Schema.org to make life sciences resources more findable</a> </strong> from <strong><a href="https://www.slideshare.net/alasdair_gray" target="_blank" rel="noopener">Alasdair Gray</a></strong>
-</div>
-
-&nbsp;
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/kIk1Nu3rEgKrKX" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/alasdair_gray/bioschemas-community-developing-profiles-over-schemaorg-to-make-life-sciences-resources-more-findable" title="Bioschemas Community: Developing profiles over Schema.org to make life sciences resources more findable" target="_blank">Bioschemas Community: Developing profiles over Schema.org to make life sciences resources more findable</a> </strong> from <strong><a href="https://www.slideshare.net/alasdair_gray" target="_blank">Alasdair Gray</a></strong> </div>
