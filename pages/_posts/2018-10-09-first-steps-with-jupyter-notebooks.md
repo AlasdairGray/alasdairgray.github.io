@@ -1,17 +1,14 @@
 ---
-id: 568
 title: First steps with Jupyter Notebooks
 date: 2018-10-09T10:04:31+01:00
 author: Alasdair Gray
 layout: post
-guid: http://www.macs.hw.ac.uk/~ajg33/?p=568
-permalink: /first-steps-with-jupyter-notebooks/
 categories:
   - ELIXIR
   - Presentation
   - Publication
 ---
-At the 2nd Workshop on Enabling Open Semantic Sciences ([SemSci2018](https://semsci.github.io/SemSci2018/)), colocated at [ISWC2018](http://iswc2018.semanticweb.org/), I presented the following paper (slides at end of this post):
+At the 2nd Workshop on Enabling Open Semantic Sciences ([SemSci2018](https://semsci.github.io/SemSci2018/)), colocated at [ISWC2018](http://iswc2018.semanticweb.org/), I presented the following paper {% cite Gray2018:jupyter:SemSci2018 %} (slides at end of this post):
 
 **Title:** Using a Jupyter Notebook to perform a reproducible scientific analysis over semantic web sources
 
@@ -25,8 +22,4 @@ One of the really great things about the paper is that you can launch the notebo
   <a href="https://mybinder.org/v2/gh/AlasdairGray/SemSci2018/master?filepath=SemSci2018%20Publication.ipynb"><img src="https://mybinder.org/badge.svg" /></a>
 </p>
 
-
-
-<div style="margin-bottom: 5px;">
-  <strong> <a title="Using a Jupyter Notebook to perform a reproducible scientific analysis over semantic web sources" href="//www.slideshare.net/alasdair_gray/using-a-jupyter-notebook-to-perform-a-reproducible-scientific-analysis-over-semantic-web-sources" target="_blank" rel="noopener">Using a Jupyter Notebook to perform a reproducible scientific analysis over semantic web sources</a> </strong> from <strong><a href="//www.slideshare.net/alasdair_gray" target="_blank" rel="noopener">Alasdair Gray</a></strong>
-</div>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/zu6lEMEcHNv0UR" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/alasdair_gray/using-a-jupyter-notebook-to-perform-a-reproducible-scientific-analysis-over-semantic-web-sources" title="Using a Jupyter Notebook to perform a reproducible scientific analysis over semantic web sources" target="_blank">Using a Jupyter Notebook to perform a reproducible scientific analysis over semantic web sources</a> </strong> from <strong><a href="https://www.slideshare.net/alasdair_gray" target="_blank">Alasdair Gray</a></strong> </div>
