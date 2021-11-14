@@ -1,13 +1,11 @@
 ---
-id: 594
 title: Research Software Engineer Post
 date: 2019-05-07T13:09:20+01:00
 author: Alasdair Gray
 layout: post
-guid: https://www.macs.hw.ac.uk/~ajg33/?p=594
-permalink: /research-software-engineer-post/
 categories:
   - Uncategorized
+excerpt_separator: <!--more-->
 ---
 We are advertising for a Research Software Engineer to come work on
 
@@ -15,3 +13,4 @@ We are advertising for a Research Software Engineer to come work on
   2. Data validation and markup support in the context of [Bioschemas](https://bioschemas.org).
 
 The post is for 12 months. Further details available on the [Heriot-Watt Vacancies Site](https://www.hw.ac.uk/about/work/jobs/job_SVJDMjIxNTA.htm).
+<!--more-->
