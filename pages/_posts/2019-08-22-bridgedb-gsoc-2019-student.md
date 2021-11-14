@@ -1,11 +1,8 @@
 ---
-id: 606
 title: BridgeDb GSoC 2019 Student
 date: 2019-08-22T17:27:00+01:00
 author: Alasdair Gray
 layout: post
-guid: http://www.macs.hw.ac.uk/~ajg33/?p=606
-permalink: /bridgedb-gsoc-2019-student/
 categories:
   - BridgeDb
   - Dataset Description
