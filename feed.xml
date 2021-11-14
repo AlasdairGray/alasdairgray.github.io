@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://alasdairgray.github.io//feed.xml" rel="self" type="application/atom+xml" /><link href="https://alasdairgray.github.io//" rel="alternate" type="text/html" /><updated>2021-11-14T21:17:46+00:00</updated><id>https://alasdairgray.github.io//feed.xml</id><title type="html">Alasdair J G Gray</title><subtitle>Connecting the dots in the World's data</subtitle><entry><title type="html">BioHackathon 2020 (Virtual)</title><link href="https://alasdairgray.github.io//posts/2020-11-16-biohackathon-2020" rel="alternate" type="text/html" title="BioHackathon 2020 (Virtual)" /><published>2020-11-16T00:00:00+00:00</published><updated>2020-11-16T00:00:00+00:00</updated><id>https://alasdairgray.github.io//posts/biohackathon-2020</id><content type="html" xml:base="https://alasdairgray.github.io//posts/2020-11-16-biohackathon-2020">&lt;p&gt;This year, due to the pandemic, the &lt;a href=&quot;https://2020.biohackathon-europe.org/&quot;&gt;European BioHackathon&lt;/a&gt; went virtual. Despite the online only nature of the event, it was well attended and there were more topics than ever – &lt;a href=&quot;https://2020.biohackathon-europe.org/projects&quot;&gt;41 topics&lt;/a&gt; – covering both the usual ELIXIR topics and some dedicated to the COVID response. 
+&lt;a href=&quot;https://bioschemas.org&quot;&gt;Bioschemas&lt;/a&gt; was again well represented in different hacking projects. This year the focus was on exploiting Bioschemas markup for different communities.&lt;/p&gt;
+
+&lt;p&gt;The main focus of the work was showing that the &lt;a href=&quot;https://idpcentral.org/&quot;&gt;IDPcentral registry&lt;/a&gt; could be populated using Bioschemas markup. &lt;a href=&quot;https://bioschemas.org/profile/Protein&quot;&gt;Protein&lt;/a&gt; markup was scraped  from three intrinsically disordered protein resources – &lt;a href=&quot;https://disprot.org/&quot;&gt;DisProt&lt;/a&gt;, &lt;a href=&quot;https://mobidb.org/&quot;&gt;MobiDB&lt;/a&gt;, and &lt;a href=&quot;https://proteinensemble.org/&quot;&gt;ProteinEnsemble&lt;/a&gt;. The scraped data was merged and converted into the existing IDPcentral registry model. We also generated a knowledge graph over which some initial analysis queries were run, e.g. identifying which proteins are found in more than one source. The work can be found in this &lt;a href=&quot;https://github.com/elixir-europe/BioHackathon-projects-2020/blob/master/projects/24/IDPCentral/notebooks/IDPCentralETLProcess.ipynb&quot;&gt;notebook&lt;/a&gt;. We plan to carry on implementing this work and extending beyond a sample of pages from each site.&lt;/p&gt;
+
+&lt;p&gt;Within the plant community, we formalised the mapping between &lt;a href=&quot;https://www.miappe.org/&quot;&gt;MIAPPE&lt;/a&gt; (the minimum information model for plant phenotyping experiments) and &lt;a href=&quot;https://bioschemas.org/profiles/Study&quot;&gt;Bioschemas Study profile&lt;/a&gt;. This will be tested in the coming weeks on the &lt;a href=&quot;https://pippa.psb.ugent.be/&quot;&gt;PIPPA&lt;/a&gt; site for phenotype experiments.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://egonw.github.io/&quot;&gt;Egon Willighagen&lt;/a&gt; used &lt;a href=&quot;https://github.com/HW-SWeL/BMUSE&quot;&gt;BMUSE&lt;/a&gt; to scrape &lt;a href=&quot;https://bioschemas.org/profiles/MolecularEntity&quot;&gt;MolecularEntity&lt;/a&gt; markup from &lt;a href=&quot;https://massbank.eu/&quot;&gt;MassBank&lt;/a&gt; compound pages. The table below reports the statistics on the data that was scraped.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;count&lt;/th&gt;
+      &lt;th&gt;description&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1,628,333&lt;/td&gt;
+      &lt;td&gt;Total number of triples&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;15,762&lt;/td&gt;
+      &lt;td&gt;InChIs&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;10,627&lt;/td&gt;
+      &lt;td&gt;Monoisotopic molecular weights&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;7,508&lt;/td&gt;
+      &lt;td&gt;Molecular formula&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1&lt;/td&gt;
+      &lt;td&gt;Different license(s)&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;The slides below were presented at the final reporting session by the various projects that invovled Bioschemas.&lt;/p&gt;
+
+&lt;iframe src=&quot;https://docs.google.com/presentation/d/e/2PACX-1vRJjfd84cvai9hQrvlziuYn_XoE7oLN4NQQEifEtBEtTHxN4SB-JcMbadcvDej527efFyKhPojsHLAz/embed?start=false&amp;amp;loop=false&amp;amp;delayms=3000&quot; frameborder=&quot;0&quot; width=&quot;480&quot; height=&quot;299&quot; allowfullscreen=&quot;true&quot; mozallowfullscreen=&quot;true&quot; webkitallowfullscreen=&quot;true&quot;&gt;&lt;/iframe&gt;</content><author><name>Alasdair Gray</name></author><category term="Bioschemas" /><category term="ELIXIR" /><category term="Research" /><summary type="html">This year, due to the pandemic, the European BioHackathon went virtual. Despite the online only nature of the event, it was well attended and there were more topics than ever – 41 topics – covering both the usual ELIXIR topics and some dedicated to the COVID response. Bioschemas was again well represented in different hacking projects. This year the focus was on exploiting Bioschemas markup for different communities.</summary></entry><entry><title type="html">Congratulations Dr Ahmad Alsadeeqi</title><link href="https://alasdairgray.github.io//posts/2019-12-10-dr-ahmad-alsadeeqi" rel="alternate" type="text/html" title="Congratulations Dr Ahmad Alsadeeqi" /><published>2019-12-10T00:00:00+00:00</published><updated>2019-12-10T00:00:00+00:00</updated><id>https://alasdairgray.github.io//posts/dr-ahmad-alsadeeqi</id><content type="html" xml:base="https://alasdairgray.github.io//posts/2019-12-10-dr-ahmad-alsadeeqi">&lt;p&gt;Today my PhD student Ahmad Alsadeeqi successfully defended his PhD thesis &lt;em&gt;“Systematically Corrupting Data to Evaluate Record Linkage”&lt;/em&gt;, receiving minor corrections. Congratulations!&lt;/p&gt;
+
+&lt;p&gt;Supervisors:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://alasdairgray.github.io/&quot;&gt;Alasdair Gray&lt;/a&gt; (&lt;a href=&quot;https://www.hw.ac.uk/schools/mathematical-computer-sciences.htm&quot;&gt;Mathematical and Computer Sciences&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://scholar.google.co.uk/citations?user=djg93PMAAAAJ&amp;amp;hl=en&quot;&gt;Albert Burger&lt;/a&gt; (&lt;a href=&quot;https://www.hw.ac.uk/schools/mathematical-computer-sciences.htm&quot;&gt;Mathematical and Computer Sciences&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;External examiner: &lt;a href=&quot;https://pure.qub.ac.uk/en/persons/anna-jurek-loughrey&quot;&gt;Anna Jurek-Loughrey&lt;/a&gt; (&lt;a href=&quot;https://www.qub.ac.uk/schools/eeecs/&quot;&gt;School of Electronics, Electrical Engineering, and Computer Science, Queen’s University, Belfast&lt;/a&gt;)&lt;/p&gt;
+
+&lt;p&gt;Internal examiner: &lt;a href=&quot;https://justmikejust.wordpress.com/&quot;&gt;Mike Just&lt;/a&gt; (&lt;a href=&quot;https://www.hw.ac.uk/schools/mathematical-computer-sciences.htm&quot;&gt;Mathematical and Computer Sciences&lt;/a&gt;)&lt;/p&gt;</content><author><name>Alasdair Gray</name></author><category term="Miscellaneous" /><category term="PhD Students" /><category term="Research" /><category term="ADRC Scotland" /><summary type="html">Today my PhD student Ahmad Alsadeeqi successfully defended his PhD thesis “Systematically Corrupting Data to Evaluate Record Linkage”, receiving minor corrections. Congratulations!</summary></entry><entry><title type="html">BioHackathon 2019</title><link href="https://alasdairgray.github.io//posts/2019-12-09-biohackathon-2019" rel="alternate" type="text/html" title="BioHackathon 2019" /><published>2019-12-09T12:28:29+00:00</published><updated>2019-12-09T12:28:29+00:00</updated><id>https://alasdairgray.github.io//posts/biohackathon-2019</id><content type="html" xml:base="https://alasdairgray.github.io//posts/2019-12-09-biohackathon-2019">&lt;div style=&quot;center&quot;&gt;
+  &lt;img src=&quot;/assets/img/2019-12-09_hacking.jpeg&quot; alt=&quot;Petros and Alasdair hacking at the BioHackathon&quot; class=&quot;center&quot; width=&quot;80%&quot; /&gt;&lt;figcaption&gt;Petros and Alasdair hacking at the BioHackathon&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;p&gt;I once again attended the &lt;a href=&quot;https://2019.biohackathon-europe.org/&quot;&gt;European BioHackathon&lt;/a&gt; which took place in November outside of Paris. It was another intense week with 150 developers from across Europe (and beyond) working together on &lt;a href=&quot;https://2019.biohackathon-europe.org/projects&quot;&gt;34 topics&lt;/a&gt;. 
+&lt;!--more--&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://bioschemas.org&quot;&gt;Bioschemas&lt;/a&gt; was well represented in the topics and the hacking activities of the week. By the end of the week we had an approach for marking up Intrinsically Disordered Proteins and Rare Disease resources. We also had several resources with newly &lt;a href=&quot;https://bioschemas.org/liveDeploys/&quot;&gt;deployed&lt;/a&gt; or improved Bioschemas markup.&lt;/p&gt;
+
+&lt;p&gt;The slides below were presented at the final reporting session by the various projects that invovled Bioschemas.&lt;/p&gt;
+
+&lt;iframe src=&quot;https://docs.google.com/presentation/d/e/2PACX-1vTcjAbv7Zr3w7YO3GPnnKs7FXmGU1nWTGttdV0Rx3CIuBqUHD1etqtUZcSSH_tdcffi_L_nJLbhZOC9/embed?start=false&amp;amp;loop=false&amp;amp;delayms=3000&quot; frameborder=&quot;0&quot; width=&quot;480&quot; height=&quot;299&quot; allowfullscreen=&quot;true&quot; mozallowfullscreen=&quot;true&quot; webkitallowfullscreen=&quot;true&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;For a fuller overview of the event and outcomes, please see the &lt;a href=&quot;https://elixir-europe.org/news/hackers-meet-develop-life-science-resources&quot;&gt;ELIXIR news item&lt;/a&gt;.&lt;/p&gt;</content><author><name>Alasdair Gray</name></author><category term="Bioschemas" /><category term="ELIXIR" /><category term="Research" /><summary type="html">Petros and Alasdair hacking at the BioHackathon I once again attended the European BioHackathon which took place in November outside of Paris. It was another intense week with 150 developers from across Europe (and beyond) working together on 34 topics.</summary></entry><entry><title type="html">BridgeDb GSoC 2019 Student</title><link href="https://alasdairgray.github.io//posts/2019-08-22-bridgedb-gsoc-2019-student" rel="alternate" type="text/html" title="BridgeDb GSoC 2019 Student" /><published>2019-08-22T16:27:00+00:00</published><updated>2019-08-22T16:27:00+00:00</updated><id>https://alasdairgray.github.io//posts/bridgedb-gsoc-2019-student</id><content type="html" xml:base="https://alasdairgray.github.io//posts/2019-08-22-bridgedb-gsoc-2019-student">&lt;p&gt;During the summer, &lt;a href=&quot;http://bridgedb.org&quot;&gt;BridgeDb&lt;/a&gt; has had a Google Summer of Code student working on extending the system to work with secondary identifiers; these are alternative identifiers for a given resource.&lt;/p&gt;
+
+&lt;p&gt;The student &lt;a href=&quot;https://medium.com/@marvex17&quot;&gt;Manas Awasthi&lt;/a&gt; has maintained a blog of his experiences. Below are some excerpts of his activity.&lt;/p&gt;
+
+&lt;blockquote class=&quot;wp-block-quote&quot;&gt;
+  &lt;p&gt;
+    &lt;strong&gt;&lt;a href=&quot;https://medium.com/@marvex17/google-summer-of-code-2019-dream-to-reality-ab2a37228a56&quot;&gt;Google Summer of Code 2019: Dream to Reality&lt;/a&gt;&lt;/strong&gt;&lt;br /&gt;&lt;a href=&quot;https://medium.com/@marvex17?source=post_page-----ab2a37228a56----------------------&quot;&gt;&lt;/a&gt;&lt;br /&gt;&lt;a href=&quot;https://medium.com/@marvex17?source=post_page-----ab2a37228a56----------------------&quot;&gt;Manas Awasthi&lt;/a&gt;&lt;br /&gt;&lt;a href=&quot;https://medium.com/@marvex17/google-summer-of-code-2019-dream-to-reality-ab2a37228a56?source=post_page-----ab2a37228a56----------------------&quot;&gt;May 28&lt;/a&gt; · 3 min read&lt;br /&gt;Google Summer of Code, an annual Google program which encourages open source contribution from students. The term I was introduced to by my seniors in my freshman year. Having no clue about open source, I started gathering knowledge about &lt;em&gt;‘How to contribute to open source projects?’ &lt;/em&gt;Then I came across version control, being a freshman it was an unknown territory for me. I started using Github for my personal projects which gave me a better understanding of how to use it. Version Control Service was off the checklists. By the time all this was done Google Summer of Code 2018 was announced.
+  &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote class=&quot;wp-block-quote&quot;&gt;
+  &lt;p&gt;
+    &lt;a href=&quot;https://medium.com/@marvex17/google-summer-of-code-2019-dream-to-reality-ab21b201a50&quot;&gt;Google Summer of Code 2019: Dream to Reality&lt;/a&gt;&lt;br /&gt;&lt;a href=&quot;https://medium.com/@marvex17?source=post_page-----ab21b201a50----------------------&quot;&gt;&lt;/a&gt;&lt;br /&gt;&lt;a href=&quot;https://medium.com/@marvex17?source=post_page-----ab21b201a50----------------------&quot;&gt;Manas Awasthi&lt;/a&gt;&lt;br /&gt;&lt;a href=&quot;https://medium.com/@marvex17/google-summer-of-code-2019-dream-to-reality-ab21b201a50?source=post_page-----ab21b201a50----------------------&quot;&gt;Jun 12&lt;/a&gt; · 3 min read&lt;br /&gt;&lt;strong&gt;The Coding Period: The First Two Weeks&lt;/strong&gt;&lt;br /&gt;The coding period of Google Summer of Code started on 27th of May, at the time of publishing it’s been more than 2 weeks, here I am writing this blog to discuss what I have done over the past two weeks, and what a ride it has been already. Plenty of coding along with plenty of learning. From the code base to the test suite.
+  &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote class=&quot;wp-block-quote&quot;&gt;
+  &lt;p&gt;
+    &lt;a href=&quot;https://medium.com/@marvex17/google-summer-of-code-2019-dream-to-reality-d1f6467701b0&quot;&gt;Google Summer of Code 2019: Dream to Reality&lt;/a&gt;&lt;br /&gt;&lt;a href=&quot;https://medium.com/@marvex17?source=post_page-----d1f6467701b0----------------------&quot;&gt;&lt;/a&gt;&lt;br /&gt;&lt;a href=&quot;https://medium.com/@marvex17?source=post_page-----d1f6467701b0----------------------&quot;&gt;Manas Awasthi&lt;/a&gt;&lt;br /&gt;&lt;a href=&quot;https://medium.com/@marvex17/google-summer-of-code-2019-dream-to-reality-d1f6467701b0?source=post_page-----d1f6467701b0----------------------&quot;&gt;Jun 22&lt;/a&gt; · 3 min read&lt;br /&gt;&lt;strong&gt;The Coding Period: Week 3 — Week 4&lt;/strong&gt;&lt;br /&gt;Hola Amigos!!! Let&amp;#8217;s discuss my progress through week 3 and 4 of GSoC’s coding period. So the major part of what I was doing this week was to add support for the secondary identifier (err!!! whats that) to BridgeDb.
+  &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote class=&quot;wp-block-quote&quot;&gt;
+  &lt;p&gt;
+    &lt;a href=&quot;https://medium.com/@marvex17/google-summer-of-code-2019-dream-to-reality-9fe650d49276&quot;&gt;Google Summer of Code 2019: Dream to Reality&lt;/a&gt;&lt;br /&gt;&lt;a href=&quot;https://medium.com/@marvex17?source=post_page-----9fe650d49276----------------------&quot;&gt;&lt;/a&gt;&lt;br /&gt;&lt;a href=&quot;https://medium.com/@marvex17?source=post_page-----9fe650d49276----------------------&quot;&gt;Manas Awasthi&lt;/a&gt;&lt;br /&gt;&lt;a href=&quot;https://medium.com/@marvex17/google-summer-of-code-2019-dream-to-reality-9fe650d49276?source=post_page-----9fe650d49276----------------------&quot;&gt;Aug 21&lt;/a&gt; · 3 min read&lt;br /&gt;Hey Folks, this is probably the last blog in this series outlining my journey as a GSoC student. In this blog I’ll go through the functionality I have added over the summer and why the end-users should use it.
+  &lt;/p&gt;
+&lt;/blockquote&gt;</content><author><name>Alasdair Gray</name></author><category term="BridgeDb" /><category term="Dataset Description" /><category term="FAIRplus" /><summary type="html">During the summer, BridgeDb has had a Google Summer of Code student working on extending the system to work with secondary identifiers; these are alternative identifiers for a given resource.</summary></entry><entry><title type="html">FAIRplus Newsletter 2</title><link href="https://alasdairgray.github.io//posts/2019-07-29-fairplus-newsletter-2" rel="alternate" type="text/html" title="FAIRplus Newsletter 2" /><published>2019-07-29T09:51:34+00:00</published><updated>2019-07-29T09:51:34+00:00</updated><id>https://alasdairgray.github.io//posts/fairplus-newsletter-2</id><content type="html" xml:base="https://alasdairgray.github.io//posts/2019-07-29-fairplus-newsletter-2">&lt;p&gt;Below is the opening exert from the &lt;a href=&quot;https://mailchi.mp/ec6eb86c5ac7/fairplus-newsletter-no-1293553&quot;&gt;second FAIRplus Newsletter&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Though FAIRplus has been running for just six months, there is already a lot to talk about. &lt;a href=&quot;https://mailchi.mp/ec6eb86c5ac7/fairplus-newsletter-no-1293553#squads&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Our two task-focused ‘Squads’ have booted up and begun the FAIRification&lt;/a&gt; of the first set of four pilot datasets, our industry partners in EFPIA organised the &lt;a href=&quot;https://mailchi.mp/ec6eb86c5ac7/fairplus-newsletter-no-1293553#byod&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;first ‘Bring Your Own Data’ workshop in London&lt;/a&gt;, and we’ve been busy explaining our goals and &lt;a href=&quot;https://mailchi.mp/ec6eb86c5ac7/fairplus-newsletter-no-1293553#faq&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;answering many questions from our stakeholders&lt;/a&gt;.
+&lt;!--more--&gt;
+ You can read about these activities in this second FAIRplus newsletter. On top of that, we bring you an update on upcoming events, news from our partners and also a &lt;a href=&quot;https://mailchi.mp/ec6eb86c5ac7/fairplus-newsletter-no-1293553#deliverables&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;new section ‘Track our progress’&lt;/a&gt; where you can check for yourself how we are progressing towards our goals and what Deliverables and reports we’ve recently submitted.&lt;/p&gt;
+
+  &lt;p&gt;Finally, &lt;a href=&quot;https://www.linkedin.com/company/fairplus&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;we’ve launched our own LinkedIn page&lt;/a&gt;. Besides regular updates on our activities, it will also feature job opportunities and news from the FAIRplus partners.
+The next FAIRplus Newsletter will come out in November 2019. In it we’ll present the FAIRplus Fellowship programme, report on the FAIR workshop in October and more.&lt;/p&gt;
+
+  &lt;p&gt;We wish you a relaxing Summer and look forward to meeting you at our events!&lt;/p&gt;
+&lt;/blockquote&gt;</content><author><name>Alasdair Gray</name></author><category term="ELIXIR" /><category term="FAIRplus" /><summary type="html">Below is the opening exert from the second FAIRplus Newsletter: Though FAIRplus has been running for just six months, there is already a lot to talk about. Our two task-focused ‘Squads’ have booted up and begun the FAIRification of the first set of four pilot datasets, our industry partners in EFPIA organised the first ‘Bring Your Own Data’ workshop in London, and we’ve been busy explaining our goals and answering many questions from our stakeholders.</summary></entry><entry><title type="html">Research Software Engineer Post</title><link href="https://alasdairgray.github.io//posts/2019-05-07-research-software-engineer-post" rel="alternate" type="text/html" title="Research Software Engineer Post" /><published>2019-05-07T12:09:20+00:00</published><updated>2019-05-07T12:09:20+00:00</updated><id>https://alasdairgray.github.io//posts/research-software-engineer-post</id><content type="html" xml:base="https://alasdairgray.github.io//posts/2019-05-07-research-software-engineer-post">&lt;p&gt;We are advertising for a Research Software Engineer to come work on&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Identifier linking and Scientific Lenses in the context of the &lt;a href=&quot;https://www.fairplus-project.eu/&quot;&gt;FAIRplus&lt;/a&gt; project, and&lt;/li&gt;
+  &lt;li&gt;Data validation and markup support in the context of &lt;a href=&quot;https://bioschemas.org&quot;&gt;Bioschemas&lt;/a&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The post is for 12 months. Further details available on the &lt;a href=&quot;https://www.hw.ac.uk/about/work/jobs/job_SVJDMjIxNTA.htm&quot;&gt;Heriot-Watt Vacancies Site&lt;/a&gt;.
+&lt;!--more--&gt;&lt;/p&gt;</content><author><name>Alasdair Gray</name></author><category term="Uncategorized" /><summary type="html">We are advertising for a Research Software Engineer to come work on Identifier linking and Scientific Lenses in the context of the FAIRplus project, and Data validation and markup support in the context of Bioschemas. The post is for 12 months. Further details available on the Heriot-Watt Vacancies Site.</summary></entry><entry><title type="html">Biohackathon 2018 -Paris</title><link href="https://alasdairgray.github.io//posts/2019-02-11-biohackathon-2018-paris" rel="alternate" type="text/html" title="Biohackathon 2018 -Paris" /><published>2019-02-11T10:11:49+00:00</published><updated>2019-02-11T10:11:49+00:00</updated><id>https://alasdairgray.github.io//posts/biohackathon-2018-paris</id><content type="html" xml:base="https://alasdairgray.github.io//posts/2019-02-11-biohackathon-2018-paris">&lt;p&gt;&lt;img src=&quot;/assets/img/2019-02-11_biohackathon-paris.jpg&quot; alt=&quot;Bioschemas at the Biohackathon&quot; width=&quot;80%&quot; class=&quot;center&quot; style=&quot;padding: 10px&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Last November I had the privilege to be one of 150 participants at the &lt;a href=&quot;https://2018.biohackathon-europe.org/&quot;&gt;Biohackathon&lt;/a&gt; organised by &lt;a href=&quot;https://www.elixir-europe.org/&quot;&gt;ELIXIR&lt;/a&gt;. The hackathon was organised into 29 topics, many of which were related to &lt;a href=&quot;http://bioschemas.org/&quot;&gt;Bioschemas&lt;/a&gt; and one directly focused on Bioschemas. For the Bioschemas topic we had up to 30 people working around three themes.
+&lt;!--more--&gt;&lt;/p&gt;
+
+&lt;p&gt;The first theme was to implement markup for the various life sciences resources present. Representatives from ELIXIR Core Data Resources and node resources from the UK and Switzerland were there to work on this thanks to the &lt;a href=&quot;https://www.elixir-europe.org/platforms/interoperability/rfp-bioschemas&quot;&gt;staff exchange and travel fund&lt;/a&gt;. By the end of the week we had new &lt;a href=&quot;http://bioschemas.org/liveDeploys/&quot;&gt;live deploys&lt;/a&gt; for 11 additional resources and examples for many more.&lt;/p&gt;
+
+&lt;p&gt;The second theme was to refine the types and profiles that Bioschemas has been developing based on the experiences of deploying the markup. Prior to the hackathon, Bioschemas had moved from a minimal &lt;a href=&quot;http://schema.org&quot;&gt;Schema.org&lt;/a&gt; extension of a single &lt;a href=&quot;http://bioschemas.org/BioChemEntity&quot;&gt;BioChemEntity&lt;/a&gt; type to collection of types for the different life science resources, e.g. &lt;a href=&quot;http://bioschemas.org/Gene&quot;&gt;Gene&lt;/a&gt;, &lt;a href=&quot;http://bioschema.org/Protein&quot;&gt;Protein&lt;/a&gt;, and &lt;a href=&quot;http://bioschemas.org/Taxon&quot;&gt;Taxon&lt;/a&gt;. Just before the hackathon a revised set of types and profiles were released. This proved to be useful for discussion, but it very quickly became clear that there was need for further refinement. During the hackathon we started new profiles for &lt;a href=&quot;http://bioschemas.org/devSpecs/DNA/&quot;&gt;DNA&lt;/a&gt;, &lt;a href=&quot;http://bioschemas.org/devSpecs/Study/&quot;&gt;Experimental Studies&lt;/a&gt;, and &lt;a href=&quot;http://bioschemas.org/devSpecs/Phenotype/&quot;&gt;Phenotype&lt;/a&gt;, and the Chemical profile was split into &lt;a href=&quot;http://bioschemas.org/devSpecs/MolecularEntity/&quot;&gt;MolecularEntity&lt;/a&gt; and ChemicalSubstance. Long discussions were held about the types and their structure with early drafts for 17 types being &lt;a href=&quot;https://docs.google.com/document/d/1_rO64r4JZgHA-66s_nsvLikUKZJnPJcwQte9BFb0WiU/edit?usp=sharing&quot;&gt;proposed&lt;/a&gt;. These are now getting to a state where they are ready for further experimentation.&lt;/p&gt;
+
+&lt;p&gt;The third theme was to develop tooling to support Bioschemas. Due to the intensity of the discussions on the types and profiles, there was no time to work on this topic. However, the prototype &lt;a href=&quot;http://www.macs.hw.ac.uk/~ajg33/BioschemasGenerator/&quot;&gt;Bioschemas Generator&lt;/a&gt; was extensively tested during the first theme and improvements fed back to the developer. There were also refinements made to the &lt;a href=&quot;https://github.com/BioSchemas/bioschemas-goweb&quot;&gt;GoWeb tool&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Overall, it was a very productive hackathon. The venue proved to be very conducive to fostering the right atmosphere. During the evenings there were opportunities to socialise or carry on the discussions. Below are two of the paintings that were produced during one of the social activities that capture the Bioschemas discussions.&lt;/p&gt;
+
+&lt;p&gt;And there was the food. Wow! Wonderful meals, three times a day.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/2019-02-11_bioschemas-rabithole.jpg&quot; alt=&quot;Bioschemas down the rabbit hole&quot; width=&quot;45%&quot; style=&quot;float:left&quot; /&gt;
+&lt;img src=&quot;/assets/img/2019-02-11_breaking-bioschemas.jpg&quot; alt=&quot;Bioschemas painted logo broken apart&quot; width=&quot;45%&quot; style=&quot;float:right&quot; /&gt;&lt;/p&gt;</content><author><name>Alasdair Gray</name></author><category term="BioSchemas" /><category term="ELIXIR" /><category term="Research" /><summary type="html">Last November I had the privilege to be one of 150 participants at the Biohackathon organised by ELIXIR. The hackathon was organised into 29 topics, many of which were related to Bioschemas and one directly focused on Bioschemas. For the Bioschemas topic we had up to 30 people working around three themes.</summary></entry><entry><title type="html">ISWC 2018 Trip Report</title><link href="https://alasdairgray.github.io//posts/2018-10-29-iswc-2018" rel="alternate" type="text/html" title="ISWC 2018 Trip Report" /><published>2018-10-29T10:48:39+00:00</published><updated>2018-10-29T10:48:39+00:00</updated><id>https://alasdairgray.github.io//posts/iswc-2018</id><content type="html" xml:base="https://alasdairgray.github.io//posts/2018-10-29-iswc-2018">&lt;h2 id=&quot;keynotes&quot;&gt;Keynotes&lt;/h2&gt;
+
+&lt;p class=&quot;md-end-block&quot; contenteditable=&quot;true&quot;&gt;
+  There were three amazing and inspiring keynote talks, all very different from each other.
+&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p class=&quot;md-end-block&quot; contenteditable=&quot;true&quot;&gt;
+  The &lt;span class=&quot; md-link&quot;&gt;&lt;a spellcheck=&quot;false&quot; href=&quot;http://iswc2018.semanticweb.org/speakers/jennifer-golbeck/&quot;&gt;first&lt;/a&gt;&lt;/span&gt; was given by &lt;span class=&quot; md-link&quot;&gt;&lt;a spellcheck=&quot;false&quot; href=&quot;https://www.cs.umd.edu/~golbeck/&quot;&gt;Jennifer Golbeck&lt;/a&gt;&lt;/span&gt; (University of Maryland). While Jennifer did her PhD on the Semantic Web in the early days of social media and Linked Data, she now focuses on user privacy and consent. These are highly relevant topics to the Semantic Web community and something that we should really be considering when linking people&amp;#8217;s personal data. While the consequences of linking scientific data might not be as scary, there are still ethical issues to consider if we do not get it right. Check out her &lt;span class=&quot; md-link&quot;&gt;&lt;a spellcheck=&quot;false&quot; href=&quot;https://www.ted.com/talks/jennifer_golbeck_the_curly_fry_conundrum_why_social_media_likes_say_more_than_you_might_think?language=en&quot;&gt;TED talk&lt;/a&gt;&lt;/span&gt; for an abridged version of her keynote.
+&lt;/p&gt;
+
+&lt;p class=&quot;md-end-block&quot; contenteditable=&quot;true&quot;&gt;
+  &lt;span class=&quot;&quot;&gt;She also suggested that when reading a companies privacy policy, you should replace the word &amp;#8220;privacy&amp;#8221; with &amp;#8220;consent&amp;#8221; and see how it seems then.&lt;/span&gt;
+&lt;/p&gt;
+
+&lt;p class=&quot;md-end-block&quot; contenteditable=&quot;true&quot;&gt;
+  The talk also struck an accord with the launch of the &lt;span class=&quot; md-link&quot;&gt;&lt;a spellcheck=&quot;false&quot; href=&quot;https://solid.inrupt.com/&quot;&gt;SOLID framework&lt;/a&gt;&lt;/span&gt; by Tim Berners-Lee. There was a good sales pitch of the SOLID framework from &lt;span class=&quot;md-link&quot;&gt;&lt;a spellcheck=&quot;false&quot; href=&quot;https://ruben.verborgh.org/&quot;&gt;Ruben Verborgh&lt;/a&gt;&lt;/span&gt; in the afternoon of the &lt;span class=&quot; md-link&quot;&gt;&lt;a spellcheck=&quot;false&quot; href=&quot;http://iswc2018.desemweb.org/&quot;&gt;Decentralising the Semantic Web Workshop&lt;/a&gt;&lt;/span&gt;.
+&lt;/p&gt;
+
+&lt;p class=&quot;md-end-block&quot; contenteditable=&quot;true&quot;&gt;
+  The second was given by &lt;span class=&quot; md-link&quot;&gt;&lt;a spellcheck=&quot;false&quot; href=&quot;http://iswc2018.semanticweb.org/speakers/natasha-noy/&quot;&gt;Natasha Noy&lt;/a&gt;&lt;/span&gt;&lt;span class=&quot;&quot;&gt; (Google). Natasha talked about the challenges of being a researcher and engineering tools that support the community. Particularly where impact may only be detect 6 to 10 years down the line. She also highlighted that Linked Data is only a small fraction of the data in the world (the tip of the iceberg), and it is not appropriate to expect all data to become Linked Data.&lt;/span&gt;
+&lt;/p&gt;
+
+&lt;p class=&quot;md-end-block&quot; contenteditable=&quot;true&quot;&gt;
+  Her most recent endeavour has been the &lt;span class=&quot; md-link&quot;&gt;&lt;a spellcheck=&quot;false&quot; href=&quot;https://www.blog.google/products/search/making-it-easier-discover-datasets/&quot;&gt;Google Dataset Search Tool&lt;/a&gt;&lt;/span&gt;. This has been a major engineering and social endeavour; getting &lt;span class=&quot; md-link&quot;&gt;&lt;a spellcheck=&quot;false&quot; href=&quot;https://schema.org/&quot;&gt;schema.org&lt;/a&gt;&lt;/span&gt; markup embedded on pages and building a specialist search tool on top of the indexed data. More details of the search framework are in this &lt;span class=&quot; md-link&quot;&gt;&lt;a spellcheck=&quot;false&quot; href=&quot;https://ai.googleblog.com/2018/09/building-google-dataset-search-and.html&quot;&gt;blog post&lt;/a&gt;&lt;/span&gt;. The current search interface is limited due to the availability of metadata; most sites only make &lt;span class=&quot; md-link&quot;&gt;&lt;a spellcheck=&quot;false&quot; href=&quot;https://schema.org/title&quot;&gt;&lt;span spellcheck=&quot;false&quot;&gt;&lt;code&gt;title&lt;/code&gt;&lt;/span&gt;&lt;/a&gt;&lt;/span&gt; and &lt;span class=&quot; md-link&quot;&gt;&lt;a spellcheck=&quot;false&quot; href=&quot;https://schema.org/description&quot;&gt;&lt;span spellcheck=&quot;false&quot;&gt;&lt;code&gt;description&lt;/code&gt;&lt;/span&gt;&lt;/a&gt;&lt;/span&gt;&lt;span class=&quot;&quot;&gt; available. However, we can now start investigating how to return search results for datasets and what additional data might be of use. This for me is a really exciting area of work.&lt;/span&gt;
+&lt;/p&gt;
+
+&lt;p class=&quot;md-end-block&quot; contenteditable=&quot;true&quot;&gt;
+  Later in the day I attended a &lt;span class=&quot; md-link&quot;&gt;&lt;a spellcheck=&quot;false&quot; href=&quot;http://iswc2018.semanticweb.org/sessions/browsing-linked-data-catalogs-with-lodatlas/&quot;&gt;talk&lt;/a&gt;&lt;/span&gt; on the &lt;span class=&quot; md-link&quot;&gt;&lt;a spellcheck=&quot;false&quot; href=&quot;http://lodatlas.lri.fr/&quot;&gt;LOD Atlas&lt;/a&gt;&lt;/span&gt;, another dataset search tool. While this gives a very detailed user interface, it is only designed for Linked Data researchers, not general users looking for a dataset.
+&lt;/p&gt;
+
+&lt;p class=&quot;md-end-block&quot; contenteditable=&quot;true&quot;&gt;
+  The &lt;span class=&quot; md-link&quot;&gt;&lt;a spellcheck=&quot;false&quot; href=&quot;http://iswc2018.semanticweb.org/speakers/vanessa-evers/&quot;&gt;third&lt;/a&gt;&lt;/span&gt;&lt;span class=&quot;&quot;&gt; keynote was given by Vanessa Evers (University of Twente, The Netherlands). This was in a completely different domain, social interactions with robots, but still raised plenty of questions for the community. For me the challenge was how to supply contextualised data.&lt;/span&gt;
+&lt;/p&gt;
+
+&lt;h2 class=&quot;md-end-block md-heading&quot; contenteditable=&quot;true&quot;&gt;
+  &lt;span class=&quot;&quot;&gt;Knowledge Graph Panel&lt;/span&gt;
+&lt;/h2&gt;
+
+&lt;p class=&quot;md-end-block&quot; contenteditable=&quot;true&quot;&gt;
+  The other big plenary event this year was the &lt;span class=&quot; md-link&quot;&gt;&lt;a spellcheck=&quot;false&quot; href=&quot;http://iswc2018.semanticweb.org/panel-enterprise-scale-knowledge-graphs/&quot;&gt;knowledge graph panel&lt;/a&gt;&lt;/span&gt;. The panel consisted of representatives from Microsoft, Facebook, eBay, Google, and IBM, all of whom were involved with the development of Knowledge Graphs within their organisation. A major concern for the Semantic Web community is that most of these panelists were not aware of our community or the results of our work. Another concern is that none of their systems use any of our results, although it sounds like several of them use something similar to RDF.
+&lt;/p&gt;
+
+&lt;p class=&quot;md-end-block&quot; contenteditable=&quot;true&quot;&gt;
+  The main messages I took from the panel were
+&lt;/p&gt;
+
+&lt;ul class=&quot;ul-list&quot; data-mark=&quot;-&quot;&gt;
+  &lt;li class=&quot;md-list-item&quot;&gt;
+    &lt;p class=&quot;md-end-block&quot; contenteditable=&quot;true&quot;&gt;
+      Scale and distribution were key
+    &lt;/p&gt;
+  &lt;/li&gt;
+  
+  &lt;li class=&quot;md-list-item&quot;&gt;
+    &lt;p class=&quot;md-end-block&quot; contenteditable=&quot;true&quot;&gt;
+      Source information is going to be noisy and challenging to extract value from
+    &lt;/p&gt;
+  &lt;/li&gt;
+  
+  &lt;li class=&quot;md-list-item&quot;&gt;
+    &lt;p class=&quot;md-end-block&quot; contenteditable=&quot;true&quot;&gt;
+      &lt;span class=&quot;md-link&quot;&gt;&lt;a spellcheck=&quot;false&quot; href=&quot;https://en.wikipedia.org/wiki/Metonymy&quot;&gt;Metonymy&lt;/a&gt;&lt;/span&gt;&lt;span class=&quot;&quot;&gt; is a major challenge&lt;/span&gt;
+    &lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p class=&quot;md-end-block&quot; contenteditable=&quot;true&quot;&gt;
+  &lt;span class=&quot;&quot;&gt;This final point connects with my work on contextualising data for the task of the user &lt;a class=&quot;citation&quot; href=&quot;#Batchelor:chem-lenses:ChemStruct2014&quot;&gt;(Batchelor &lt;i&gt;et al.&lt;/i&gt;, 2014; Batchelor &lt;i&gt;et al.&lt;/i&gt;, 2014)&lt;/a&gt; and has reinvigorated my interest in this research topic.&lt;/span&gt;
+&lt;/p&gt;
+
+&lt;h2 class=&quot;md-end-block md-heading&quot; contenteditable=&quot;true&quot;&gt;
+  Final Thoughts
+&lt;/h2&gt;
+
+&lt;p class=&quot;md-end-block&quot; contenteditable=&quot;true&quot;&gt;
+  This was another great ISWC conference, although many familiar faces were missing.
+&lt;/p&gt;
+
+&lt;p class=&quot;md-end-block&quot; contenteditable=&quot;true&quot;&gt;
+  There was a great and vibrant &lt;span class=&quot;md-link&quot;&gt;&lt;a spellcheck=&quot;false&quot; href=&quot;http://iswc2018.semanticweb.org/workshops-tutorials/&quot;&gt;workshop programme&lt;/a&gt;&lt;/span&gt;. My &lt;a href=&quot;http://www.macs.hw.ac.uk/~ajg33/first-steps-with-jupyter-notebooks/&quot;&gt;paper&lt;/a&gt; &lt;a class=&quot;citation&quot; href=&quot;#Gray2018:jupyter:SemSci2018&quot;&gt;(Gray, 2018)&lt;/a&gt; was presented during the Enabling Open Semantic Science workshop (&lt;span class=&quot; md-link&quot;&gt;&lt;a spellcheck=&quot;false&quot; href=&quot;https://semsci.github.io/SemSci2018/&quot;&gt;SemSci 2018&lt;/a&gt;&lt;/span&gt;) and resulted in a good deal of discussion. There were also great keynotes at the workshop from Paul Groth (&lt;span class=&quot; md-link&quot;&gt;&lt;a spellcheck=&quot;false&quot; href=&quot;https://www.slideshare.net/pgroth/the-challenge-of-deeper-knowledge-graphs-for-science&quot;&gt;slides&lt;/a&gt;&lt;/span&gt;&lt;span class=&quot;&quot;&gt;) and Yolanda Gil which I would recommend anyone to look over.&lt;/span&gt;
+&lt;/p&gt;
+
+&lt;p class=&quot;md-end-block md-focus&quot; contenteditable=&quot;true&quot;&gt;
+  &lt;span class=&quot;md-expand&quot;&gt;I regret not having gone to more of the Industry Track sessions. The one I did make was very inspiring to see how the results of the community are being used in practice, and to get insights into the challenges faced.&lt;/span&gt;
+&lt;/p&gt;
+
+&lt;p&gt;The conference banquet involved a walking dinner around the &lt;span class=&quot; md-link&quot;&gt;&lt;a spellcheck=&quot;false&quot; href=&quot;http://www.montereybayaquarium.org/&quot;&gt;Monterey Bay Aquarium&lt;/a&gt;&lt;/span&gt;. This was a great idea as it allowed plenty of opportunities for conversations with a wide range of conference participants; far more than your standard banquet.&lt;/p&gt;
+
+&lt;p&gt;Here are some other takes on the conference:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.linkedin.com/pulse/knowledge-graphs-machine-learning-iswc-2018-trip-report-helena-deus/&quot;&gt;Helena Deus&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://thinklinks.wordpress.com/2018/10/23/trip-report-iswc-2018/&quot;&gt;Paul Groth&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.juansequeda.com/blog/2018/10/25/international-semantic-web-conference-iswc-2018-trip-report/&quot;&gt;Juan Sequeda&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;span class=&quot;md-expand&quot;&gt;I also managed to sneak off to look for the sea otters.&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&quot;aligncenter size-large wp-image-576&quot; src=&quot;/assets/img/2018-10-29_seaOtters.jpeg&quot; alt=&quot;Exploring the pacific coast; hunting for sea otters&quot; width=&quot;620&quot; height=&quot;465&quot; /&gt;&lt;/p&gt;</content><author><name>Alasdair Gray</name></author><category term="Dataset Description" /><category term="Linked Data" /><category term="Presentation" /><category term="Publication" /><category term="Research" /><category term="Trip report" /><summary type="html">Keynotes There were three amazing and inspiring keynote talks, all very different from each other.</summary></entry><entry><title type="html">First steps with Jupyter Notebooks</title><link href="https://alasdairgray.github.io//posts/2018-10-09-first-steps-with-jupyter-notebooks" rel="alternate" type="text/html" title="First steps with Jupyter Notebooks" /><published>2018-10-09T09:04:31+00:00</published><updated>2018-10-09T09:04:31+00:00</updated><id>https://alasdairgray.github.io//posts/first-steps-with-jupyter-notebooks</id><content type="html" xml:base="https://alasdairgray.github.io//posts/2018-10-09-first-steps-with-jupyter-notebooks">&lt;p&gt;At the 2nd Workshop on Enabling Open Semantic Sciences (&lt;a href=&quot;https://semsci.github.io/SemSci2018/&quot;&gt;SemSci2018&lt;/a&gt;), colocated at &lt;a href=&quot;http://iswc2018.semanticweb.org/&quot;&gt;ISWC2018&lt;/a&gt;, I presented the following paper &lt;a class=&quot;citation&quot; href=&quot;#Gray2018:jupyter:SemSci2018&quot;&gt;(Gray, 2018)&lt;/a&gt; (slides at end of this post):&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Title:&lt;/strong&gt; Using a Jupyter Notebook to perform a reproducible scientific analysis over semantic web sources&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Abstract:&lt;/strong&gt; In recent years there has been a reproducibility crisis in science. Computational notebooks, such as Jupyter, have been touted as one solution to this problem. However, when executing analyses over live SPARQL endpoints, we get different answers depending upon when the analysis in the notebook was executed. In this paper, we identify some of the issues discovered in trying to develop a reproducible analysis over a collection of biomedical data sources and suggest some best practice to overcome these issues.&lt;/p&gt;
+
+&lt;p&gt;The paper covers my first attempt at using a computational notebook to publish a data analysis for reproducibility. The paper provokes more questions than it answers and this was the case in the workshop too.&lt;/p&gt;
+
+&lt;p&gt;One of the really great things about the paper is that you can launch the notebook, without installing any software, by clicking on the binder button below. You can then rerun the entire notebook and see whether you get the same results that I did when I ran the analysis over the various datasets.&lt;/p&gt;
+
+&lt;p style=&quot;text-align: center;&quot;&gt;
+  &lt;a href=&quot;https://mybinder.org/v2/gh/AlasdairGray/SemSci2018/master?filepath=SemSci2018%20Publication.ipynb&quot;&gt;&lt;img src=&quot;https://mybinder.org/badge.svg&quot; /&gt;&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;iframe src=&quot;//www.slideshare.net/slideshow/embed_code/key/zu6lEMEcHNv0UR&quot; width=&quot;595&quot; height=&quot;485&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; style=&quot;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&quot; allowfullscreen=&quot;&quot;&gt; &lt;/iframe&gt;
+&lt;div style=&quot;margin-bottom:5px&quot;&gt; &lt;strong&gt; &lt;a href=&quot;//www.slideshare.net/alasdair_gray/using-a-jupyter-notebook-to-perform-a-reproducible-scientific-analysis-over-semantic-web-sources&quot; title=&quot;Using a Jupyter Notebook to perform a reproducible scientific analysis over semantic web sources&quot; target=&quot;_blank&quot;&gt;Using a Jupyter Notebook to perform a reproducible scientific analysis over semantic web sources&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href=&quot;https://www.slideshare.net/alasdair_gray&quot; target=&quot;_blank&quot;&gt;Alasdair Gray&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;</content><author><name>Alasdair Gray</name></author><category term="ELIXIR" /><category term="Presentation" /><category term="Publication" /><summary type="html">At the 2nd Workshop on Enabling Open Semantic Sciences (SemSci2018), colocated at ISWC2018, I presented the following paper (Gray, 2018) (slides at end of this post):</summary></entry><entry><title type="html">Summer of Good News</title><link href="https://alasdairgray.github.io//posts/2018-08-01-summer-of-good-news" rel="alternate" type="text/html" title="Summer of Good News" /><published>2018-08-01T09:20:58+00:00</published><updated>2018-08-01T09:20:58+00:00</updated><id>https://alasdairgray.github.io//posts/summer-of-good-news</id><content type="html" xml:base="https://alasdairgray.github.io//posts/2018-08-01-summer-of-good-news">&lt;div style=&quot;width: 173px; float: right&quot;&gt;
+  &lt;img aria-describedby=&quot;caption-attachment-558&quot; class=&quot;wp-image-558 size-medium&quot; src=&quot;/assets/img/2018-08-01_qianru-graduation.jpg&quot; alt=&quot;Qianru graduation 21 June 2018&quot; width=&quot;163&quot; height=&quot;300&quot; /&gt;
+  
+  &lt;p&gt;
+    Picture of Qianru on her graduation day
+  &lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;This has been a good summer, not just because the British weather has been somewhat more summery than usual.&lt;/p&gt;
+
+&lt;h2 id=&quot;qianrus-graduation&quot;&gt;Qianru’s Graduation&lt;/h2&gt;
+
+&lt;p&gt;In June, my first PhD student graduated. &lt;a href=&quot;https://scholar.google.co.uk/citations?user=o1Fe2swAAAAJ&amp;amp;hl=en&quot;&gt;Dr Qianru Zhou&lt;/a&gt; investigated the use of an &lt;a href=&quot;http://purl.org/toco/&quot;&gt;ontology&lt;/a&gt; to enable a software defined network. Her PhD thesis is &lt;em&gt;“Ontology-driven knowledge based autonomic management for telecommunication networks: Theory, implementation and applications”&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;promotion&quot;&gt;Promotion&lt;/h2&gt;
+
+&lt;p&gt;As of today (1 August 2018), I am now an &lt;a href=&quot;https://en.wikipedia.org/wiki/Associate_professor&quot;&gt;Associate Professor&lt;/a&gt; (equivalent to Senior Lecturer in traditional British universities).&lt;/p&gt;
+
+&lt;h2 id=&quot;grant-success&quot;&gt;Grant Success&lt;/h2&gt;
+
+&lt;p&gt;Today saw the start of a collaboration with &lt;a href=&quot;http://www.visionware.com/&quot;&gt;VisionWare&lt;/a&gt;, a company based in Glasgow who specialise in record linkage, and is funded as an &lt;a href=&quot;https://interface-online.org.uk/how-we-can-help/funding/standard-innovation-vouchers&quot;&gt;Interface Voucher&lt;/a&gt;. We are investigating combining the data corruption framework that Ahmad has been developing with the synthetic data that VisionWare have been generating. The purpose is to enable us to evaluate, and thus improve, record linkage.&lt;/p&gt;</content><author><name>Alasdair Gray</name></author><category term="ADRC-Scotland" /><category term="PhD Students" /><category term="Record Linkage" /><summary type="html">Picture of Qianru on her graduation day This has been a good summer, not just because the British weather has been somewhat more summery than usual.</summary></entry></feed>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=4054bcef280d78a3966bcac515ce94fa775eff10">
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/fontawesome-5.15.4/css/all.min.css?v=4054bcef280d78a3966bcac515ce94fa775eff10">
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/academicons-1.9.1/css/academicons.min.css?v=4054bcef280d78a3966bcac515ce94fa775eff10">
+
+<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>A short project on linking course data from Sharing and learning | Alasdair J G Gray</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="A short project on linking course data from Sharing and learning" />
+<meta name="author" content="Alasdair Gray" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="During the summer my colleague Phil Barker (author of the Sharing and Learning blog) and I hosted a summer intern, Anna Grant. Anna’s project was to investigate the feasibility of publishing the data about our courses as Linked Data. Phil subsequently wrote up a blog post about the work which I have been meaning to share for a long time, so here it is; long overdue." />
+<meta property="og:description" content="During the summer my colleague Phil Barker (author of the Sharing and Learning blog) and I hosted a summer intern, Anna Grant. Anna’s project was to investigate the feasibility of publishing the data about our courses as Linked Data. Phil subsequently wrote up a blog post about the work which I have been meaning to share for a long time, so here it is; long overdue." />
+<link rel="canonical" href="https://alasdairgray.github.io//posts/2015-12-02-anna-linking-course-data" />
+<meta property="og:url" content="https://alasdairgray.github.io//posts/2015-12-02-anna-linking-course-data" />
+<meta property="og:site_name" content="Alasdair J G Gray" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2015-12-02T09:12:51+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="A short project on linking course data from Sharing and learning" />
+<script type="application/ld+json">
+{"description":"During the summer my colleague Phil Barker (author of the Sharing and Learning blog) and I hosted a summer intern, Anna Grant. Anna’s project was to investigate the feasibility of publishing the data about our courses as Linked Data. Phil subsequently wrote up a blog post about the work which I have been meaning to share for a long time, so here it is; long overdue.","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://alasdairgray.github.io//posts/2015-12-02-anna-linking-course-data"},"url":"https://alasdairgray.github.io//posts/2015-12-02-anna-linking-course-data","headline":"A short project on linking course data from Sharing and learning","dateModified":"2015-12-02T09:12:51+00:00","datePublished":"2015-12-02T09:12:51+00:00","author":{"@type":"Person","name":"Alasdair Gray"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <div id="navbar">
+    
+        <a href="/" title="Home">Home</a>
+    
+    
+        <a href="/Publications" title="Publications">Publications</a>
+    
+    <a href="/teaching" title="Teaching">Teaching</a>
+    
+        <a href="/about" title="About Me">About</a>
+    
+    
+        <a href="/contact" title="Contactt details">Contact</a>
+    
+</div>
+
+        <header class="inner">
+          <h1 id="project_title"><a href="/">Alasdair J G Gray</a></h1>
+          <h2 id="project_tagline">Connecting the dots in the World's data</h2>
+
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <div class="row">
+          <div class="leftcolumn">          
+            <h1>A short project on linking course data from Sharing and learning</h1>
+<span class="post-meta">2 Dec 2015</span>
+<p>During the summer my colleague <a href="http://www.macs.hw.ac.uk/~philb/">Phil Barker</a> (author of the <a href="http://blogs.pjjk.net/phil/">Sharing and Learning blog</a>) and I hosted a summer intern, <a href="https://www.linkedin.com/in/annalgrant">Anna Grant</a>.</p>
+
+<p>Anna’s project was to investigate the feasibility of publishing the data about our courses as Linked Data. Phil subsequently wrote up a blog post about the work which I have been meaning to share for a long time, so here it is; long overdue.</p>
+
+<!--more-->
+
+<p>Below I have picked out some quotes from Phil’s original blog post that describe the work that Anna did.</p>
+
+<blockquote>
+  <p>The objectives for Anna’s work were ambitious: survey existing HE [Higher Education] open data and ontologies in use; design an ontology that we can use; develop an interface we can use to create and publish our course data. Anna made great progress on all three fronts.</p>
+
+  <p>…</p>
+
+  <p>The ontologies reviewed were: <a href="http://vocab.org/aiiso/schema">AIISO</a>, <a href="http://linkedscience.org/teach/ns/">Teach</a>, <a href="http://www.resist-noe.org/index.html">CourseWare</a>, <a href="http://shop.bsigroup.com/ProductDetail/?pid=000000000030259242">XCRI</a>, <a href="ftp://ftp.cenorm.be/PUBLIC/CWAs/e-Europe/WS-LT/CWA15903-00-2008-Dec.pdf">MLO</a>, <a href="ftp://ftp.cen.eu/CEN/Sectors/TCandWorkshops/Workshops/CWA16077.pdf">ECIM</a> and <a href="https://ceds.ed.gov/">CEDS</a>. A <a href="https://docs.google.com/document/d/1Aqp-x1j1Vzoo3d3tPateL8DBiByCnbhBsJ4r1hTdZgg/edit?usp=sharing">live working draft of the summary / review</a> for these is available for comment as a Google Doc.</p>
+
+  <p>…</p>
+
+  <p>The final draft [of the extended MLO Ontology] is shown below. Key:  Green= MLO, Purple=MLO extension, Blue=ECIM / previous alteration to MLO Yellow= generic ontologies such as Dublin core and SKOS.</p>
+
+  <div class="wp-caption alignnone">
+  <img style="width: 100%" src="http://i0.wp.com/blogs.pjjk.net/phil/content/uploads/mloExtension2.png" alt="Extension for the MLO ontology" />
+  
+  <p class="wp-caption-text">
+    MLO Extension to capture taught courses and their relationships to degree programmes.
+  </p>
+</div>
+
+  <p>…</p>
+
+  <p>Anna has finished her work here now and returns to Edinburgh Napier University to finish her Master’s project. Alasdair and I think she has done a really impressive job, not least considering she had no previous experience with RDF and semantic technologies. We’ve also found her a pleasure to work with and would like to thank her for her efforts on this project.</p>
+</blockquote>
+
+<p>Source: <a href="http://blogs.pjjk.net/phil/a-short-project-on-linking-course-data/"><em>A short project on linking course data | Sharing and learning</em></a></p>
+
+<ol class="bibliography"></ol>
+          </div>
+          <div class="rightcolumn">
+            <h4>About Me</h4>
+            <a href="/about" title="About me"><img class="icon" src="/assets/img/gray-135x135.jpg" alt="Headshot"></a>
+            <p>I'm an Associate Professor in Computer Science at Heriot-Watt University. My research focuses on linking datasets.
+            <em><a href="/about" title="About me">Read more</a></em></p>
+            <div class="social-icons">
+              <a href="https://github.com/AlasdairGray" title="GitHub Alasdair Gray" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="https://orcid.org/0000-0002-5711-4872" title="ORCID Alasdair Gray" target="_blank"><i class="fab fa-orcid"></i></a>
+              <a href="https://twitter.com/gray_alasdair" title="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+            <h4>Tweets</h4>
+            <a class="twitter-timeline" data-width="300" data-height="350" data-theme="light" href="https://twitter.com/gray_alasdair?ref_src=twsrc%5Etfw">Tweets by gray_alasdair</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        
+        <p class="copyright">Alasdair J G Gray maintained by <a href="https://github.com/AlasdairGray">AlasdairGray</a></p>
+        
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+  </body>
+  <!-- Site script -->
+  <script src="/js/scripts.js"></script>
+</html>

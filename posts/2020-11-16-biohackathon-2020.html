@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=4054bcef280d78a3966bcac515ce94fa775eff10">
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/fontawesome-5.15.4/css/all.min.css?v=4054bcef280d78a3966bcac515ce94fa775eff10">
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/academicons-1.9.1/css/academicons.min.css?v=4054bcef280d78a3966bcac515ce94fa775eff10">
+
+<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>BioHackathon 2020 (Virtual) | Alasdair J G Gray</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="BioHackathon 2020 (Virtual)" />
+<meta name="author" content="Alasdair Gray" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="This year, due to the pandemic, the European BioHackathon went virtual. Despite the online only nature of the event, it was well attended and there were more topics than ever – 41 topics – covering both the usual ELIXIR topics and some dedicated to the COVID response. Bioschemas was again well represented in different hacking projects. This year the focus was on exploiting Bioschemas markup for different communities." />
+<meta property="og:description" content="This year, due to the pandemic, the European BioHackathon went virtual. Despite the online only nature of the event, it was well attended and there were more topics than ever – 41 topics – covering both the usual ELIXIR topics and some dedicated to the COVID response. Bioschemas was again well represented in different hacking projects. This year the focus was on exploiting Bioschemas markup for different communities." />
+<link rel="canonical" href="https://alasdairgray.github.io//posts/2020-11-16-biohackathon-2020" />
+<meta property="og:url" content="https://alasdairgray.github.io//posts/2020-11-16-biohackathon-2020" />
+<meta property="og:site_name" content="Alasdair J G Gray" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-11-16T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="BioHackathon 2020 (Virtual)" />
+<script type="application/ld+json">
+{"description":"This year, due to the pandemic, the European BioHackathon went virtual. Despite the online only nature of the event, it was well attended and there were more topics than ever – 41 topics – covering both the usual ELIXIR topics and some dedicated to the COVID response. Bioschemas was again well represented in different hacking projects. This year the focus was on exploiting Bioschemas markup for different communities.","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://alasdairgray.github.io//posts/2020-11-16-biohackathon-2020"},"url":"https://alasdairgray.github.io//posts/2020-11-16-biohackathon-2020","headline":"BioHackathon 2020 (Virtual)","dateModified":"2020-11-16T00:00:00+00:00","datePublished":"2020-11-16T00:00:00+00:00","author":{"@type":"Person","name":"Alasdair Gray"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <div id="navbar">
+    
+        <a href="/" title="Home">Home</a>
+    
+    
+        <a href="/Publications" title="Publications">Publications</a>
+    
+    <a href="/teaching" title="Teaching">Teaching</a>
+    
+        <a href="/about" title="About Me">About</a>
+    
+    
+        <a href="/contact" title="Contactt details">Contact</a>
+    
+</div>
+
+        <header class="inner">
+          <h1 id="project_title"><a href="/">Alasdair J G Gray</a></h1>
+          <h2 id="project_tagline">Connecting the dots in the World's data</h2>
+
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <div class="row">
+          <div class="leftcolumn">          
+            <h1>BioHackathon 2020 (Virtual)</h1>
+<span class="post-meta">16 Nov 2020</span>
+<p>This year, due to the pandemic, the <a href="https://2020.biohackathon-europe.org/">European BioHackathon</a> went virtual. Despite the online only nature of the event, it was well attended and there were more topics than ever – <a href="https://2020.biohackathon-europe.org/projects">41 topics</a> – covering both the usual ELIXIR topics and some dedicated to the COVID response. 
+<a href="https://bioschemas.org">Bioschemas</a> was again well represented in different hacking projects. This year the focus was on exploiting Bioschemas markup for different communities.</p>
+
+<p>The main focus of the work was showing that the <a href="https://idpcentral.org/">IDPcentral registry</a> could be populated using Bioschemas markup. <a href="https://bioschemas.org/profile/Protein">Protein</a> markup was scraped  from three intrinsically disordered protein resources – <a href="https://disprot.org/">DisProt</a>, <a href="https://mobidb.org/">MobiDB</a>, and <a href="https://proteinensemble.org/">ProteinEnsemble</a>. The scraped data was merged and converted into the existing IDPcentral registry model. We also generated a knowledge graph over which some initial analysis queries were run, e.g. identifying which proteins are found in more than one source. The work can be found in this <a href="https://github.com/elixir-europe/BioHackathon-projects-2020/blob/master/projects/24/IDPCentral/notebooks/IDPCentralETLProcess.ipynb">notebook</a>. We plan to carry on implementing this work and extending beyond a sample of pages from each site.</p>
+
+<p>Within the plant community, we formalised the mapping between <a href="https://www.miappe.org/">MIAPPE</a> (the minimum information model for plant phenotyping experiments) and <a href="https://bioschemas.org/profiles/Study">Bioschemas Study profile</a>. This will be tested in the coming weeks on the <a href="https://pippa.psb.ugent.be/">PIPPA</a> site for phenotype experiments.</p>
+
+<p><a href="https://egonw.github.io/">Egon Willighagen</a> used <a href="https://github.com/HW-SWeL/BMUSE">BMUSE</a> to scrape <a href="https://bioschemas.org/profiles/MolecularEntity">MolecularEntity</a> markup from <a href="https://massbank.eu/">MassBank</a> compound pages. The table below reports the statistics on the data that was scraped.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: right">count</th>
+      <th>description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: right">1,628,333</td>
+      <td>Total number of triples</td>
+    </tr>
+    <tr>
+      <td style="text-align: right">15,762</td>
+      <td>InChIs</td>
+    </tr>
+    <tr>
+      <td style="text-align: right">10,627</td>
+      <td>Monoisotopic molecular weights</td>
+    </tr>
+    <tr>
+      <td style="text-align: right">7,508</td>
+      <td>Molecular formula</td>
+    </tr>
+    <tr>
+      <td style="text-align: right">1</td>
+      <td>Different license(s)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The slides below were presented at the final reporting session by the various projects that invovled Bioschemas.</p>
+
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRJjfd84cvai9hQrvlziuYn_XoE7oLN4NQQEifEtBEtTHxN4SB-JcMbadcvDej527efFyKhPojsHLAz/embed?start=false&amp;loop=false&amp;delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+<ol class="bibliography"></ol>
+          </div>
+          <div class="rightcolumn">
+            <h4>About Me</h4>
+            <a href="/about" title="About me"><img class="icon" src="/assets/img/gray-135x135.jpg" alt="Headshot"></a>
+            <p>I'm an Associate Professor in Computer Science at Heriot-Watt University. My research focuses on linking datasets.
+            <em><a href="/about" title="About me">Read more</a></em></p>
+            <div class="social-icons">
+              <a href="https://github.com/AlasdairGray" title="GitHub Alasdair Gray" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="https://orcid.org/0000-0002-5711-4872" title="ORCID Alasdair Gray" target="_blank"><i class="fab fa-orcid"></i></a>
+              <a href="https://twitter.com/gray_alasdair" title="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+            <h4>Tweets</h4>
+            <a class="twitter-timeline" data-width="300" data-height="350" data-theme="light" href="https://twitter.com/gray_alasdair?ref_src=twsrc%5Etfw">Tweets by gray_alasdair</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        
+        <p class="copyright">Alasdair J G Gray maintained by <a href="https://github.com/AlasdairGray">AlasdairGray</a></p>
+        
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+  </body>
+  <!-- Site script -->
+  <script src="/js/scripts.js"></script>
+</html>
