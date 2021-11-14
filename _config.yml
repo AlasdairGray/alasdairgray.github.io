@@ -6,6 +6,9 @@ email: A.J.G.Gray@hw.ac.uk
 url: "https://AlasdairGray.github.io/"
 google_scholar: https://scholar.google.co.uk/citations?user=3XRqgLcAAAAJ&hl=en
 github_link: https://github.com/AlassdairGray
+github_username: AlasdairGray
+twitter_username: gray_alasdair
+permalink: /posts/:categories/:year/:title/
 
 # Processing configuraitons
 highlighter: rouge
@@ -19,6 +22,20 @@ theme: jekyll-theme-slate
 # Plugins
 plugins:
   - "jekyll/scholar"
+  - "jekyll-paginate-v2"
+  - "jekyll-redirect-from"
+  - "jekyll-sitemap"
+
+# Pagination-v2 Settings
+pagination:
+  enabled: true
+  per_page: 10
+  paginate_path: 'blog/page:num/'
+  # permalink: '/page/:num/'
+  title: ' - page :num'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
 
 # Scholar configuration
 scholar:
@@ -27,3 +44,12 @@ scholar:
   sort_by: 'year,month'
   order: descending
   bibliography_template: bib
+
+# Collections
+collections_dir: pages
+collections:
+  posts:
+    output: true
+    permalink: /:collection/:path
+    redirect_from:
+      - "/:collection/:path/"

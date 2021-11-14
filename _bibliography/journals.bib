@@ -13,7 +13,7 @@
 	journal = {Proceedings of the Institution of Civil Engineers - Management, Procurement and Law}
 }
 
-@article{DBLP:journals/nar/HardingSFSPIGBA18,
+@article{Harding:GtoPdb:NAR2018,
   abstract  = {The IUPHAR/BPS Guide to PHARMACOLOGY (GtoPdb, www.guidetopharmacology.org) and its precursor IUPHAR-DB, have captured expert-curated interactions between targets and ligands from selected papers in pharmacology and drug discovery since 2003. This resource continues to be developed in conjunction with the International Union of Basic and Clinical Pharmacology (IUPHAR) and the British Pharmacological Society (BPS). As previously described, our unique model of content selection and quality control is based on 96 target-class subcommittees comprising 512 scientists collaborating with in-house curators. This update describes content expansion, new features and interoperability improvements introduced in the 10 releases since August 2015. Our relationship matrix now describes ∼9000 ligands, ∼15 000 binding constants, ∼6000 papers and ∼1700 human proteins. As an important addition, we also introduce our newly funded project for the Guide to IMMUNOPHARMACOLOGY (GtoImmuPdb, www.guidetoimmunopharmacology.org). This has been ‘forked’ from the well-established GtoPdb data model and expanded into new types of data related to the immune system and inflammatory processes. This includes new ligands, targets, pathways, cell types and diseases for which we are recruiting new IUPHAR expert committees. Designed as an immunopharmacological gateway, it also has an emphasis on potential therapeutic interventions.},
   author    = {Simon D. Harding and
                Joanna L. Sharman and
@@ -44,7 +44,7 @@
   doi       = {10.1093/nar/gkx1121}
 }
 
-@article{DBLP:journals/peerj-cs/WilkinsonVSCSKG17,
+@article{Wilkinson:InteropFAIRWebTech:PeerJ2017,
   author    = {Mark D. Wilkinson and
                Ruben Verborgh and
                Luiz Olavo Bonino da Silva Santos and
@@ -67,7 +67,49 @@
   pages     = {e110},
   year      = {2017},
   url       = {https://doi.org/10.7717/peerj-cs.110},
-  doi       = {10.7717/peerj-cs.110}
+  doi       = {10.7717/peerj-cs.110},
+  abstract  = {Data in the life sciences are extremely diverse and are stored in a broad spectrum of repositories ranging from those designed for particular data types (such as KEGG for pathway data or UniProt for protein data) to those that are general-purpose (such as FigShare, Zenodo, Dataverse or EUDAT). These data have widely different levels of sensitivity and security considerations. For example, clinical observations about genetic mutations in patients are highly sensitive, while observations of species diversity are generally not. The lack of uniformity in data models from one repository to another, and in the richness and availability of metadata descriptions, makes integration and analysis of these data a manual, time-consuming task with no scalability. Here we explore a set of resource-oriented Web design patterns for data discovery, accessibility, transformation, and integration that can be implemented by any general- or special-purpose repository as a means to assist users in finding and reusing their data holdings. We show that by using off-the-shelf technologies, interoperability can be achieved at the level of an individual spreadsheet cell. We note that the behaviours of this architecture compare favourably to the desiderata defined by the FAIR Data Principles, and can therefore represent an exemplar implementation of those principles. The proposed interoperability design patterns may be used to improve discovery and integration of both new and legacy data, maximizing the utility of all scholarly outputs.}
+}
+
+@article{Dumontier:HCLS-datadesc:PeerJ2016,
+  abstract={Access to consistent, high-quality metadata is critical to finding, understanding, and reusing scientific data. However, while there are many relevant vocabularies for the annotation of a dataset, none sufficiently captures all the necessary metadata. This prevents uniform indexing and querying of dataset repositories. Towards providing a practical guide for producing a high quality description of biomedical datasets, the W3C Semantic Web for Health Care and the Life Sciences Interest Group (HCLSIG) identified Resource Description Framework (RDF) vocabularies that could be used to specify common metadata elements and their value sets. The resulting guideline covers elements of description, identification, attribution, versioning, provenance, and content summarization. This guideline reuses existing vocabularies, and is intended to meet key functional requirements including indexing, discovery, exchange, query, and retrieval of datasets, thereby enabling the publication of FAIR data. The resulting metadata profile is generic and could be used by other domains with an interest in providing machine readable descriptions of versioned datasets.},
+  title={The health care and life sciences community profile for dataset descriptions},
+  author={Dumontier, Michel and Gray, Alasdair JG and Marshall, M Scott and Alexiev, Vladimir and Ansell, Peter and Bader, Gary and Baran, Joachim and Bolleman, Jerven T and Callahan, Alison and Cruz-Toledo, Jos{\'e} and others},
+  journal={PeerJ},
+  volume={4},
+  pages={e2331},
+  year={2016},
+  month=aug,
+  url={https://doi.org/10.7717/peerj.2331},
+  doi={10.7717/peerj.2331},
+  publisher={PeerJ Inc.}
+}
+
+@article{Playford:AdminSocSciRep:BDS2016,
+author = {Christopher J Playford and Vernon Gayle and Roxanne Connelly and Alasdair JG Gray},
+title ={Administrative social science data: The challenge of reproducible research},
+journal = {Big Data and Society},
+volume = {3},
+number = {2},
+pages = {2053951716684143},
+year = {2016},
+doi = {10.1177/2053951716684143},
+URL = {https://doi.org/10.1177/2053951716684143},
+eprint = {https://doi.org/10.1177/2053951716684143},
+abstract = {Powerful new social science data resources are emerging. One particularly important source is administrative data, which were originally collected for organisational purposes but often contain information that is suitable for social science research. In this paper we outline the concept of reproducible research in relation to micro-level administrative social science data. Our central claim is that a planned and organised workflow is essential for high quality research using micro-level administrative social science data. We argue that it is essential for researchers to share research code, because code sharing enables the elements of reproducible research. First, it enables results to be duplicated and therefore allows the accuracy and validity of analyses to be evaluated. Second, it facilitates further tests of the robustness of the original piece of research. Drawing on insights from computer science and other disciplines that have been engaged in e-Research we discuss and advocate the use of Git repositories to provide a useable and effective solution to research code sharing and rendering social science research using micro-level administrative data reproducible.}
+}
+
+@article{Wilkinson:FAIRPrinciples:SciData2016,
+  title={The FAIR Guiding Principles for scientific data management and stewardship},
+  author={Wilkinson, Mark D and Dumontier, Michel and Aalbersberg, IJsbrand Jan and Appleton, Gabrielle and Axton, Myles and Baak, Arie and Blomberg, Niklas and Boiten, Jan-Willem and da Silva Santos, Luiz Bonino and Bourne, Philip E and others},
+  journal={Scientific data},
+  volume={3},
+  number={1},
+  pages={1--9},
+  year={2016},
+  publisher={Nature Publishing Group},
+  doi={10.1038/sdata.2016.18},
+  abstract={There is an urgent need to improve the infrastructure supporting the reuse of scholarly data. A diverse set of stakeholders—representing academia, industry, funding agencies, and scholarly publishers—have come together to design and jointly endorse a concise and measureable set of principles that we refer to as the FAIR Data Principles. The intent is that these may act as a guideline for those wishing to enhance the reusability of their data holdings. Distinct from peer initiatives that focus on the human scholar, the FAIR Principles put specific emphasis on enhancing the ability of machines to automatically find and use the data, in addition to supporting its reuse by individuals. This Comment is the first formal publication of the FAIR Principles, and includes the rationale behind them, and some exemplar implementations in the community.}
 }
 
 @article{DBLP:journals/internet/Gray14,
@@ -82,7 +124,7 @@
   doi       = {10.1109/MIC.2014.66}
 }
 
-@article{DBLP:journals/semweb/GrayGLABBCEGHPTWW14,
+@article{Gray:OPS:SWJ,
   abstract = {The discovery of new medicines requires pharmacologists to interact with a number of information sources ranging from tabular data to scientific papers, and other specialized formats. In this application report, we describe a linked data platform for integrating multiple pharmacology datasets that form the basis for several drug discovery applications. The functionality offered by the platform has been drawn from a collection of prioritised drug discovery business questions created as part of the Open PHACTS project, a collaboration of research institutions and major pharmaceutical companies. We describe the architecture of the platform focusing on seven design decisions that drove its development with the aim of informing others developing similar software in this or other domains. The utility of the platform is demonstrated by the variety of drug discovery applications being built to access the integrated data.},
   author    = {Alasdair J. G. Gray and
                Paul T. Groth and
@@ -126,7 +168,7 @@
   doi       = {10.1016/j.websem.2014.03.003}
 }
 
-@article{DBLP:journals/biomedsem/CiccareseSBGGC13,
+@article{Ciccarese:PAV:JoBS2013,
   abstract  = {Background
   Provenance is a critical ingredient for establishing trust of published scientific content. This is true whether we are considering a data set, a computational workflow, a peer-reviewed publication or a simple scientific claim with supportive evidence. Existing vocabularies such as Dublin Core Terms (DC Terms) and the W3C Provenance Ontology (PROV-O) are domain-independent and general-purpose and they allow and encourage for extensions to cover more specific needs. In particular, to track authoring and versioning information of web resources, PROV-O provides a basic methodology but not any specific classes and properties for identifying or distinguishing between the various roles assumed by agents manipulating digital artifacts, such as author, contributor and curator.
   
@@ -234,7 +276,7 @@
   doi       = {10.1016/j.ipm.2009.09.004}
 }
 
-@article{DBLP:journals/ijwis/GrayNW07,
+@article{Gray:AnsQIncompleteStream:IJWIS2007,
   abstract  = {Purpose
   Distributed data streams are an important topic of current research. In such a setting, data values will be missed, e.g. due to network errors. This paper aims to allow this incompleteness to be detected and overcome with either the user not being affected or the effects of the incompleteness being reported to the user.
   
@@ -265,7 +307,7 @@
   doi       = {10.1108/17440080710829216}
 }
 
-@article{DBLP:journals/jods/CookeGN05,
+@article{Cooke:StreamIntegration:JoDS2005,
   author    = {Andrew W. Cooke and
                Alasdair J. G. Gray and
                Werner Nutt},
@@ -279,7 +321,7 @@
   doi       = {10.1007/978-3-540-30567-5\_6}
 }
 
-@article{DBLP:journals/grid/CookeGNMOTCBCDFFHLMWZPCKOR04,
+@article{Cooke:RGMA:JoGC2004,
   abstract  = {We have developed and implemented the Relational Grid Monitoring Architecture (R-GMA) as part of the DataGrid project, to provide a flexible information and monitoring service for use by other middleware components and applications.
 
               R-GMA presents users with a virtual database and mediates queries posed at this database: users pose queries against a global schema and R-GMA takes responsibility for locating relevant sources and returning an answer. R-GMA’s architecture and mechanisms are general and can be used wherever there is a need for publishing and querying information in a distributed environment.

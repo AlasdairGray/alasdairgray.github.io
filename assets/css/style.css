@@ -154,6 +154,39 @@ p img {
   border: none;
 }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.icon {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 100%;
+}
+
+.social-icons a{
+  display:inline-block;
+  height:2.5rem;
+  width:2.5rem;
+  background-color:#495057;
+  color:#fff!important;
+  border-radius:100%;
+  text-align:center;
+  font-size:1.75rem;
+  margin-right:1rem
+}
+
+.social-icons a:last-child{
+  margin-right:0
+}
+
+.social-icons a:hover{
+  background-color:#000000
+}
+
 pre, code {
   color: #222;
   background-color: #fff;

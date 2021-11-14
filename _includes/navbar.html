@@ -1,13 +1,23 @@
 <div id="navbar">
-    {% if include.active == "About" %}
-        <a class="active" href="/">Home</a>
+    {% if include.active == "Home" %}
+        <a class="active" href="/" title="Home">Home</a>
     {% else %}
-        <a href="/">Home</a>
+        <a href="/" title="Home">Home</a>
     {% endif %}
     {% if include.active == "Publications" %}
-        <a class="active" href="/Publications">Publications</a>
+        <a class="active" href="/Publications" title="Publications">Publications</a>
     {% else %}
-        <a href="/Publications">Publications</a>
+        <a href="/Publications" title="Publications">Publications</a>
     {% endif %}
-    <a href="/teaching">Teaching</a>
+    <a href="/teaching" title="Teaching">Teaching</a>
+    {% if include.active == "About" %}
+        <a class="active" href="/about" title="About Me">About</a>
+    {% else %}
+        <a href="/about" title="About Me">About</a>
+    {% endif %}
+    {% if include.active == "Contact Details" %}
+        <a class="active" href="/contact" title="Contact details">Contact</a>
+    {% else %}
+        <a href="/contact" title="Contactt details">Contact</a>
+    {% endif %}
 </div>
