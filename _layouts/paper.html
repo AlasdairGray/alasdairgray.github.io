@@ -1,0 +1,67 @@
+---
+---
+<h1>{{ entry.title }}</h1>
+{% if entry.doi %}
+    <a href="https://doi.org/{{entry.doi}}">{{entry.doi}}</a>
+{% elsif entry.url %}
+    <a href="{{entry.url}}">{{entry.url}}</a>
+<!-- {% else %}
+    {{entry.title}} -->
+{% endif %}
+
+{% if entry.abstract %}
+    <p>{{ entry.abstract }}</p>
+{% endif %}
+
+<p>
+{% if entry.author %}
+    {{ entry.author }}
+{% else %}
+    {{ entry.editor  }}
+{% endif %}
+</p>
+
+<p>
+{% case entry.type  %} 
+{% when "article" %}
+    {{ entry.journal }}{% if entry.volume %}, {{ entry.volume }}{% endif %}{% if entry.number %}({{ entry.number }}){% endif %}{% if entry.pages %}:{{ entry.pages }}{% endif %}{% if entry.publisher %}, {{ entry.publisher }}{% endif %}{% if entry.year %}, {{ entry.year }}{% endif %}
+{% when "inproceedings" %}
+    In <em>{{ entry.booktitle }}</em>{% if entry.address %}, {{ entry.address }}{% endif %}{% if entry.series %}, {{ entry.series }}{% endif %}{% if entry.volume %}, {{ entry.volume }}{% endif %}{% if entry.pages %}, pages {{ entry.pages }}{% endif %}{% if entry.publisher %}, {{ entry.publisher }}{% endif %}{% if entry.year %}, {{ entry.year }}{% endif %}
+{% when "phdthesis" %}
+    PhD Thesis, {{ entry.school }}, {{ entry.address }}, {{ entry.year }}
+{% when "proceedings" %}
+    <!--
+        Can use multiple lines due to assumptions on fields present
+    -->
+    {% if entry.series %}{{ entry.series }},{% endif %}
+    {% if entry.volume %}{{ entry.volume }},{% endif %}
+    {% if entry.publisher %}{{ entry.publisher }},{% endif %}
+    {{ entry.year }}
+    {% if entry.isbn %}<br/>ISBN: {{ entry.isbn }}{% endif %}
+{% else %}
+    {% if entry.type == "techreport" %}Technical Report{% else %}{{ entry.type }}{% endif %}{% if entry.number %}, {{ entry.number }}. {% else %}. {% endif %}{% if entry.institution %} {{ entry.institution }}. {% endif %}{% if entry.publisher %}{{ entry.publisher }}. {% endif %}{%if entry.month %}{{ entry.month }}, {% endif %}{%if entry.year %}{{ entry.year }}{% endif %}
+{% endcase %}
+
+{% if entry.note %}
+{{ entry.note }}
+<br/>
+{% endif %}
+</p>
+
+{% assign cleanKey = {{entry.key | remove: ":" | remove: "/" | remove: "_" | remove: '-' }}}} %}
+{% assign bibKey = {{cleanKey | append: "Bib"}} %}
+<button onclick="toggle({{ bibKey }})">BibTeX</button>
+<pre style="display: none" id="{{ bibKey }}">{{ entry.bibtex }}</pre>
+
+{% if entry.doi %}
+    <!-- PlumX widget; requires script at end of page -->
+    <a data-popup="bottom" href="https://plu.mx/plum/a/?doi={{ entry.doi }}" class="plumx-plum-print-popup plum-liberty-theme"></a>
+    
+    <!-- Altmetrics donut; requires script at end of page -->
+    <div data-badge-popover="right" data-badge-type="donut" data-doi="{{ entry.doi }}" data-hide-no-mentions="true" class="altmetric-embed"></div>
+{% endif %}
+
+<!-- Altmetrics script -->
+<script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+<!-- PlumX script -->
+<script type="text/javascript" src="//cdn.plu.mx/widget-popup.js"></script>
