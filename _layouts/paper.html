@@ -2,9 +2,14 @@
 ---
 <h1>{{ entry.title }}</h1>
 {% if entry.doi %}
-    <a href="https://doi.org/{{entry.doi}}">{{entry.doi}}</a>
+    <a href="https://doi.org/{{entry.doi}}"><i class="ai ai-doi"></i></a>
+    <!-- PlumX widget; requires script at end of page -->
+    <a data-popup="bottom" href="https://plu.mx/plum/a/?doi={{ entry.doi }}" class="plumx-plum-print-popup plum-liberty-theme"></a>
+    
+    <!-- Altmetrics donut; requires script at end of page -->
+    <div data-badge-popover="right" data-badge-type="donut" data-doi="{{ entry.doi }}" data-hide-no-mentions="true" class="altmetric-embed"></div>
 {% elsif entry.url %}
-    <a href="{{entry.url}}">{{entry.url}}</a>
+    <a href="{{entry.url}}"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
 <!-- {% else %}
     {{entry.title}} -->
 {% endif %}
@@ -52,14 +57,6 @@
 {% assign bibKey = {{cleanKey | append: "Bib"}} %}
 <button onclick="toggle({{ bibKey }})">BibTeX</button>
 <pre style="display: none" id="{{ bibKey }}">{{ entry.bibtex }}</pre>
-
-{% if entry.doi %}
-    <!-- PlumX widget; requires script at end of page -->
-    <a data-popup="bottom" href="https://plu.mx/plum/a/?doi={{ entry.doi }}" class="plumx-plum-print-popup plum-liberty-theme"></a>
-    
-    <!-- Altmetrics donut; requires script at end of page -->
-    <div data-badge-popover="right" data-badge-type="donut" data-doi="{{ entry.doi }}" data-hide-no-mentions="true" class="altmetric-embed"></div>
-{% endif %}
 
 <!-- Altmetrics script -->
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
