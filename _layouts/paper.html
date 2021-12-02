@@ -9,9 +9,7 @@
     <!-- Altmetrics donut; requires script at end of page -->
     <div data-badge-popover="right" data-badge-type="donut" data-doi="{{ entry.doi }}" data-hide-no-mentions="true" class="altmetric-embed"></div>
 {% elsif entry.url %}
-    <a href="{{entry.url}}"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-<!-- {% else %}
-    {{entry.title}} -->
+    <a href="{{entry.url}}"><i class="fas fa-external-link-alt fa-sm ms-2"></i></a>
 {% endif %}
 
 {% if entry.abstract %}
