@@ -1,3 +1,20 @@
+@techReport{gray:bioschemas-idpcntral:2021,
+  abstract={One of the goals of the ELIXIR Intrinsically Disordered Protein (IDP) community is create a registry called IDPcentral. The registry will aggregate data contained in the community's specialist data sources such as DisProt, MobiDB, and Protein Ensemble Database (PED) so that proteins that are known to be intrinsically disordered can be discovered; with summary details of the protein presented, and the specialist source consulted for more detailed data.
+
+  At the ELIXIR BioHackathon-Europe 2020, we aimed to investigate the feasibility of populating IDPcentral harvesting the Bioschemas markup that has been deployed on the IDP community data sources. The benefit of using Bioschemas markup, which is embedded in the HTML web pages for each protein in the data source, is that a standard harvesting approach can be used for all data sources; rather than needing bespoke wrappers for each data source API. We expect to harvest the markup using the Bioschemas Markup Scraper and Extractor (BMUSE) tool that has been developed specifically for this purpose.
+  
+  The challenge, however, is that the sources contain overlapping information about proteins but use different identifiers for the proteins. After the data has been harvested, it will need to be processed so that information about a particular protein, which will come from multiple sources, is consolidated into a single concept for the protein, with links back to where each piece of data originated.
+  
+  As well as populating the IDPcentral registry, we plan to consolidate the markup into a knowledge graph that can be queried to gain further insight into the IDPs.},
+  title={Exploiting Bioschemas Markup to Populate IDPcentral},
+  url={biohackrxiv.org/v3jct},
+  DOI={10.37044/osf.io/v3jct},
+  publisher={BioHackrXiv},
+  author={Gray, Alasdair J G and Papadopoulos, Petros and Mičetić, Ivan and Hatos, András},
+  year={2021},
+  month=Jun
+}
+
 @techReport{labra-gayo:kg-subsetting:biohackrxiv2021,
  abstract={Knowledge graphs have successfully been adopted by academia, governement and industry to represent large scale knowledge bases.
  Open and collaborative knowledge graphs such as Wikidata capture knowledge from different domains and harmonize them under a common format, making it easier for researchers to access the data while also supporting Open Science.
