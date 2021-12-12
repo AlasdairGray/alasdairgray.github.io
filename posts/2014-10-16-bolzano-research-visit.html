@@ -5,9 +5,9 @@
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,maximum-scale=2">
-    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=b68177814fdc5be2d58db3dc0cf235706571f3b2">
-    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/fontawesome-5.15.4/css/all.min.css?v=b68177814fdc5be2d58db3dc0cf235706571f3b2">
-    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/academicons-1.9.1/css/academicons.min.css?v=b68177814fdc5be2d58db3dc0cf235706571f3b2">
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=5a401142799d3a00c1222feb68630f4a1b883bea">
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/fontawesome-5.15.4/css/all.min.css?v=5a401142799d3a00c1222feb68630f4a1b883bea">
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/academicons-1.9.1/css/academicons.min.css?v=5a401142799d3a00c1222feb68630f4a1b883bea">
 
 <!-- Begin Jekyll SEO tag v2.7.1 -->
 <title>Bolzano Research Visit | Alasdair J G Gray</title>
@@ -25,7 +25,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Bolzano Research Visit" />
 <script type="application/ld+json">
-{"description":"Before going to ISWC2014, I am taking a quick trip to visit Werner Nutt at the Free University of Bozen-Bolzano. Werner was my PhD supervisor where we developed techniques for integrating distributed data streams (Gray, 2007). The work was inspired by the problem of monitoring the resources on a computational Grid (Cooke, Gray and Nutt, 2005; Cooke et al., 2004; Cooke et al., 2003; Gray, Nutt and Williams, 2007). We will be exploring our common interests in stream processing, data integration and incompleteness.","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://alasdairgray.github.io//posts/2014-10-16-bolzano-research-visit"},"url":"https://alasdairgray.github.io//posts/2014-10-16-bolzano-research-visit","headline":"Bolzano Research Visit","dateModified":"2014-10-16T08:05:26+00:00","datePublished":"2014-10-16T08:05:26+00:00","author":{"@type":"Person","name":"Alasdair Gray"},"@context":"https://schema.org"}</script>
+{"description":"Before going to ISWC2014, I am taking a quick trip to visit Werner Nutt at the Free University of Bozen-Bolzano. Werner was my PhD supervisor where we developed techniques for integrating distributed data streams (Gray, 2007). The work was inspired by the problem of monitoring the resources on a computational Grid (Cooke, Gray and Nutt, 2005; Cooke et al., 2004; Cooke et al., 2003; Gray, Nutt and Williams, 2007). We will be exploring our common interests in stream processing, data integration and incompleteness.","@type":"BlogPosting","headline":"Bolzano Research Visit","dateModified":"2014-10-16T08:05:26+00:00","url":"https://alasdairgray.github.io//posts/2014-10-16-bolzano-research-visit","datePublished":"2014-10-16T08:05:26+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://alasdairgray.github.io//posts/2014-10-16-bolzano-research-visit"},"author":{"@type":"Person","name":"Alasdair Gray"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
@@ -176,6 +176,40 @@
   doi = {10.1108/17440080710829216}
 }
 </pre>
+
+        <script type="application/ld+json" >
+            {
+                "@context": "https://schema.org",
+                "@type": "ScholarlyArticle",
+                "dct:conformsTo": "https://bioschemas.org/profiles/ScholarlyArticle/0.2-DRAFT-2020_12_03",
+                
+                "@id": "10.1108/17440080710829216",
+                "identifier": ["10.1108/17440080710829216", "https://doi.org/10.1108/17440080710829216"],
+                
+                "name": "Answering queries over incomplete data stream histories",
+                
+                "abstract": "Purpose
+  Distributed data streams are an important topic of current research. In such a setting, data values will be missed, e.g. due to network errors. This paper aims to allow this incompleteness to be detected and overcome with either the user not being affected or the effects of the incompleteness being reported to the user.
+  
+  Design/methodology/approach
+  A model for representing the incomplete information has been developed that captures the information that is known about the missing data. Techniques for query answering involving certain and possible answer sets have been extended so that queries over incomplete data stream histories can be answered.
+  
+  Findings
+  It is possible to detect when a distributed data stream is missing one or more values. When such data values are missing there will be some information that is known about the data and this is stored in an appropriate format. Even when the available data are incomplete, it is possible in some circumstances to answer a query completely. When this is not possible, additional meta‐data can be returned to inform the user of the effects of the incompleteness.
+  
+  Research limitations/implications
+  The techniques and models proposed in this paper have only been partially implemented.
+  
+  Practical implications
+  The proposed system is general and can be applied wherever there is a need to query the history of distributed data streams. The work in this paper enables the system to answer queries when there are missing values in the data.
+  
+  Originality/value
+  This paper presents a general model of how to detect, represent, and answer historical queries over incomplete distributed data streams.",
+                
+                "author": "Gray, Alasdair J. G. and Nutt, Werner and Williams, M. Howard"
+            }
+        </script>
+    
     </div>
 
     <!-- Display metrics in right grid item -->
@@ -258,7 +292,7 @@
         <button onclick="toggle(Gray2007IntegratingDisBib)">BibTeX</button>
 
         <!-- Display abstract on button click -->
-        <p style="display: none" id="Gray2007IntegratingDisAbstract">	There is an increasing amount of information being made available as data streams, \eg stock tickers, data from sensor networks, smart homes, monitoring data, etc.
+        <p style="display: none" id="Gray2007IntegratingDisAbstract">	There is an increasing amount of information being made available as data streams, e.g. stock tickers, data from sensor networks, smart homes, monitoring data, etc.
 	In many cases, this data is generated by distributed sources under the control of many different organisations.
 	Users would like to seamlessly query such data without prior knowledge of where it is located or how it is published.  
 	This is similar to the problem of integrating data residing in multiple heterogeneous stored data sources.  
@@ -283,6 +317,38 @@
   year = {2007}
 }
 </pre>
+
+        <script type="application/ld+json" >
+            {
+                "@context": "https://schema.org",
+                "@type": "ScholarlyArticle",
+                "dct:conformsTo": "https://bioschemas.org/profiles/ScholarlyArticle/0.2-DRAFT-2020_12_03",
+                
+                "@id": "http://AlasdairGray.github.io/publications/thesis-final_web-copy.pdf",
+                "identifier": "http://AlasdairGray.github.io/publications/thesis-final_web-copy.pdf",
+                
+                "name": "Integrating Distributed Data Streams",
+                
+                "abstract": "	There is an increasing amount of information being made available as data streams, e.g. stock tickers, data from sensor networks, smart homes, monitoring data, etc.
+	In many cases, this data is generated by distributed sources under the control of many different organisations.
+	Users would like to seamlessly query such data without prior knowledge of where it is located or how it is published.  
+	This is similar to the problem of integrating data residing in multiple heterogeneous stored data sources.  
+	However, the techniques developed for stored data are not applicable due to the continuous and long-lived nature of queries over data streams.
+
+	This thesis proposes an architecture for a stream integration system.  
+	A key feature of the architecture is a republisher component that collects together distributed streams and makes the merged stream available for querying.
+	A formal model for the system has been developed and is used to generate plans for executing continuous queries which exploit the redundancy introduced by the republishers.  
+	Additionally, due to the long-lived nature of continuous queries, mechanisms for maintaining the plans whenever there is a change in the set of data sources have been developed.  
+	A prototype of the system has been implemented and performance measures made.
+
+	The work of this thesis has been motivated by the problem of retrieving monitoring information about Grid resources.  
+	However, the techniques developed are general and can be applied wherever there is a need to publish and query distributed data involving data streams.
+	",
+                
+                "author": "Gray, Alasdair J.G."
+            }
+        </script>
+    
     </div>
 
     <!-- Display metrics in right grid item -->
@@ -373,6 +439,22 @@
   doi = {10.1007/978-3-540-30567-5\_6}
 }
 </pre>
+
+        <script type="application/ld+json" >
+            {
+                "@context": "https://schema.org",
+                "@type": "ScholarlyArticle",
+                "dct:conformsTo": "https://bioschemas.org/profiles/ScholarlyArticle/0.2-DRAFT-2020_12_03",
+                
+                "@id": "10.1007/978-3-540-30567-5_6",
+                "identifier": ["10.1007/978-3-540-30567-5_6", "https://doi.org/10.1007/978-3-540-30567-5_6"],
+                
+                "name": "Stream Integration Techniques for Grid Monitoring",
+                
+                "author": "Cooke, Andrew W. and Gray, Alasdair J. G. and Nutt, Werner"
+            }
+        </script>
+    
     </div>
 
     <!-- Display metrics in right grid item -->
@@ -479,6 +561,29 @@
   doi = {10.1007/s10723-005-0151-6}
 }
 </pre>
+
+        <script type="application/ld+json" >
+            {
+                "@context": "https://schema.org",
+                "@type": "ScholarlyArticle",
+                "dct:conformsTo": "https://bioschemas.org/profiles/ScholarlyArticle/0.2-DRAFT-2020_12_03",
+                
+                "@id": "10.1007/s10723-005-0151-6",
+                "identifier": ["10.1007/s10723-005-0151-6", "https://doi.org/10.1007/s10723-005-0151-6"],
+                
+                "name": "The Relational Grid Monitoring Architecture: Mediating Information
+               about the Grid",
+                
+                "abstract": "We have developed and implemented the Relational Grid Monitoring Architecture (R-GMA) as part of the DataGrid project, to provide a flexible information and monitoring service for use by other middleware components and applications.
+
+              R-GMA presents users with a virtual database and mediates queries posed at this database: users pose queries against a global schema and R-GMA takes responsibility for locating relevant sources and returning an answer. R-GMA’s architecture and mechanisms are general and can be used wherever there is a need for publishing and querying information in a distributed environment.
+  
+              We discuss the requirements, design and implementation of R-GMA as deployed on the DataGrid testbed. We also describe some of the ways in which R-GMA is being used.",
+                
+                "author": "Cooke, Andrew W. and Gray, Alasdair J. G. and Nutt, Werner and Magowan, James and Oevers, Manfred and Taylor, Paul and Cordenonsi, Roney and Byrom, Rob and Cornwall, Linda and Djaoui, Abdeslem and Field, Laurence and Fisher, Steve and Hicks, Steve and Leake, Jason and Middleton, Robin and Wilson, Antony J. and Zhu, Xiaomei and Podhorszki, Norbert and Coghlan, Brian A. and Kenny, Stuart and O’Callaghan, David and Ryan, John"
+            }
+        </script>
+    
     </div>
 
     <!-- Display metrics in right grid item -->
@@ -578,6 +683,22 @@
   doi = {10.1007/978-3-540-39964-3\_29}
 }
 </pre>
+
+        <script type="application/ld+json" >
+            {
+                "@context": "https://schema.org",
+                "@type": "ScholarlyArticle",
+                "dct:conformsTo": "https://bioschemas.org/profiles/ScholarlyArticle/0.2-DRAFT-2020_12_03",
+                
+                "@id": "10.1007/978-3-540-39964-3_29",
+                "identifier": ["10.1007/978-3-540-39964-3_29", "https://doi.org/10.1007/978-3-540-39964-3_29"],
+                
+                "name": "R-GMA: An Information Integration System for Grid Monitoring",
+                
+                "author": "Cooke, Andrew W. and Gray, Alasdair J. G. and Ma, Lisha and Nutt, Werner and Magowan, James and Oevers, Manfred and Taylor, Paul and Byrom, Rob and Field, Laurence and Hicks, Steve and Leake, Jason and Soni, Manish and Wilson, Antony J. and Cordenonsi, Roney and Cornwall, Linda and Djaoui, Abdeslem and Fisher, Steve and Podhorszki, Norbert and Coghlan, Brian A. and Kenny, Stuart and O’Callaghan, David"
+            }
+        </script>
+    
     </div>
 
     <!-- Display metrics in right grid item -->

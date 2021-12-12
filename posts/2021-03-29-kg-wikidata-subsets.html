@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=5a401142799d3a00c1222feb68630f4a1b883bea">
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/fontawesome-5.15.4/css/all.min.css?v=5a401142799d3a00c1222feb68630f4a1b883bea">
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/academicons-1.9.1/css/academicons.min.css?v=5a401142799d3a00c1222feb68630f4a1b883bea">
+
+<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>New Paper: BioHackathon 2020 report on Knowledge Graph and Wikidata Subsetting | Alasdair J G Gray</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="New Paper: BioHackathon 2020 report on Knowledge Graph and Wikidata Subsetting" />
+<meta name="author" content="Alasdair Gray" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="One of the topics that my PhD student Seyed and I were involved with at last year’s virtual BioHackathon was subsetting knowledge graphs and Wikidata. Our hacking group, led by Jose Labra Gayo has now written up our findings, covering use cases and existing tooling for subsetting." />
+<meta property="og:description" content="One of the topics that my PhD student Seyed and I were involved with at last year’s virtual BioHackathon was subsetting knowledge graphs and Wikidata. Our hacking group, led by Jose Labra Gayo has now written up our findings, covering use cases and existing tooling for subsetting." />
+<link rel="canonical" href="https://alasdairgray.github.io//posts/2021-03-29-kg-wikidata-subsets" />
+<meta property="og:url" content="https://alasdairgray.github.io//posts/2021-03-29-kg-wikidata-subsets" />
+<meta property="og:site_name" content="Alasdair J G Gray" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-03-29T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="New Paper: BioHackathon 2020 report on Knowledge Graph and Wikidata Subsetting" />
+<script type="application/ld+json">
+{"description":"One of the topics that my PhD student Seyed and I were involved with at last year’s virtual BioHackathon was subsetting knowledge graphs and Wikidata. Our hacking group, led by Jose Labra Gayo has now written up our findings, covering use cases and existing tooling for subsetting.","@type":"BlogPosting","headline":"New Paper: BioHackathon 2020 report on Knowledge Graph and Wikidata Subsetting","dateModified":"2021-03-29T00:00:00+00:00","url":"https://alasdairgray.github.io//posts/2021-03-29-kg-wikidata-subsets","datePublished":"2021-03-29T00:00:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://alasdairgray.github.io//posts/2021-03-29-kg-wikidata-subsets"},"author":{"@type":"Person","name":"Alasdair Gray"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <div id="navbar">
+    
+        <a href="/" title="Home">Home</a>
+    
+    
+        <a href="/Publications" title="Publications">Publications</a>
+    
+    <a href="/teaching" title="Teaching">Teaching</a>
+    
+        <a href="/about" title="About Me">About</a>
+    
+    
+        <a href="/contact" title="Contactt details">Contact</a>
+    
+</div>
+
+        <header class="inner">
+          <h1 id="project_title"><a href="/">Alasdair J G Gray</a></h1>
+          <h2 id="project_tagline">Connecting the dots in the World's data</h2>
+
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <div class="row">
+          <div class="leftcolumn">          
+            <ol class="bibliography"><li><h1>Knowledge graphs and wikidata subsetting</h1>
+
+    <a href="https://doi.org/10.37044/osf.io/wu9et"><i class="ai ai-doi"></i></a>
+    <!-- PlumX widget; requires script at end of page -->
+    <a data-popup="bottom" href="https://plu.mx/plum/a/?doi=10.37044/osf.io/wu9et" class="plumx-plum-print-popup plum-liberty-theme"></a>
+    
+    <!-- Altmetrics donut; requires script at end of page -->
+    <div data-badge-popover="right" data-badge-type="donut" data-doi="10.37044/osf.io/wu9et" data-hide-no-mentions="true" class="altmetric-embed"></div>
+
+
+
+    <p><strong>Abstract:</strong> Knowledge graphs have successfully been adopted by academia, governement and industry to represent large scale knowledge bases.
+ Open and collaborative knowledge graphs such as Wikidata capture knowledge from different domains and harmonize them under a common format, making it easier for researchers to access the data while also supporting Open Science.
+ 
+ Wikidata keeps getting bigger and better, which subsumes integration use cases. Having a large amount of data such as the one presented in a scopeless Wikidata offers some advantages, e.g., unique access point and common format, but also poses some challenges, e.g., performance.
+ Regular wikidata users are not unfamiliar with running into frequent timeouts of submitted queries. Due to its popularity, limits have been imposed to allow for fair access to many.
+ However this suppreses many interesting and complex queries that require more computational power and resources. Replicating Wikidata on one’s own infrastructure can be a solution which also offers a snapshot of the contents of wikidata at some given point in time.
+ 
+ There is no need to replicate Wikidata in full, it is possible to work with subsets targeting, for instance, a particular domain. Creating those subsets has emerged as an alternative to reduce the amount and spectrum of data offered by Wikidata. Less data makes more complex queries possible while still keeping the compatibility with the whole Wikidata as the model is kept.
+ 
+ In this paper we report the tasks done as part of a Wikidata subsetting project during the Virtual BioHackathon Europe 2020 and SWAT4(HC)LS 2021, which had already started at NBDC/DBCLS BioHackathon 2019 in Japan, SWAT4(HC)LS hackathon 2019, and Virtual COVID-19 BioHackathon 2019. We describe some of approaches we identified to create subsets and some susbsets from the Life Sciences domain as well as other use cases we also discussed.</p>
+
+
+<p>
+
+    Labra-Gayo, Jose E and Hevia, Alejandro G and Álvarez, Daniel F and Ammar, Ammar and Brickley, Dan and Gray, Alasdair J G and Prud’hommeaux, Eric and Slenter, Denise and Solbrig, Harold and Beghaeiraveri, Seyed A H and et al.
+
+</p>
+
+<p>
+
+    Technical Report. BioHackrXiv. apr, 2021
+
+
+
+</p>
+
+
+
+<button onclick="toggle(labragayokgsubsettingbiohackrxiv2021Bib)">BibTeX</button>
+<pre style="display: none" id="labragayokgsubsettingbiohackrxiv2021Bib">@techreport{labra-gayo:kg-subsetting:biohackrxiv2021,
+  title = {Knowledge graphs and wikidata subsetting},
+  url = {biohackrxiv.org/wu9et},
+  doi = {10.37044/osf.io/wu9et},
+  publisher = {BioHackrXiv},
+  author = {Labra-Gayo, Jose E and Hevia, Alejandro G and Álvarez, Daniel F and Ammar, Ammar and Brickley, Dan and Gray, Alasdair J G and Prud'hommeaux, Eric and Slenter, Denise and Solbrig, Harold and Beghaeiraveri, Seyed A H and et al.},
+  year = {2021},
+  month = apr
+}
+</pre>
+
+<!-- Altmetrics script -->
+<script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+<!-- PlumX script -->
+<script type="text/javascript" src="//cdn.plu.mx/widget-popup.js"></script>
+
+<script type="application/ld+json" >
+{
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "dct:conformsTo": "https://bioschemas.org/profiles/ScholarlyArticle/0.2-DRAFT-2020_12_03",
+    
+    "@id": "10.37044/osf.io/wu9et",
+    "identifier": ["10.37044/osf.io/wu9et", "biohackrxiv.org/wu9et"],
+    
+    "name": "Knowledge graphs and wikidata subsetting",
+    
+    "abstract": "Knowledge graphs have successfully been adopted by academia, governement and industry to represent large scale knowledge bases.
+ Open and collaborative knowledge graphs such as Wikidata capture knowledge from different domains and harmonize them under a common format, making it easier for researchers to access the data while also supporting Open Science.
+ 
+ Wikidata keeps getting bigger and better, which subsumes integration use cases. Having a large amount of data such as the one presented in a scopeless Wikidata offers some advantages, e.g., unique access point and common format, but also poses some challenges, e.g., performance.
+ Regular wikidata users are not unfamiliar with running into frequent timeouts of submitted queries. Due to its popularity, limits have been imposed to allow for fair access to many.
+ However this suppreses many interesting and complex queries that require more computational power and resources. Replicating Wikidata on one’s own infrastructure can be a solution which also offers a snapshot of the contents of wikidata at some given point in time.
+ 
+ There is no need to replicate Wikidata in full, it is possible to work with subsets targeting, for instance, a particular domain. Creating those subsets has emerged as an alternative to reduce the amount and spectrum of data offered by Wikidata. Less data makes more complex queries possible while still keeping the compatibility with the whole Wikidata as the model is kept.
+ 
+ In this paper we report the tasks done as part of a Wikidata subsetting project during the Virtual BioHackathon Europe 2020 and SWAT4(HC)LS 2021, which had already started at NBDC/DBCLS BioHackathon 2019 in Japan, SWAT4(HC)LS hackathon 2019, and Virtual COVID-19 BioHackathon 2019. We describe some of approaches we identified to create subsets and some susbsets from the Life Sciences domain as well as other use cases we also discussed.,"
+    
+    "author": "Labra-Gayo, Jose E and Hevia, Alejandro G and Álvarez, Daniel F and Ammar, Ammar and Brickley, Dan and Gray, Alasdair J G and Prud’hommeaux, Eric and Slenter, Denise and Solbrig, Harold and Beghaeiraveri, Seyed A H and et al."
+}
+</script>
+</li></ol>
+          </div>
+          <div class="rightcolumn">
+            <h4>About Me</h4>
+            <a href="/about" title="About me"><img class="icon" src="/assets/img/gray-135x135.jpg" alt="Headshot"></a>
+            <p>I'm an Associate Professor in Computer Science at Heriot-Watt University. My research focuses on linking datasets.
+            <em><a href="/about" title="About me">Read more</a></em></p>
+            <div class="social-icons">
+              <a href="https://github.com/AlasdairGray" title="GitHub Alasdair Gray" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="https://orcid.org/0000-0002-5711-4872" title="ORCID Alasdair Gray" target="_blank"><i class="fab fa-orcid"></i></a>
+              <a href="https://twitter.com/gray_alasdair" title="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+            <h4>Tweets</h4>
+            <a class="twitter-timeline" data-width="300" data-height="350" data-theme="light" href="https://twitter.com/gray_alasdair?ref_src=twsrc%5Etfw">Tweets by gray_alasdair</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        
+        <p class="copyright">Alasdair J G Gray maintained by <a href="https://github.com/AlasdairGray">AlasdairGray</a></p>
+        
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+  </body>
+  <!-- Site script -->
+  <script src="/js/scripts.js"></script>
+</html>
