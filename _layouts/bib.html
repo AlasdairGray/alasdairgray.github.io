@@ -91,6 +91,30 @@
         <p style="display: none" id="{{ abKey }}">{{ entry.abstract }}</p>
         <!-- Display bibtex on button click -->
         <pre style="display: none" id="{{ bibKey }}">{{ entry.bibtex }}</pre>
+
+        <script type="application/ld+json" >
+            {
+                "@context": "https://schema.org",
+                "@type": "ScholarlyArticle",
+                "dct:conformsTo": "https://bioschemas.org/profiles/ScholarlyArticle/0.2-DRAFT-2020_12_03",
+                {% if entry.doi  and entry.url %}
+                "@id": "{{entry.doi}}",
+                "identifier": ["{{entry.doi}}", "{{entry.url}}"],
+                {% elsif entry.doi %}
+                "@id": "{{entry.doi}}",
+                "identifier": "{{entry.doi}}",
+                {% elsif entry.url %}
+                "@id": "{{entry.url}}",
+                "identifier": "{{entry.url}}",
+                {% endif %}
+                "name": "{{entry.title}}",
+                {% if entry.abstract  %}
+                "abstract": "{{entry.abstract}}",
+                {% endif %}
+                "author": "{{entry.author}}"
+            }
+        </script>
+    
     </div>
 
     <!-- Display metrics in right grid item -->
