@@ -60,3 +60,26 @@
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 <!-- PlumX script -->
 <script type="text/javascript" src="//cdn.plu.mx/widget-popup.js"></script>
+
+<script type="application/ld+json" >
+{
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "dct:conformsTo": "https://bioschemas.org/profiles/ScholarlyArticle/0.2-DRAFT-2020_12_03",
+    {% if entry.doi  and entry.url %}
+    "@id": "{{entry.doi}}",
+    "identifier": ["{{entry.doi}}", "{{entry.url}}"],
+    {% elsif entry.doi %}
+    "@id": "{{entry.doi}}",
+    "identifier": "{{entry.doi}}",
+    {% elsif entry.url %}
+    "@id": "{{entry.url}}",
+    "identifier": "{{entry.url}}",
+    {% endif %}
+    "name": "{{entry.title}}",
+    {% if entry.abstract  %}
+    "abstract": "{{entry.abstract}},"
+    {% endif %}
+    "author": "{{entry.author}}"
+}
+</script>
