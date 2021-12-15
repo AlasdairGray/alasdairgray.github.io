@@ -1,3 +1,6 @@
+---
+layout: default
+---
 # Basic OWL Lab Session
 
 In this OWL lab you will get started using Protégé to create and edit an ontology.
