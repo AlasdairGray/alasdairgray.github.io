@@ -1,9 +1,28 @@
+@article{nico:SSSOM:Database2022,
+  abstract={Despite progress in the development of standards for describing and exchanging scientific information, the lack of easy-to-use standards for mapping between different representations of the same or similar objects in different databases poses a major impediment to data integration and interoperability. Mappings often lack the metadata needed to be correctly interpreted and applied. For example, are two terms equivalent or merely related? Are they narrow or broad matches? Or are they associated in some other way? Such relationships between the mapped terms are often not documented, which leads to incorrect assumptions and makes them hard to use in scenarios that require a high degree of precision (such as diagnostics or risk prediction). Furthermore, the lack of descriptions of how mappings were done makes it hard to combine and reconcile mappings, particularly curated and automated ones. We have developed the Simple Standard for Sharing Ontological Mappings (SSSOM) which addresses these problems by: (i) Introducing a machine-readable and extensible vocabulary to describe metadata that makes imprecision, inaccuracy and incompleteness in mappings explicit. (ii) Defining an easy-to-use simple table-based format that can be integrated into existing data science pipelines without the need to parse or query ontologies, and that integrates seamlessly with Linked Data principles. (iii) Implementing open and community-driven collaborative workflows that are designed to evolve the standard continuously to address changing requirements and mapping practices. (iv) Providing reference tools and software libraries for working with the standard. In this paper, we present the SSSOM standard, describe several use cases in detail and survey some of the existing work on standardizing the exchange of mappings, with the goal of making mappings Findable, Accessible, Interoperable and Reusable (FAIR). The SSSOM specification can be found at http://w3id.org/sssom/spec.
+
+Database URL: http://w3id.org/sssom/spec},
+  title={A Simple Standard for Sharing Ontological Mappings (SSSOM)},
+  author={Matentzoglu, Nicolas and Balhoff, James P and Bello, Susan M and Bizon, Chris and Brush, Matthew and Callahan, Tiffany J and Chute, Christopher G and Duncan, William D and Evelo, Chris T and Gabriel, Davera and others},
+  journal={Database},
+  month=may,
+  volume={2022},
+  year={2022},
+  doi={10.1093/database/baac035},
+  url={https://doi.org/10.1093/database/baac035},
+  publisher={Oxford Academic}
+}
+
 @article{courtot:elixir-validator:bioinformatics2022,
-    author = {Liyanage, Isuru and Burdett, Tony and Droesbeke, Bert and Erdos, Karoly and Fernandez, Rolando and Gray, Alasdair and Haseeb, Muhammad and Penim, Flavia and Pommier, Cyril and Rocca-Serra, Philippe and Courtot, Mélanie and Coppens, Frederik},
+    author = {Liyanage, Isuru and Burdett, Tony and Droesbeke, Bert and Erdos, Karoly and Fernandez, Rolando and Gray, Alasdair and Haseeb, Muhammad and Jupp, Simon and Penim, Flavia and Pommier, Cyril and Rocca-Serra, Philippe and Courtot, Mélanie and Coppens, Frederik},
     title = "{ELIXIR biovalidator for semantic validation of life science metadata}",
     journal = {Bioinformatics},
     year = {2022},
-    month = {04},
+    month = apr,
+    volume = {38},
+    number = {11},
+    pages = {3141-3142},
+    publisher = {Oxford University Press},
     abstract = "{To advance biomedical research, increasingly large amounts of complex data need to be discovered and integrated. This requires syntactic and semantic validation to ensure shared understanding of relevant entities. This article describes the ELIXIR biovalidator, which extends the syntactic validation of the widely used AJV library with ontology-based validation of JSON documents.Source code: https://github.com/elixir-europe/biovalidator, Release: v1.9.1, License: Apache License 2.0, Deployed at: https://www.ebi.ac.uk/biosamples/schema/validator/validate}",
     issn = {1367-4803},
     doi = {10.1093/bioinformatics/btac195},
@@ -199,13 +218,13 @@ abstract = {Powerful new social science data resources are emerging. One particu
 @article{Ciccarese:PAV:JoBS2013,
   abstract  = {Background
   Provenance is a critical ingredient for establishing trust of published scientific content. This is true whether we are considering a data set, a computational workflow, a peer-reviewed publication or a simple scientific claim with supportive evidence. Existing vocabularies such as Dublin Core Terms (DC Terms) and the W3C Provenance Ontology (PROV-O) are domain-independent and general-purpose and they allow and encourage for extensions to cover more specific needs. In particular, to track authoring and versioning information of web resources, PROV-O provides a basic methodology but not any specific classes and properties for identifying or distinguishing between the various roles assumed by agents manipulating digital artifacts, such as author, contributor and curator.
-  
+
   Results
   We present the Provenance, Authoring and Versioning ontology (PAV, namespace http://purl.org/pav/): a lightweight ontology for capturing “just enough” descriptions essential for tracking the provenance, authoring and versioning of web resources. We argue that such descriptions are essential for digital scientific content. PAV distinguishes between contributors, authors and curators of content and creators of representations in addition to the provenance of originating resources that have been accessed, transformed and consumed. We explore five projects (and communities) that have adopted PAV illustrating their usage through concrete examples. Moreover, we present mappings that show how PAV extends the W3C PROV-O ontology to support broader interoperability.
-  
+
   Method
   The initial design of the PAV ontology was driven by requirements from the AlzSWAN project with further requirements incorporated later from other projects detailed in this paper. The authors strived to keep PAV lightweight and compact by including only those terms that have demonstrated to be pragmatically useful in existing applications, and by recommending terms from existing ontologies when plausible.
-  
+
   Discussion
   We analyze and compare PAV with related approaches, namely Provenance Vocabulary (PRV), DC Terms and BIBFRAME. We identify similarities and analyze differences between those vocabularies and PAV, outlining strengths and weaknesses of our proposed model. We specify SKOS mappings that align PAV with DC Terms. We conclude the paper with general remarks on the applicability of PAV.},
   author    = {Paolo Ciccarese and
@@ -307,19 +326,19 @@ abstract = {Powerful new social science data resources are emerging. One particu
 @article{Gray:AnsQIncompleteStream:IJWIS2007,
   abstract  = {Purpose
   Distributed data streams are an important topic of current research. In such a setting, data values will be missed, e.g. due to network errors. This paper aims to allow this incompleteness to be detected and overcome with either the user not being affected or the effects of the incompleteness being reported to the user.
-  
+
   Design/methodology/approach
   A model for representing the incomplete information has been developed that captures the information that is known about the missing data. Techniques for query answering involving certain and possible answer sets have been extended so that queries over incomplete data stream histories can be answered.
-  
+
   Findings
   It is possible to detect when a distributed data stream is missing one or more values. When such data values are missing there will be some information that is known about the data and this is stored in an appropriate format. Even when the available data are incomplete, it is possible in some circumstances to answer a query completely. When this is not possible, additional meta‐data can be returned to inform the user of the effects of the incompleteness.
-  
+
   Research limitations/implications
   The techniques and models proposed in this paper have only been partially implemented.
-  
+
   Practical implications
   The proposed system is general and can be applied wherever there is a need to query the history of distributed data streams. The work in this paper enables the system to answer queries when there are missing values in the data.
-  
+
   Originality/value
   This paper presents a general model of how to detect, represent, and answer historical queries over incomplete distributed data streams.},
   author    = {Alasdair J. G. Gray and
@@ -353,7 +372,7 @@ abstract = {Powerful new social science data resources are emerging. One particu
   abstract  = {We have developed and implemented the Relational Grid Monitoring Architecture (R-GMA) as part of the DataGrid project, to provide a flexible information and monitoring service for use by other middleware components and applications.
 
               R-GMA presents users with a virtual database and mediates queries posed at this database: users pose queries against a global schema and R-GMA takes responsibility for locating relevant sources and returning an answer. R-GMA’s architecture and mechanisms are general and can be used wherever there is a need for publishing and querying information in a distributed environment.
-  
+
               We discuss the requirements, design and implementation of R-GMA as deployed on the DataGrid testbed. We also describe some of the ways in which R-GMA is being used.},
   author    = {Andrew W. Cooke and
                Alasdair J. G. Gray and
