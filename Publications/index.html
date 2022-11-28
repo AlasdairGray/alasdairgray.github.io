@@ -5,9 +5,9 @@
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,maximum-scale=2">
-    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=698989c03dd4566f778c95a26a61347fcda91a5a">
-    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/fontawesome-5.15.4/css/all.min.css?v=698989c03dd4566f778c95a26a61347fcda91a5a">
-    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/academicons-1.9.1/css/academicons.min.css?v=698989c03dd4566f778c95a26a61347fcda91a5a">
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=74b1f994f5eddbd396598752569795080e6efef5">
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/fontawesome-5.15.4/css/all.min.css?v=74b1f994f5eddbd396598752569795080e6efef5">
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/academicons-1.9.1/css/academicons.min.css?v=74b1f994f5eddbd396598752569795080e6efef5">
 
 <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Publications | Alasdair J G Gray</title>
@@ -72,7 +72,7 @@
           <div class="leftcolumn">          
             <h1 id="publications">Publications</h1>
 
-<p>I have published 40 papers in peer reviewed conferences and journals. Below you will find a complete listing of all my contributions (98) to conferences, journals, workshops, proceedings, and technical recommendations, as well as my PhD Thesis.</p>
+<p>I have published 40 papers in peer reviewed conferences and journals. Below you will find a complete listing of all my contributions (99) to conferences, journals, workshops, proceedings, and technical recommendations, as well as my PhD Thesis.</p>
 
 <p>You can also find my publications on the following academic repositories.</p>
 <div class="social-icons">
@@ -94,6 +94,118 @@
 -->
 <h2 id="2022">2022</h2>
 <ol class="bibliography"><li><style>
+    pre {
+        white-space: pre-wrap; 
+    }
+    .grid-container {
+        display: grid;
+        border: 2px solid silver;
+        border-radius: 10px;
+        padding: 5px;
+        margin-bottom: 5px;
+    }
+    .mainItem {
+        grid-column: 1 /span 2;
+        grid-row: 1;
+    }
+    .rightItem {
+        grid-column: 3;
+        grid-row: 1;
+        text-align: center;
+    }
+</style>
+
+<div class="grid-container">
+    <div class="grid-item mainItem">
+        <!-- title with hyperlink -->
+        
+            <a href="https://doi.org/10.37044/osf.io/7f95d">An ETL pipeline to construct the Intrinsically Disordered Proteins Knowledge Graph (IDP-KG) using Bioschemas JSON-LD data dumps</a>
+        
+        <br />
+        <!-- Display author list, or editor list if no author list -->
+        <!-- 
+            Could do extra processing on {"first"=>"Ammar", "last"=>"Ammar", "prefix"=>"", "suffix"=>""}{"first"=>"Ivan", "last"=>"Mičetić", "prefix"=>"", "suffix"=>""}{"first"=>"Alasdair J. G.", "last"=>"Gray", "prefix"=>"", "suffix"=>""} to control
+            the display of author/editor information using the subkeys
+             and 
+            There are also enumerated forms if you want to control the number
+            of authors/editors shown. These are not in a sub-array but accessed
+            directly with Ammar and Ammar
+        -->
+        
+            Ammar, Ammar and Mičetić, Ivan and Gray, Alasdair J. G.
+        
+        <br />
+        <!--
+            Display venue information based on entry type.
+            Note that you cannot prettify the code below since any 
+            spaces/newlines get manifested as spaces in the HTML
+        -->
+        
+                Technical Report. BioHackrXiv. nov, 2022
+        
+        <br />
+        
+
+        <!-- Buttons to control blocks -->
+        
+        
+            
+            <button onclick="toggle(ammardatapipelinebiohackrxiv2022Abstract)">Abstract</button>
+        
+        
+        <button onclick="toggle(ammardatapipelinebiohackrxiv2022Bib)">BibTeX</button>
+
+        <!-- Display abstract on button click -->
+        <p style="display: none" id="ammardatapipelinebiohackrxiv2022Abstract">Schema.org and Bioschemas are lightweight vocabularies that aim at making the contents of web pages machine-readable so that software agents can consume that content and understand it in an actionable way. Due to the time needed to process each page, extracting markup by visiting each page of a site is not practical for huge sites. This approach imposes processing requirements on the publisher and the consumer. The Schema.org community proposed a method for exchanging markup from various pages as a DataFeed published at a recognized address in February 2022. This would ease publisher and customer processing requirements and accelerate data collection. In this work, we report on the implementation of a JSON-LD consumer ETL (Extract-Transform-Load) pipeline that enables data dumps to be ingested into knowledge graphs (KG). The pipeline loads scraped JSON-LD from the three sources, converts it to RDF, applies SPARQL construct queries to map the source RDF to a unified Bioschemas-based model and stores the resulting KG as a turtle file. This work was conducted during the one-week Biohackathion Europe 2022 in Paris France, under Project 23 titled, “Publishing and Consuming Schema.org DataFeeds.”</p>
+        <!-- Display bibtex on button click -->
+        <pre style="display: none" id="ammardatapipelinebiohackrxiv2022Bib">@techreport{ammar:data-pipeline:biohackrxiv2022,
+  title = {An ETL pipeline to construct the Intrinsically Disordered Proteins Knowledge Graph (IDP-KG) using Bioschemas JSON-LD data dumps},
+  url = {https://biohackrxiv.org/7f95d/},
+  doi = {10.37044/osf.io/7f95d},
+  publisher = {BioHackrXiv},
+  author = {Ammar, Ammar and Mičetić, Ivan and Gray, Alasdair J. G.},
+  year = {2022},
+  month = nov
+}
+</pre>
+
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "ScholarlyArticle",
+                "dct:conformsTo": "https://bioschemas.org/profiles/ScholarlyArticle/0.2-DRAFT-2020_12_03",
+                
+                "@id": "10.37044/osf.io/7f95d",
+                "identifier": ["10.37044/osf.io/7f95d", "https://biohackrxiv.org/7f95d/"],
+                
+                "name": "An ETL pipeline to construct the Intrinsically Disordered Proteins Knowledge Graph (IDP-KG) using Bioschemas JSON-LD data dumps",
+                
+                "abstract": "Schema.org and Bioschemas are lightweight vocabularies that aim at making the contents of web pages machine-readable so that software agents can consume that content and understand it in an actionable way. Due to the time needed to process each page, extracting markup by visiting each page of a site is not practical for huge sites. This approach imposes processing requirements on the publisher and the consumer. The Schema.org community proposed a method for exchanging markup from various pages as a DataFeed published at a recognized address in February 2022. This would ease publisher and customer processing requirements and accelerate data collection. In this work, we report on the implementation of a JSON-LD consumer ETL (Extract-Transform-Load) pipeline that enables data dumps to be ingested into knowledge graphs (KG). The pipeline loads scraped JSON-LD from the three sources, converts it to RDF, applies SPARQL construct queries to map the source RDF to a unified Bioschemas-based model and stores the resulting KG as a turtle file. This work was conducted during the one-week Biohackathion Europe 2022 in Paris France, under Project 23 titled, “Publishing and Consuming Schema.org DataFeeds.”",
+                
+                "author": "Ammar, Ammar and Mičetić, Ivan and Gray, Alasdair J. G."
+            }
+        </script>
+    
+    </div>
+
+    <!-- Display metrics in right grid item -->
+    <div class="grid-item rightItem">
+        
+        <!-- PlumX widget; requires script at end of page -->
+        <a data-popup="bottom" href="https://plu.mx/plum/a/?doi=10.37044/osf.io/7f95d" class="plumx-plum-print-popup plum-liberty-theme"></a>
+        
+        <!-- Altmetrics donut; requires script at end of page -->
+        <div data-badge-popover="right" data-badge-type="donut" data-doi="10.37044/osf.io/7f95d" data-hide-no-mentions="true" class="altmetric-embed"></div>
+        
+    </div>
+</div>
+
+<!-- Altmetrics script -->
+<script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
+<!-- PlumX script -->
+<script type="text/javascript" src="//cdn.plu.mx/widget-popup.js"></script>
+</li>
+<li><style>
     pre {
         white-space: pre-wrap; 
     }
@@ -797,117 +909,6 @@ In this paper, we investigate using Bioschemas markup as a mechanism to populate
     <div class="grid-item mainItem">
         <!-- title with hyperlink -->
         
-            <a href="http://ceur-ws.org/Vol-2873/paper13.pdf">Experiences of Using WDumper to Create Topical Subsets from Wikidata</a>
-        
-        <br />
-        <!-- Display author list, or editor list if no author list -->
-        <!-- 
-            Could do extra processing on {"first"=>"Seyed Amir", "last"=>"Hosseini Beghaeiraveri", "prefix"=>"", "suffix"=>""}{"first"=>"Alasdair J. G.", "last"=>"Gray", "prefix"=>"", "suffix"=>""}{"first"=>"Fiona", "last"=>"McNeill", "prefix"=>"", "suffix"=>""} to control
-            the display of author/editor information using the subkeys
-             and 
-            There are also enumerated forms if you want to control the number
-            of authors/editors shown. These are not in a sub-array but accessed
-            directly with Seyed Amir and Hosseini Beghaeiraveri
-        -->
-        
-            Hosseini Beghaeiraveri, Seyed Amir and Gray, Alasdair J. G. and McNeill, Fiona
-        
-        <br />
-        <!--
-            Display venue information based on entry type.
-            Note that you cannot prettify the code below since any 
-            spaces/newlines get manifested as spaces in the HTML
-        -->
-        
-                In <em>Proceedings of the 2nd International Workshop on Knowledge Graph Construction, co-located with the 18th Extended Semantic Web Conference (ESWC 2021)</em>, CEUR Workshop Proceedings, 2873, CEUR Workshop Proceedings (CEUR-WS.org), 2021
-            
-        <br />
-        
-
-        <!-- Buttons to control blocks -->
-        
-        
-            
-            <button onclick="toggle(HosseiniBeghaeiraveri2021TopicalSubsetsKGConstruction2021Abstract)">Abstract</button>
-        
-        
-        <button onclick="toggle(HosseiniBeghaeiraveri2021TopicalSubsetsKGConstruction2021Bib)">BibTeX</button>
-
-        <!-- Display abstract on button click -->
-        <p style="display: none" id="HosseiniBeghaeiraveri2021TopicalSubsetsKGConstruction2021Abstract">Wikidata is a general-purpose knowledge graph covering a wide variety of topics with content being crowd-sourced through an open wiki. There are now over 90M interrelated data items in Wikidata which are accessible through a public query endpoint and data dumps. However, execution timeout limits and the size of data dumps make it difficult to use the data.
-  The creation of arbitrary topical subsets of Wikidata, where only the relevant data is kept, would enable reuse of that data with the benefits of cost reduction, ease of access, and flexibility. In this paper, we provide a formal definition of topical subsets over the Wikidata Knowledge Graph and evaluate a third-party tool (WDumper) to extract these topical subsets from Wikidata.</p>
-        <!-- Display bibtex on button click -->
-        <pre style="display: none" id="HosseiniBeghaeiraveri2021TopicalSubsetsKGConstruction2021Bib">@inproceedings{HosseiniBeghaeiraveri2021:TopicalSubsets:KGConstruction2021,
-  title = {Experiences of Using WDumper to Create Topical Subsets from Wikidata},
-  booktitle = {Proceedings of the 2nd International Workshop on Knowledge Graph Construction, co-located with the 18th Extended Semantic Web Conference (ESWC 2021)},
-  keywords = {Wikidata, Topical subset, WikiProject, Gene Wiki},
-  author = {{Hosseini Beghaeiraveri}, {Seyed Amir} and Gray, {Alasdair J. G.} and McNeill, Fiona},
-  year = {2021},
-  month = jun,
-  series = {CEUR Workshop Proceedings},
-  publisher = {CEUR Workshop Proceedings (CEUR-WS.org)},
-  volume = {2873},
-  url = {http://ceur-ws.org/Vol-2873/paper13.pdf}
-}
-</pre>
-
-        <script type="application/ld+json">
-            {
-                "@context": "https://schema.org",
-                "@type": "ScholarlyArticle",
-                "dct:conformsTo": "https://bioschemas.org/profiles/ScholarlyArticle/0.2-DRAFT-2020_12_03",
-                
-                "@id": "http://ceur-ws.org/Vol-2873/paper13.pdf",
-                "identifier": "http://ceur-ws.org/Vol-2873/paper13.pdf",
-                
-                "name": "Experiences of Using WDumper to Create Topical Subsets from Wikidata",
-                
-                "abstract": "Wikidata is a general-purpose knowledge graph covering a wide variety of topics with content being crowd-sourced through an open wiki. There are now over 90M interrelated data items in Wikidata which are accessible through a public query endpoint and data dumps. However, execution timeout limits and the size of data dumps make it difficult to use the data.
-  The creation of arbitrary topical subsets of Wikidata, where only the relevant data is kept, would enable reuse of that data with the benefits of cost reduction, ease of access, and flexibility. In this paper, we provide a formal definition of topical subsets over the Wikidata Knowledge Graph and evaluate a third-party tool (WDumper) to extract these topical subsets from Wikidata.",
-                
-                "author": "Hosseini Beghaeiraveri, Seyed Amir and Gray, Alasdair J. G. and McNeill, Fiona"
-            }
-        </script>
-    
-    </div>
-
-    <!-- Display metrics in right grid item -->
-    <div class="grid-item rightItem">
-        
-    </div>
-</div>
-
-<!-- Altmetrics script -->
-<script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
-<!-- PlumX script -->
-<script type="text/javascript" src="//cdn.plu.mx/widget-popup.js"></script>
-</li>
-<li><style>
-    pre {
-        white-space: pre-wrap; 
-    }
-    .grid-container {
-        display: grid;
-        border: 2px solid silver;
-        border-radius: 10px;
-        padding: 5px;
-        margin-bottom: 5px;
-    }
-    .mainItem {
-        grid-column: 1 /span 2;
-        grid-row: 1;
-    }
-    .rightItem {
-        grid-column: 3;
-        grid-row: 1;
-        text-align: center;
-    }
-</style>
-
-<div class="grid-container">
-    <div class="grid-item mainItem">
-        <!-- title with hyperlink -->
-        
             <a href="https://doi.org/10.37044/osf.io/v3jct">Exploiting Bioschemas Markup to Populate IDPcentral</a>
         
         <br />
@@ -997,6 +998,117 @@ In this paper, we investigate using Bioschemas markup as a mechanism to populate
         
         <!-- Altmetrics donut; requires script at end of page -->
         <div data-badge-popover="right" data-badge-type="donut" data-doi="10.37044/osf.io/v3jct" data-hide-no-mentions="true" class="altmetric-embed"></div>
+        
+    </div>
+</div>
+
+<!-- Altmetrics script -->
+<script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
+<!-- PlumX script -->
+<script type="text/javascript" src="//cdn.plu.mx/widget-popup.js"></script>
+</li>
+<li><style>
+    pre {
+        white-space: pre-wrap; 
+    }
+    .grid-container {
+        display: grid;
+        border: 2px solid silver;
+        border-radius: 10px;
+        padding: 5px;
+        margin-bottom: 5px;
+    }
+    .mainItem {
+        grid-column: 1 /span 2;
+        grid-row: 1;
+    }
+    .rightItem {
+        grid-column: 3;
+        grid-row: 1;
+        text-align: center;
+    }
+</style>
+
+<div class="grid-container">
+    <div class="grid-item mainItem">
+        <!-- title with hyperlink -->
+        
+            <a href="http://ceur-ws.org/Vol-2873/paper13.pdf">Experiences of Using WDumper to Create Topical Subsets from Wikidata</a>
+        
+        <br />
+        <!-- Display author list, or editor list if no author list -->
+        <!-- 
+            Could do extra processing on {"first"=>"Seyed Amir", "last"=>"Hosseini Beghaeiraveri", "prefix"=>"", "suffix"=>""}{"first"=>"Alasdair J. G.", "last"=>"Gray", "prefix"=>"", "suffix"=>""}{"first"=>"Fiona", "last"=>"McNeill", "prefix"=>"", "suffix"=>""} to control
+            the display of author/editor information using the subkeys
+             and 
+            There are also enumerated forms if you want to control the number
+            of authors/editors shown. These are not in a sub-array but accessed
+            directly with Seyed Amir and Hosseini Beghaeiraveri
+        -->
+        
+            Hosseini Beghaeiraveri, Seyed Amir and Gray, Alasdair J. G. and McNeill, Fiona
+        
+        <br />
+        <!--
+            Display venue information based on entry type.
+            Note that you cannot prettify the code below since any 
+            spaces/newlines get manifested as spaces in the HTML
+        -->
+        
+                In <em>Proceedings of the 2nd International Workshop on Knowledge Graph Construction, co-located with the 18th Extended Semantic Web Conference (ESWC 2021)</em>, CEUR Workshop Proceedings, 2873, CEUR Workshop Proceedings (CEUR-WS.org), 2021
+            
+        <br />
+        
+
+        <!-- Buttons to control blocks -->
+        
+        
+            
+            <button onclick="toggle(HosseiniBeghaeiraveri2021TopicalSubsetsKGConstruction2021Abstract)">Abstract</button>
+        
+        
+        <button onclick="toggle(HosseiniBeghaeiraveri2021TopicalSubsetsKGConstruction2021Bib)">BibTeX</button>
+
+        <!-- Display abstract on button click -->
+        <p style="display: none" id="HosseiniBeghaeiraveri2021TopicalSubsetsKGConstruction2021Abstract">Wikidata is a general-purpose knowledge graph covering a wide variety of topics with content being crowd-sourced through an open wiki. There are now over 90M interrelated data items in Wikidata which are accessible through a public query endpoint and data dumps. However, execution timeout limits and the size of data dumps make it difficult to use the data.
+  The creation of arbitrary topical subsets of Wikidata, where only the relevant data is kept, would enable reuse of that data with the benefits of cost reduction, ease of access, and flexibility. In this paper, we provide a formal definition of topical subsets over the Wikidata Knowledge Graph and evaluate a third-party tool (WDumper) to extract these topical subsets from Wikidata.</p>
+        <!-- Display bibtex on button click -->
+        <pre style="display: none" id="HosseiniBeghaeiraveri2021TopicalSubsetsKGConstruction2021Bib">@inproceedings{HosseiniBeghaeiraveri2021:TopicalSubsets:KGConstruction2021,
+  title = {Experiences of Using WDumper to Create Topical Subsets from Wikidata},
+  booktitle = {Proceedings of the 2nd International Workshop on Knowledge Graph Construction, co-located with the 18th Extended Semantic Web Conference (ESWC 2021)},
+  keywords = {Wikidata, Topical subset, WikiProject, Gene Wiki},
+  author = {{Hosseini Beghaeiraveri}, {Seyed Amir} and Gray, {Alasdair J. G.} and McNeill, Fiona},
+  year = {2021},
+  month = jun,
+  series = {CEUR Workshop Proceedings},
+  publisher = {CEUR Workshop Proceedings (CEUR-WS.org)},
+  volume = {2873},
+  url = {http://ceur-ws.org/Vol-2873/paper13.pdf}
+}
+</pre>
+
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "ScholarlyArticle",
+                "dct:conformsTo": "https://bioschemas.org/profiles/ScholarlyArticle/0.2-DRAFT-2020_12_03",
+                
+                "@id": "http://ceur-ws.org/Vol-2873/paper13.pdf",
+                "identifier": "http://ceur-ws.org/Vol-2873/paper13.pdf",
+                
+                "name": "Experiences of Using WDumper to Create Topical Subsets from Wikidata",
+                
+                "abstract": "Wikidata is a general-purpose knowledge graph covering a wide variety of topics with content being crowd-sourced through an open wiki. There are now over 90M interrelated data items in Wikidata which are accessible through a public query endpoint and data dumps. However, execution timeout limits and the size of data dumps make it difficult to use the data.
+  The creation of arbitrary topical subsets of Wikidata, where only the relevant data is kept, would enable reuse of that data with the benefits of cost reduction, ease of access, and flexibility. In this paper, we provide a formal definition of topical subsets over the Wikidata Knowledge Graph and evaluate a third-party tool (WDumper) to extract these topical subsets from Wikidata.",
+                
+                "author": "Hosseini Beghaeiraveri, Seyed Amir and Gray, Alasdair J. G. and McNeill, Fiona"
+            }
+        </script>
+    
+    </div>
+
+    <!-- Display metrics in right grid item -->
+    <div class="grid-item rightItem">
         
     </div>
 </div>
@@ -2471,122 +2583,6 @@ The 39 revised full papers presented were carefully reviewed and selected from 1
     <div class="grid-item mainItem">
         <!-- title with hyperlink -->
         
-            <a href="https://doi.org/10.1680/jmapl.17.00052">An ontology-based data integration framework for construction information management</a>
-        
-        <br />
-        <!-- Display author list, or editor list if no author list -->
-        <!-- 
-            Could do extra processing on {"first"=>"Abiodun", "last"=>"Akinyemi", "prefix"=>"", "suffix"=>""}{"first"=>"Ming", "last"=>"Sun", "prefix"=>"", "suffix"=>""}{"first"=>"Alasdair J G", "last"=>"Gray", "prefix"=>"", "suffix"=>""} to control
-            the display of author/editor information using the subkeys
-             and 
-            There are also enumerated forms if you want to control the number
-            of authors/editors shown. These are not in a sub-array but accessed
-            directly with Abiodun and Akinyemi
-        -->
-        
-            Akinyemi, Abiodun and Sun, Ming and Gray, Alasdair J G
-        
-        <br />
-        <!--
-            Display venue information based on entry type.
-            Note that you cannot prettify the code below since any 
-            spaces/newlines get manifested as spaces in the HTML
-        -->
-        
-                Proceedings of the Institution of Civil Engineers - Management, Procurement and Law, 171(3):111–125, Thomas Telford Ltd., 2018
-            
-        <br />
-        
-
-        <!-- Buttons to control blocks -->
-        
-        
-            
-            <button onclick="toggle(Akinyemi2018Abstract)">Abstract</button>
-        
-        
-        <button onclick="toggle(Akinyemi2018Bib)">BibTeX</button>
-
-        <!-- Display abstract on button click -->
-        <p style="display: none" id="Akinyemi2018Abstract">Information management during the construction phase of a built asset involves multiple stakeholders using multiple software applications to generate and store data. This is problematic as data come in different forms and are labour intensive to piece together. Existing solutions to this problem are predominantly in proprietary applications, which are sometimes cost prohibitive for small engineering firms, or conceptual studies with use cases that cannot be easily adapted. In view of these limitations, this research presents an ontology-based data integration framework that makes use of open-source tools that support Semantic Web technologies. The proposed framework enables rapid answering of queries over construction data integrated from heterogeneous sources, data quality checks and reuse of project software resources. The attributes and functionalities of the proposed solution align with the requirements common to small firms with limited information technology skill and budget. Consequently, this solution can be of great benefit for their data projects.</p>
-        <!-- Display bibtex on button click -->
-        <pre style="display: none" id="Akinyemi2018Bib">@article{Akinyemi_2018,
-  doi = {10.1680/jmapl.17.00052},
-  url = {https://doi.org/10.1680%2Fjmapl.17.00052},
-  year = {2018},
-  month = jun,
-  publisher = {Thomas Telford Ltd.},
-  volume = {171},
-  number = {3},
-  pages = {111--125},
-  author = {Akinyemi, Abiodun and Sun, Ming and Gray, Alasdair J G},
-  title = {An ontology-based data integration framework for construction information management},
-  journal = {Proceedings of the Institution of Civil Engineers - Management, Procurement and Law}
-}
-</pre>
-
-        <script type="application/ld+json">
-            {
-                "@context": "https://schema.org",
-                "@type": "ScholarlyArticle",
-                "dct:conformsTo": "https://bioschemas.org/profiles/ScholarlyArticle/0.2-DRAFT-2020_12_03",
-                
-                "@id": "10.1680/jmapl.17.00052",
-                "identifier": ["10.1680/jmapl.17.00052", "https://doi.org/10.1680%2Fjmapl.17.00052"],
-                
-                "name": "An ontology-based data integration framework for construction information management",
-                
-                "abstract": "Information management during the construction phase of a built asset involves multiple stakeholders using multiple software applications to generate and store data. This is problematic as data come in different forms and are labour intensive to piece together. Existing solutions to this problem are predominantly in proprietary applications, which are sometimes cost prohibitive for small engineering firms, or conceptual studies with use cases that cannot be easily adapted. In view of these limitations, this research presents an ontology-based data integration framework that makes use of open-source tools that support Semantic Web technologies. The proposed framework enables rapid answering of queries over construction data integrated from heterogeneous sources, data quality checks and reuse of project software resources. The attributes and functionalities of the proposed solution align with the requirements common to small firms with limited information technology skill and budget. Consequently, this solution can be of great benefit for their data projects.",
-                
-                "author": "Akinyemi, Abiodun and Sun, Ming and Gray, Alasdair J G"
-            }
-        </script>
-    
-    </div>
-
-    <!-- Display metrics in right grid item -->
-    <div class="grid-item rightItem">
-        
-        <!-- PlumX widget; requires script at end of page -->
-        <a data-popup="bottom" href="https://plu.mx/plum/a/?doi=10.1680/jmapl.17.00052" class="plumx-plum-print-popup plum-liberty-theme"></a>
-        
-        <!-- Altmetrics donut; requires script at end of page -->
-        <div data-badge-popover="right" data-badge-type="donut" data-doi="10.1680/jmapl.17.00052" data-hide-no-mentions="true" class="altmetric-embed"></div>
-        
-    </div>
-</div>
-
-<!-- Altmetrics script -->
-<script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
-<!-- PlumX script -->
-<script type="text/javascript" src="//cdn.plu.mx/widget-popup.js"></script>
-</li>
-<li><style>
-    pre {
-        white-space: pre-wrap; 
-    }
-    .grid-container {
-        display: grid;
-        border: 2px solid silver;
-        border-radius: 10px;
-        padding: 5px;
-        margin-bottom: 5px;
-    }
-    .mainItem {
-        grid-column: 1 /span 2;
-        grid-row: 1;
-    }
-    .rightItem {
-        grid-column: 3;
-        grid-row: 1;
-        text-align: center;
-    }
-</style>
-
-<div class="grid-container">
-    <div class="grid-item mainItem">
-        <!-- title with hyperlink -->
-        
             <a href="https://doi.org/10.1109/NETSOFT.2018.8460050">ReasoNet: Inferring Network Policies Using Ontologies</a>
         
         <br />
@@ -2668,6 +2664,122 @@ The 39 revised full papers presented were carefully reviewed and selected from 1
         
         <!-- Altmetrics donut; requires script at end of page -->
         <div data-badge-popover="right" data-badge-type="donut" data-doi="10.1109/NETSOFT.2018.8460050" data-hide-no-mentions="true" class="altmetric-embed"></div>
+        
+    </div>
+</div>
+
+<!-- Altmetrics script -->
+<script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
+<!-- PlumX script -->
+<script type="text/javascript" src="//cdn.plu.mx/widget-popup.js"></script>
+</li>
+<li><style>
+    pre {
+        white-space: pre-wrap; 
+    }
+    .grid-container {
+        display: grid;
+        border: 2px solid silver;
+        border-radius: 10px;
+        padding: 5px;
+        margin-bottom: 5px;
+    }
+    .mainItem {
+        grid-column: 1 /span 2;
+        grid-row: 1;
+    }
+    .rightItem {
+        grid-column: 3;
+        grid-row: 1;
+        text-align: center;
+    }
+</style>
+
+<div class="grid-container">
+    <div class="grid-item mainItem">
+        <!-- title with hyperlink -->
+        
+            <a href="https://doi.org/10.1680/jmapl.17.00052">An ontology-based data integration framework for construction information management</a>
+        
+        <br />
+        <!-- Display author list, or editor list if no author list -->
+        <!-- 
+            Could do extra processing on {"first"=>"Abiodun", "last"=>"Akinyemi", "prefix"=>"", "suffix"=>""}{"first"=>"Ming", "last"=>"Sun", "prefix"=>"", "suffix"=>""}{"first"=>"Alasdair J G", "last"=>"Gray", "prefix"=>"", "suffix"=>""} to control
+            the display of author/editor information using the subkeys
+             and 
+            There are also enumerated forms if you want to control the number
+            of authors/editors shown. These are not in a sub-array but accessed
+            directly with Abiodun and Akinyemi
+        -->
+        
+            Akinyemi, Abiodun and Sun, Ming and Gray, Alasdair J G
+        
+        <br />
+        <!--
+            Display venue information based on entry type.
+            Note that you cannot prettify the code below since any 
+            spaces/newlines get manifested as spaces in the HTML
+        -->
+        
+                Proceedings of the Institution of Civil Engineers - Management, Procurement and Law, 171(3):111–125, Thomas Telford Ltd., 2018
+            
+        <br />
+        
+
+        <!-- Buttons to control blocks -->
+        
+        
+            
+            <button onclick="toggle(Akinyemi2018Abstract)">Abstract</button>
+        
+        
+        <button onclick="toggle(Akinyemi2018Bib)">BibTeX</button>
+
+        <!-- Display abstract on button click -->
+        <p style="display: none" id="Akinyemi2018Abstract">Information management during the construction phase of a built asset involves multiple stakeholders using multiple software applications to generate and store data. This is problematic as data come in different forms and are labour intensive to piece together. Existing solutions to this problem are predominantly in proprietary applications, which are sometimes cost prohibitive for small engineering firms, or conceptual studies with use cases that cannot be easily adapted. In view of these limitations, this research presents an ontology-based data integration framework that makes use of open-source tools that support Semantic Web technologies. The proposed framework enables rapid answering of queries over construction data integrated from heterogeneous sources, data quality checks and reuse of project software resources. The attributes and functionalities of the proposed solution align with the requirements common to small firms with limited information technology skill and budget. Consequently, this solution can be of great benefit for their data projects.</p>
+        <!-- Display bibtex on button click -->
+        <pre style="display: none" id="Akinyemi2018Bib">@article{Akinyemi_2018,
+  doi = {10.1680/jmapl.17.00052},
+  url = {https://doi.org/10.1680%2Fjmapl.17.00052},
+  year = {2018},
+  month = jun,
+  publisher = {Thomas Telford Ltd.},
+  volume = {171},
+  number = {3},
+  pages = {111--125},
+  author = {Akinyemi, Abiodun and Sun, Ming and Gray, Alasdair J G},
+  title = {An ontology-based data integration framework for construction information management},
+  journal = {Proceedings of the Institution of Civil Engineers - Management, Procurement and Law}
+}
+</pre>
+
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "ScholarlyArticle",
+                "dct:conformsTo": "https://bioschemas.org/profiles/ScholarlyArticle/0.2-DRAFT-2020_12_03",
+                
+                "@id": "10.1680/jmapl.17.00052",
+                "identifier": ["10.1680/jmapl.17.00052", "https://doi.org/10.1680%2Fjmapl.17.00052"],
+                
+                "name": "An ontology-based data integration framework for construction information management",
+                
+                "abstract": "Information management during the construction phase of a built asset involves multiple stakeholders using multiple software applications to generate and store data. This is problematic as data come in different forms and are labour intensive to piece together. Existing solutions to this problem are predominantly in proprietary applications, which are sometimes cost prohibitive for small engineering firms, or conceptual studies with use cases that cannot be easily adapted. In view of these limitations, this research presents an ontology-based data integration framework that makes use of open-source tools that support Semantic Web technologies. The proposed framework enables rapid answering of queries over construction data integrated from heterogeneous sources, data quality checks and reuse of project software resources. The attributes and functionalities of the proposed solution align with the requirements common to small firms with limited information technology skill and budget. Consequently, this solution can be of great benefit for their data projects.",
+                
+                "author": "Akinyemi, Abiodun and Sun, Ming and Gray, Alasdair J G"
+            }
+        </script>
+    
+    </div>
+
+    <!-- Display metrics in right grid item -->
+    <div class="grid-item rightItem">
+        
+        <!-- PlumX widget; requires script at end of page -->
+        <a data-popup="bottom" href="https://plu.mx/plum/a/?doi=10.1680/jmapl.17.00052" class="plumx-plum-print-popup plum-liberty-theme"></a>
+        
+        <!-- Altmetrics donut; requires script at end of page -->
+        <div data-badge-popover="right" data-badge-type="donut" data-doi="10.1680/jmapl.17.00052" data-hide-no-mentions="true" class="altmetric-embed"></div>
         
     </div>
 </div>
@@ -9330,103 +9442,6 @@ Availability. An alpha version is currently available to the Open PHACTS consort
     <div class="grid-item mainItem">
         <!-- title with hyperlink -->
         
-            Searching and exploring controlled vocabularies
-        
-        <br />
-        <!-- Display author list, or editor list if no author list -->
-        <!-- 
-            Could do extra processing on {"first"=>"A.J.G.", "last"=>"Gray", "prefix"=>"", "suffix"=>""}{"first"=>"N.", "last"=>"Gray", "prefix"=>"", "suffix"=>""}{"first"=>"I.", "last"=>"Ounis", "prefix"=>"", "suffix"=>""} to control
-            the display of author/editor information using the subkeys
-             and 
-            There are also enumerated forms if you want to control the number
-            of authors/editors shown. These are not in a sub-array but accessed
-            directly with A.J.G. and Gray
-        -->
-        
-            Gray, A.J.G. and Gray, N. and Ounis, I.
-        
-        <br />
-        <!--
-            Display venue information based on entry type.
-            Note that you cannot prettify the code below since any 
-            spaces/newlines get manifested as spaces in the HTML
-        -->
-        
-                In <em>Exploiting Semantic Annotations in Information Retrieval (ESAIR 2009)</em>, Barcelona, Spain, pages 1-5, 2009
-            
-        <br />
-        
-
-        <!-- Buttons to control blocks -->
-        
-        
-        
-        <button onclick="toggle(Gray2009SearchingandeBib)">BibTeX</button>
-
-        <!-- Display abstract on button click -->
-        <p style="display: none" id="DBLPjournalsipmGrayGHO10Abstract"></p>
-        <!-- Display bibtex on button click -->
-        <pre style="display: none" id="Gray2009SearchingandeBib">@inproceedings{Gray2009Searching-and-e,
-  address = {Barcelona, Spain},
-  author = {Gray, A.J.G. and Gray, N. and Ounis, I.},
-  booktitle = {Exploiting Semantic Annotations in Information Retrieval (ESAIR 2009)},
-  pages = {1-5},
-  title = {Searching and exploring controlled vocabularies},
-  year = {2009}
-}
-</pre>
-
-        <script type="application/ld+json">
-            {
-                "@context": "https://schema.org",
-                "@type": "ScholarlyArticle",
-                "dct:conformsTo": "https://bioschemas.org/profiles/ScholarlyArticle/0.2-DRAFT-2020_12_03",
-                
-                "name": "Searching and exploring controlled vocabularies",
-                
-                "author": "Gray, A.J.G. and Gray, N. and Ounis, I."
-            }
-        </script>
-    
-    </div>
-
-    <!-- Display metrics in right grid item -->
-    <div class="grid-item rightItem">
-        
-    </div>
-</div>
-
-<!-- Altmetrics script -->
-<script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
-<!-- PlumX script -->
-<script type="text/javascript" src="//cdn.plu.mx/widget-popup.js"></script>
-</li>
-<li><style>
-    pre {
-        white-space: pre-wrap; 
-    }
-    .grid-container {
-        display: grid;
-        border: 2px solid silver;
-        border-radius: 10px;
-        padding: 5px;
-        margin-bottom: 5px;
-    }
-    .mainItem {
-        grid-column: 1 /span 2;
-        grid-row: 1;
-    }
-    .rightItem {
-        grid-column: 3;
-        grid-row: 1;
-        text-align: center;
-    }
-</style>
-
-<div class="grid-container">
-    <div class="grid-item mainItem">
-        <!-- title with hyperlink -->
-        
             <a href="http://www.ivoa.net/Documents/latest/Vocabularies.html">Vocabularies in the Virtual Observatory</a>
         
         <br />
@@ -9490,6 +9505,103 @@ Availability. An alpha version is currently available to the Open PHACTS consort
                 "name": "Vocabularies in the Virtual Observatory",
                 
                 "author": "Gray, A.J.G. and Gray, N. and Hessman, F.V. and Preite Martinez (Eds), A."
+            }
+        </script>
+    
+    </div>
+
+    <!-- Display metrics in right grid item -->
+    <div class="grid-item rightItem">
+        
+    </div>
+</div>
+
+<!-- Altmetrics script -->
+<script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
+<!-- PlumX script -->
+<script type="text/javascript" src="//cdn.plu.mx/widget-popup.js"></script>
+</li>
+<li><style>
+    pre {
+        white-space: pre-wrap; 
+    }
+    .grid-container {
+        display: grid;
+        border: 2px solid silver;
+        border-radius: 10px;
+        padding: 5px;
+        margin-bottom: 5px;
+    }
+    .mainItem {
+        grid-column: 1 /span 2;
+        grid-row: 1;
+    }
+    .rightItem {
+        grid-column: 3;
+        grid-row: 1;
+        text-align: center;
+    }
+</style>
+
+<div class="grid-container">
+    <div class="grid-item mainItem">
+        <!-- title with hyperlink -->
+        
+            Searching and exploring controlled vocabularies
+        
+        <br />
+        <!-- Display author list, or editor list if no author list -->
+        <!-- 
+            Could do extra processing on {"first"=>"A.J.G.", "last"=>"Gray", "prefix"=>"", "suffix"=>""}{"first"=>"N.", "last"=>"Gray", "prefix"=>"", "suffix"=>""}{"first"=>"I.", "last"=>"Ounis", "prefix"=>"", "suffix"=>""} to control
+            the display of author/editor information using the subkeys
+             and 
+            There are also enumerated forms if you want to control the number
+            of authors/editors shown. These are not in a sub-array but accessed
+            directly with A.J.G. and Gray
+        -->
+        
+            Gray, A.J.G. and Gray, N. and Ounis, I.
+        
+        <br />
+        <!--
+            Display venue information based on entry type.
+            Note that you cannot prettify the code below since any 
+            spaces/newlines get manifested as spaces in the HTML
+        -->
+        
+                In <em>Exploiting Semantic Annotations in Information Retrieval (ESAIR 2009)</em>, Barcelona, Spain, pages 1-5, 2009
+            
+        <br />
+        
+
+        <!-- Buttons to control blocks -->
+        
+        
+        
+        <button onclick="toggle(Gray2009SearchingandeBib)">BibTeX</button>
+
+        <!-- Display abstract on button click -->
+        <p style="display: none" id="DBLPjournalsipmGrayGHO10Abstract"></p>
+        <!-- Display bibtex on button click -->
+        <pre style="display: none" id="Gray2009SearchingandeBib">@inproceedings{Gray2009Searching-and-e,
+  address = {Barcelona, Spain},
+  author = {Gray, A.J.G. and Gray, N. and Ounis, I.},
+  booktitle = {Exploiting Semantic Annotations in Information Retrieval (ESAIR 2009)},
+  pages = {1-5},
+  title = {Searching and exploring controlled vocabularies},
+  year = {2009}
+}
+</pre>
+
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "ScholarlyArticle",
+                "dct:conformsTo": "https://bioschemas.org/profiles/ScholarlyArticle/0.2-DRAFT-2020_12_03",
+                
+                "name": "Searching and exploring controlled vocabularies",
+                
+                "author": "Gray, A.J.G. and Gray, N. and Ounis, I."
             }
         </script>
     
