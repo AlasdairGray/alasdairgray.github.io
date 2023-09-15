@@ -15,9 +15,9 @@ jobs:
       with:
         ref: source
     - name: Set up Ruby
-      uses: actions/setup-ruby@v1
+      uses: ruby/setup-ruby@v1
       with:
-        ruby-version: 3.2
+        ruby-version: 2.7
     - name: Build Jekyll site
       run: |
         set -xo pipefail
